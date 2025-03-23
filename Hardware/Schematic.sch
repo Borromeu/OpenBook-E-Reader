@@ -1427,7 +1427,7 @@ Source: &lt;a href="https://www.torexsemi.com/file/xc6220/XC6220.pdf"&gt; Datash
 </device>
 </devices>
 </deviceset>
-<deviceset name="ESP32_WROVER_SPARKFUN-DISCRETESEMI_MOSFET_PCH" prefix="Q" library_version="64">
+<deviceset name="ESP32_WROVER_SPARKFUN-DISCRETESEMI_MOSFET_PCH" prefix="Q" library_version="1">
 <description>&lt;h3&gt;P-channel MOSFETs&lt;/h3&gt;
 &lt;p&gt;Voltage controlled devices that allow control of high current outputs.&lt;/p&gt;
 &lt;p&gt;&lt;b&gt;SparkFun Products:&lt;/b&gt;
@@ -1906,6 +1906,10 @@ Source: &lt;a href="https://www.hirose.com/en/product/document?clcode=CL0580-125
 <part name="EPD_C12" library="DeskAssistant v19 v1.flbr" library_urn="urn:adsk.wipprod:fs.file:vf.vVvdDOfaSfavM5thX5SjWw" deviceset="EAGLE-LTSPICE_C" device="C0402" value="1uF/50V"/>
 <part name="GND25" library="DeskAssistant v19 v1.flbr" library_urn="urn:adsk.wipprod:fs.file:vf.vVvdDOfaSfavM5thX5SjWw" deviceset="GND" device=""/>
 <part name="GND26" library="DeskAssistant v19 v1.flbr" library_urn="urn:adsk.wipprod:fs.file:vf.vVvdDOfaSfavM5thX5SjWw" deviceset="GND" device=""/>
+<part name="Q3" library="DeskAssistant v19 v1.flbr" library_urn="urn:adsk.wipprod:fs.file:vf.vVvdDOfaSfavM5thX5SjWw" deviceset="ESP32_WROVER_SPARKFUN-DISCRETESEMI_MOSFET_PCH" device="-DMG2305UX-7" value="20V/4.2A/52mΩ/1.4W"/>
+<part name="SUPPLY5" library="DeskAssistant v19 v1.flbr" library_urn="urn:adsk.wipprod:fs.file:vf.vVvdDOfaSfavM5thX5SjWw" deviceset="3V3-CIRCLE" device="" value="3V3"/>
+<part name="SUPPLY6" library="DeskAssistant v19 v1.flbr" library_urn="urn:adsk.wipprod:fs.file:vf.vVvdDOfaSfavM5thX5SjWw" deviceset="3V3-CIRCLE" device="" value="3V3"/>
+<part name="R_CL1" library="DeskAssistant v19 v1.flbr" library_urn="urn:adsk.wipprod:fs.file:vf.vVvdDOfaSfavM5thX5SjWw" deviceset="ESP32_WROVER_EAGLE-LTSPICE_R" device="R0402" value="10K"/>
 </parts>
 <sheets>
 <sheet>
@@ -1954,6 +1958,7 @@ ESD Protection</text>
 </text>
 <text x="124.46" y="228.6" size="1.778" layer="95" align="center">ESP32 C6</text>
 <text x="-160.02" y="165.1" size="1.778" layer="95">E-Paper Display Header</text>
+<text x="-73.66" y="162.56" size="1.778" layer="95">EPD Power</text>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="-165.1" y="20.32" smashed="yes">
@@ -2246,6 +2251,22 @@ ESD Protection</text>
 </instance>
 <instance part="GND26" gate="1" x="-157.48" y="129.54" smashed="yes" rot="R180">
 <attribute name="VALUE" x="-154.94" y="132.08" size="1.778" layer="96" rot="R180"/>
+</instance>
+<instance part="Q3" gate="G$1" x="-53.34" y="129.54" smashed="yes">
+<attribute name="NAME" x="-48.26" y="129.54" size="1.778" layer="95" font="vector"/>
+<attribute name="VALUE" x="-48.26" y="127" size="1.778" layer="96" font="vector" rot="R270"/>
+</instance>
+<instance part="SUPPLY5" gate="G$1" x="-50.8" y="144.78" smashed="yes">
+<attribute name="VALUE" x="-50.927" y="147.955" size="1.778" layer="96" align="bottom-center"/>
+</instance>
+<instance part="SUPPLY6" gate="G$1" x="-60.96" y="152.4" smashed="yes">
+<attribute name="VALUE" x="-61.087" y="155.575" size="1.778" layer="96" align="bottom-center"/>
+</instance>
+<instance part="R_CL1" gate="G$1" x="-60.96" y="142.24" smashed="yes" rot="R270">
+<attribute name="NAME" x="-59.4614" y="146.05" size="1.778" layer="95" rot="R270"/>
+<attribute name="VALUE" x="-64.262" y="146.05" size="1.778" layer="96" rot="R270"/>
+<attribute name="NAME" x="-59.4614" y="146.05" size="1.778" layer="95" rot="R270"/>
+<attribute name="VALUE" x="-64.262" y="146.05" size="1.778" layer="96" rot="R270"/>
 </instance>
 </instances>
 <busses>
@@ -2629,6 +2650,16 @@ ESD Protection</text>
 <pinref part="R1" gate="G$1" pin="2"/>
 <pinref part="SUPPLY4" gate="G$1" pin="3V3"/>
 </segment>
+<segment>
+<pinref part="Q3" gate="G$1" pin="D"/>
+<wire x1="-50.8" y1="134.62" x2="-50.8" y2="142.24" width="0.1524" layer="91"/>
+<pinref part="SUPPLY5" gate="G$1" pin="3V3"/>
+</segment>
+<segment>
+<pinref part="SUPPLY6" gate="G$1" pin="3V3"/>
+<pinref part="R_CL1" gate="G$1" pin="1"/>
+<wire x1="-60.96" y1="149.86" x2="-60.96" y2="147.32" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="N$3" class="0">
 <segment>
@@ -2785,6 +2816,11 @@ ESD Protection</text>
 <wire x1="-114.3" y1="119.38" x2="-116.84" y2="119.38" width="0.1524" layer="91"/>
 <junction x="-114.3" y="119.38"/>
 <label x="-116.84" y="119.38" size="1.778" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<pinref part="Q3" gate="G$1" pin="S"/>
+<wire x1="-50.8" y1="124.46" x2="-50.8" y2="121.92" width="0.1524" layer="91"/>
+<label x="-50.8" y="121.92" size="1.778" layer="95" rot="R270" xref="yes"/>
 </segment>
 </net>
 <net name="N$4" class="0">
@@ -2988,6 +3024,15 @@ ESD Protection</text>
 <pinref part="U2" gate="G$1" pin="IO20"/>
 <wire x1="187.96" y1="193.04" x2="190.5" y2="193.04" width="0.1524" layer="91"/>
 <label x="190.5" y="193.04" size="1.778" layer="95" xref="yes"/>
+</segment>
+<segment>
+<pinref part="Q3" gate="G$1" pin="G"/>
+<wire x1="-58.42" y1="127" x2="-60.96" y2="127" width="0.1524" layer="91"/>
+<label x="-63.5" y="127" size="1.778" layer="95" rot="R270" xref="yes"/>
+<wire x1="-60.96" y1="127" x2="-63.5" y2="127" width="0.1524" layer="91"/>
+<junction x="-60.96" y="127"/>
+<wire x1="-60.96" y1="127" x2="-60.96" y2="137.16" width="0.1524" layer="91"/>
+<pinref part="R_CL1" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="SDA" class="0">
