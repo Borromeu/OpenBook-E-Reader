@@ -350,6 +350,41 @@ Source: www.farnell.com/datasheets/49238.pdf</description>
 <text x="-0.635" y="0.635" size="1.27" layer="25">&gt;NAME</text>
 <text x="-0.635" y="-1.905" size="1.27" layer="27">&gt;VALUE</text>
 </package>
+<package name="112ATAARR03ATTEND" library_version="2">
+<description>&lt;b&gt;112A-TAAR-R03 ATTEND-1&lt;/b&gt;&lt;br&gt;</description>
+<wire x1="0.07" y1="-4.5" x2="14.07" y2="-4.5" width="0.2" layer="51"/>
+<wire x1="14.07" y1="-4.5" x2="14.07" y2="10.7" width="0.2" layer="51"/>
+<wire x1="14.07" y1="10.7" x2="0.07" y2="10.7" width="0.2" layer="51"/>
+<wire x1="0.07" y1="10.7" x2="0.07" y2="-4.5" width="0.2" layer="51"/>
+<wire x1="0.07" y1="10.7" x2="0.57" y2="10.7" width="0.1" layer="21"/>
+<wire x1="12.32" y1="-4.5" x2="0.07" y2="-4.5" width="0.1" layer="21"/>
+<wire x1="12.07" y1="10.7" x2="14.07" y2="10.7" width="0.1" layer="21"/>
+<wire x1="-1.18" y1="12" x2="15.37" y2="12" width="0.1" layer="51"/>
+<wire x1="15.37" y1="12" x2="15.37" y2="-5.8" width="0.1" layer="51"/>
+<wire x1="15.37" y1="-5.8" x2="-1.18" y2="-5.8" width="0.1" layer="51"/>
+<wire x1="-1.18" y1="-5.8" x2="-1.18" y2="12" width="0.1" layer="51"/>
+<wire x1="0.07" y1="-1.4" x2="0.07" y2="10.7" width="0.1" layer="21"/>
+<wire x1="14.07" y1="10.7" x2="14.07" y2="-2.15" width="0.1" layer="21"/>
+<wire x1="10.67" y1="11.8" x2="10.67" y2="11.7" width="0.2" layer="21" curve="180"/>
+<wire x1="10.67" y1="11.7" x2="10.67" y2="11.8" width="0.2" layer="21" curve="180"/>
+<wire x1="10.67" y1="11.8" x2="10.67" y2="11.7" width="0.2" layer="21" curve="180"/>
+<smd name="G1" x="10.6" y="10.4" dx="1.8" dy="1.2" layer="1"/>
+<smd name="G2" x="4.9" y="10.4" dx="1.8" dy="1.2" layer="1"/>
+<smd name="G3" x="13.6" y="-3.85" dx="1.9" dy="1.4" layer="1" rot="R90"/>
+<smd name="G4" x="0.45" y="-2.85" dx="1.9" dy="1.4" layer="1" rot="R90"/>
+<smd name="P1" x="8.8" y="0" dx="1.5" dy="0.7" layer="1" rot="R90"/>
+<smd name="P2" x="7.7" y="0.4" dx="1.5" dy="0.7" layer="1" rot="R90"/>
+<smd name="P3" x="6.6" y="0" dx="1.5" dy="0.7" layer="1" rot="R90"/>
+<smd name="P4" x="5.5" y="-0.2" dx="1.5" dy="0.7" layer="1" rot="R90"/>
+<smd name="P5" x="4.4" y="0" dx="1.5" dy="0.7" layer="1" rot="R90"/>
+<smd name="P6" x="3.3" y="-0.2" dx="1.5" dy="0.7" layer="1" rot="R90"/>
+<smd name="P7" x="2.2" y="0" dx="1.5" dy="0.7" layer="1" rot="R90"/>
+<smd name="P8" x="1.1" y="0" dx="1.5" dy="0.7" layer="1" rot="R90"/>
+<smd name="S1" x="7.75" y="10.4" dx="1.8" dy="1.2" layer="1"/>
+<smd name="S2" x="2.05" y="10.4" dx="1.8" dy="1.2" layer="1"/>
+<text x="7.095" y="3.1" size="1.27" layer="25" align="center">&gt;NAME</text>
+<text x="7.095" y="3.1" size="1.27" layer="27" align="center">&gt;VALUE</text>
+</package>
 </packages>
 <symbols>
 <symbol name="SAMACSYS_PARTS_USB4110-GF-A" library_version="1">
@@ -539,6 +574,28 @@ Switches electrical signals</description>
 <text x="0" y="2.54" size="0.4064" layer="99" align="center">SpiceOrder 1</text>
 <text x="0" y="-5.08" size="0.4064" layer="99" align="center">SpiceOrder 2</text>
 </symbol>
+<symbol name="112A-TAAR-R03_ATTEND" library_version="1">
+<wire x1="5.08" y1="2.54" x2="35.56" y2="2.54" width="0.254" layer="94"/>
+<wire x1="35.56" y1="-17.78" x2="35.56" y2="2.54" width="0.254" layer="94"/>
+<wire x1="35.56" y1="-17.78" x2="5.08" y2="-17.78" width="0.254" layer="94"/>
+<wire x1="5.08" y1="2.54" x2="5.08" y2="-17.78" width="0.254" layer="94"/>
+<pin name="CD/DAT3" x="0" y="-12.7" length="middle"/>
+<pin name="CLK" x="40.64" y="-2.54" length="middle" rot="R180"/>
+<pin name="CMD" x="0" y="-15.24" length="middle"/>
+<pin name="DAT0" x="40.64" y="-7.62" length="middle" rot="R180"/>
+<pin name="DAT1" x="40.64" y="-10.16" length="middle" rot="R180"/>
+<pin name="DAT2" x="0" y="-10.16" length="middle"/>
+<pin name="DETECTION_1" x="40.64" y="-12.7" length="middle" rot="R180"/>
+<pin name="DETECTION_2" x="40.64" y="-15.24" length="middle" rot="R180"/>
+<pin name="GND_1" x="0" y="0" length="middle"/>
+<pin name="GND_2" x="0" y="-2.54" length="middle"/>
+<pin name="GND_3" x="0" y="-5.08" length="middle"/>
+<pin name="GND_4" x="0" y="-7.62" length="middle"/>
+<pin name="VDD" x="40.64" y="0" length="middle" rot="R180"/>
+<pin name="VSS" x="40.64" y="-5.08" length="middle" rot="R180"/>
+<text x="36.83" y="7.62" size="1.778" layer="95" align="center-left">&gt;NAME</text>
+<text x="36.83" y="5.08" size="1.778" layer="96" align="center-left">&gt;VALUE</text>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="SAMACSYS_PARTS_USB4110-GF-A" prefix="J" library_version="64">
@@ -638,7 +695,7 @@ Source: &lt;a href="https://gct.co/files/drawings/usb4110.pdf"&gt; Datasheet &lt
 </device>
 </devices>
 </deviceset>
-<deviceset name="EAGLE-LTSPICE_C" prefix="C" uservalue="yes" library_version="2">
+<deviceset name="EAGLE-LTSPICE_C" prefix="C" uservalue="yes" library_version="1">
 <description>&lt;B&gt;CAPACITOR&lt;/B&gt;, European symbol</description>
 <gates>
 <gate name="G$1" symbol="EAGLE-LTSPICE_C" x="0" y="0"/>
@@ -833,6 +890,47 @@ Source: &lt;a href="https://www.torexsemi.com/file/xc6220/XC6220.pdf"&gt; Datash
 </device>
 </devices>
 </deviceset>
+<deviceset name="112A-TAAR-R03_ATTEND" prefix="J" library_version="2">
+<description>&lt;b&gt;Micro SD Card Socket, Push-Push Type, Top Mount, SMT, H=1.83mm, 10u&lt;/b&gt;&lt;p&gt;
+Source: &lt;a href="https://www.attend.com.tw/data/download/file/112A-TAAR-R03.pdf"&gt; Datasheet &lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="112A-TAAR-R03_ATTEND" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="112ATAARR03ATTEND">
+<connects>
+<connect gate="G$1" pin="CD/DAT3" pad="P2"/>
+<connect gate="G$1" pin="CLK" pad="P5"/>
+<connect gate="G$1" pin="CMD" pad="P3"/>
+<connect gate="G$1" pin="DAT0" pad="P7"/>
+<connect gate="G$1" pin="DAT1" pad="P8"/>
+<connect gate="G$1" pin="DAT2" pad="P1"/>
+<connect gate="G$1" pin="DETECTION_1" pad="S1"/>
+<connect gate="G$1" pin="DETECTION_2" pad="S2"/>
+<connect gate="G$1" pin="GND_1" pad="G1"/>
+<connect gate="G$1" pin="GND_2" pad="G2"/>
+<connect gate="G$1" pin="GND_3" pad="G3"/>
+<connect gate="G$1" pin="GND_4" pad="G4"/>
+<connect gate="G$1" pin="VDD" pad="P4"/>
+<connect gate="G$1" pin="VSS" pad="P6"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="ARROW_PART_NUMBER" value="" constant="no"/>
+<attribute name="ARROW_PRICE-STOCK" value="" constant="no"/>
+<attribute name="DESCRIPTION" value="Micro SD Card Socket, Push-Push Type, Top Mount, SMT, H=1.83mm, 10u" constant="no"/>
+<attribute name="HEIGHT" value="1.9mm" constant="no"/>
+<attribute name="MANUFACTURER_NAME" value="ATTEND" constant="no"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="112A-TAAR-R03 ATTEND" constant="no"/>
+<attribute name="MOUSER_PART_NUMBER" value="" constant="no"/>
+<attribute name="MOUSER_PRICE-STOCK" value="" constant="no"/>
+<attribute name="MOUSER_TESTING_PART_NUMBER" value="" constant="no"/>
+<attribute name="MOUSER_TESTING_PRICE-STOCK" value="" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
 </devicesets>
 </library>
 </libraries>
@@ -871,6 +969,11 @@ Source: &lt;a href="https://www.torexsemi.com/file/xc6220/XC6220.pdf"&gt; Datash
 <part name="GND10" library="DeskAssistant v19 v1.flbr" library_urn="urn:adsk.wipprod:fs.file:vf.vVvdDOfaSfavM5thX5SjWw" deviceset="GND" device=""/>
 <part name="C1_BAT2" library="DeskAssistant v19 v1.flbr" library_urn="urn:adsk.wipprod:fs.file:vf.vVvdDOfaSfavM5thX5SjWw" deviceset="ESP32_WROVER_EAGLE-LTSPICE_C" device="C0402" value="4.7uF"/>
 <part name="C1_BAT1" library="DeskAssistant v19 v1.flbr" library_urn="urn:adsk.wipprod:fs.file:vf.vVvdDOfaSfavM5thX5SjWw" deviceset="ESP32_WROVER_EAGLE-LTSPICE_C" device="C0402" value="4.7uF"/>
+<part name="J4" library="DeskAssistant v19 v1.flbr" library_urn="urn:adsk.wipprod:fs.file:vf.vVvdDOfaSfavM5thX5SjWw" deviceset="112A-TAAR-R03_ATTEND" device=""/>
+<part name="GND11" library="DeskAssistant v19 v1.flbr" library_urn="urn:adsk.wipprod:fs.file:vf.vVvdDOfaSfavM5thX5SjWw" deviceset="GND" device=""/>
+<part name="GND12" library="DeskAssistant v19 v1.flbr" library_urn="urn:adsk.wipprod:fs.file:vf.vVvdDOfaSfavM5thX5SjWw" deviceset="GND" device=""/>
+<part name="C9" library="DeskAssistant v19 v1.flbr" library_urn="urn:adsk.wipprod:fs.file:vf.vVvdDOfaSfavM5thX5SjWw" deviceset="EAGLE-LTSPICE_C" device="C0402" value="100nF"/>
+<part name="SUPPLY2" library="DeskAssistant v19 v1.flbr" library_urn="urn:adsk.wipprod:fs.file:vf.vVvdDOfaSfavM5thX5SjWw" deviceset="3V3-CIRCLE" device="" value="3V3"/>
 </parts>
 <sheets>
 <sheet>
@@ -912,6 +1015,7 @@ Source: &lt;a href="https://www.torexsemi.com/file/xc6220/XC6220.pdf"&gt; Datash
 <text x="-157.48" y="269.24" size="1.778" layer="97">USB C connector &amp;
 ESD Protection</text>
 <text x="-2.54" y="271.78" size="1.778" layer="95" align="center">LDO Voltage Regulator</text>
+<text x="124.46" y="274.32" size="1.778" layer="95" align="center">SD Card</text>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="-165.1" y="20.32" smashed="yes">
@@ -1010,6 +1114,23 @@ ESD Protection</text>
 <attribute name="NAME" x="23.876" y="235.839" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="23.876" y="240.919" size="1.778" layer="96" rot="R180"/>
 </instance>
+<instance part="J4" gate="G$1" x="149.86" y="261.62" smashed="yes">
+<attribute name="NAME" x="153.67" y="266.7" size="1.778" layer="95" align="center-left"/>
+<attribute name="VALUE" x="156.21" y="241.3" size="1.778" layer="96" align="center-left"/>
+</instance>
+<instance part="GND11" gate="1" x="142.24" y="259.08" smashed="yes">
+<attribute name="VALUE" x="139.7" y="256.54" size="1.778" layer="96"/>
+</instance>
+<instance part="GND12" gate="1" x="205.74" y="254" smashed="yes">
+<attribute name="VALUE" x="203.2" y="251.46" size="1.778" layer="96"/>
+</instance>
+<instance part="C9" gate="G$1" x="203.2" y="264.16" smashed="yes" rot="R90">
+<attribute name="NAME" x="202.819" y="265.684" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="207.899" y="265.684" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="SUPPLY2" gate="G$1" x="195.58" y="271.78" smashed="yes">
+<attribute name="VALUE" x="195.453" y="274.955" size="1.778" layer="96" align="bottom-center"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -1100,6 +1221,34 @@ ESD Protection</text>
 <wire x1="-12.7" y1="228.6" x2="-12.7" y2="238.76" width="0.1524" layer="91"/>
 <pinref part="R1_PWRUSB" gate="G$1" pin="1"/>
 <pinref part="GND10" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="J4" gate="G$1" pin="GND_4"/>
+<wire x1="149.86" y1="254" x2="147.32" y2="254" width="0.1524" layer="91"/>
+<wire x1="147.32" y1="254" x2="147.32" y2="256.54" width="0.1524" layer="91"/>
+<wire x1="147.32" y1="256.54" x2="147.32" y2="259.08" width="0.1524" layer="91"/>
+<wire x1="147.32" y1="259.08" x2="147.32" y2="261.62" width="0.1524" layer="91"/>
+<wire x1="147.32" y1="261.62" x2="149.86" y2="261.62" width="0.1524" layer="91"/>
+<pinref part="J4" gate="G$1" pin="GND_1"/>
+<pinref part="J4" gate="G$1" pin="GND_2"/>
+<wire x1="149.86" y1="259.08" x2="147.32" y2="259.08" width="0.1524" layer="91"/>
+<junction x="147.32" y="259.08"/>
+<pinref part="J4" gate="G$1" pin="GND_3"/>
+<wire x1="149.86" y1="256.54" x2="147.32" y2="256.54" width="0.1524" layer="91"/>
+<junction x="147.32" y="256.54"/>
+<wire x1="147.32" y1="261.62" x2="142.24" y2="261.62" width="0.1524" layer="91"/>
+<junction x="147.32" y="261.62"/>
+<pinref part="GND11" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="J4" gate="G$1" pin="VSS"/>
+<wire x1="190.5" y1="256.54" x2="205.74" y2="256.54" width="0.1524" layer="91"/>
+<pinref part="GND12" gate="1" pin="GND"/>
+<pinref part="C9" gate="G$1" pin="2"/>
+<wire x1="208.28" y1="264.16" x2="210.82" y2="264.16" width="0.1524" layer="91"/>
+<wire x1="210.82" y1="264.16" x2="210.82" y2="256.54" width="0.1524" layer="91"/>
+<wire x1="210.82" y1="256.54" x2="205.74" y2="256.54" width="0.1524" layer="91"/>
+<junction x="205.74" y="256.54"/>
 </segment>
 </net>
 <net name="VUSB" class="0">
@@ -1246,6 +1395,16 @@ ESD Protection</text>
 <wire x1="78.74" y1="246.38" x2="78.74" y2="241.3" width="0.1524" layer="91"/>
 <pinref part="C1_BAT2" gate="G$1" pin="2"/>
 </segment>
+<segment>
+<pinref part="J4" gate="G$1" pin="VDD"/>
+<wire x1="190.5" y1="261.62" x2="195.58" y2="261.62" width="0.1524" layer="91"/>
+<wire x1="195.58" y1="261.62" x2="195.58" y2="264.16" width="0.1524" layer="91"/>
+<wire x1="195.58" y1="264.16" x2="200.66" y2="264.16" width="0.1524" layer="91"/>
+<pinref part="C9" gate="G$1" pin="1"/>
+<wire x1="195.58" y1="264.16" x2="195.58" y2="269.24" width="0.1524" layer="91"/>
+<junction x="195.58" y="264.16"/>
+<pinref part="SUPPLY2" gate="G$1" pin="3V3"/>
+</segment>
 </net>
 <net name="N$3" class="0">
 <segment>
@@ -1272,6 +1431,34 @@ ESD Protection</text>
 <pinref part="Q1" gate="G$1" pin="D"/>
 <wire x1="20.32" y1="266.7" x2="20.32" y2="269.24" width="0.1524" layer="91"/>
 <label x="20.32" y="269.24" size="1.778" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="SS_SD" class="0">
+<segment>
+<pinref part="J4" gate="G$1" pin="CD/DAT3"/>
+<wire x1="149.86" y1="248.92" x2="147.32" y2="248.92" width="0.1524" layer="91"/>
+<label x="147.32" y="248.92" size="1.778" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="MOSI" class="0">
+<segment>
+<pinref part="J4" gate="G$1" pin="CMD"/>
+<wire x1="149.86" y1="246.38" x2="147.32" y2="246.38" width="0.1524" layer="91"/>
+<label x="147.32" y="246.38" size="1.778" layer="95" rot="R270" xref="yes"/>
+</segment>
+</net>
+<net name="MISO" class="0">
+<segment>
+<pinref part="J4" gate="G$1" pin="DAT0"/>
+<wire x1="190.5" y1="254" x2="193.04" y2="254" width="0.1524" layer="91"/>
+<label x="193.04" y="254" size="1.778" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="SCK" class="0">
+<segment>
+<pinref part="J4" gate="G$1" pin="CLK"/>
+<wire x1="190.5" y1="259.08" x2="193.04" y2="259.08" width="0.1524" layer="91"/>
+<label x="193.04" y="259.08" size="1.778" layer="95" xref="yes"/>
 </segment>
 </net>
 </nets>
