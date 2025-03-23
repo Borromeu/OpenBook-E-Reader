@@ -694,6 +694,65 @@ Source: http://www.osram.convergy.de/ ... Lb_q993.pdf</description>
 <text x="-0.635" y="-0.635" size="1.27" layer="25" rot="R90">&gt;NAME</text>
 <text x="1.905" y="-0.635" size="1.27" layer="27" rot="R90">&gt;VALUE</text>
 </package>
+<package name="XCVR_ESP32-C6-WROOM-1-N8" library_version="1">
+<text x="-9" y="13.25" size="1.27" layer="25">&gt;NAME</text>
+<text x="-9" y="-14.5" size="1.27" layer="27">&gt;VALUE</text>
+<wire x1="-9" y1="-12.75" x2="9" y2="-12.75" width="0.127" layer="51"/>
+<wire x1="-9" y1="12.75" x2="9" y2="12.75" width="0.127" layer="51"/>
+<wire x1="9" y1="12.75" x2="9" y2="-12.75" width="0.127" layer="51"/>
+<wire x1="-9" y1="-12.75" x2="9" y2="-12.75" width="0.127" layer="21"/>
+<wire x1="-9" y1="-12.75" x2="-9" y2="-12.02" width="0.127" layer="21"/>
+<wire x1="9" y1="-12.02" x2="9" y2="-12.75" width="0.127" layer="21"/>
+<wire x1="-9" y1="6.03" x2="-9" y2="12.75" width="0.127" layer="21"/>
+<wire x1="-9" y1="12.75" x2="9" y2="12.75" width="0.127" layer="21"/>
+<wire x1="9" y1="12.75" x2="9" y2="6.03" width="0.127" layer="21"/>
+<rectangle x1="-9" y1="6.75" x2="9" y2="12.75" layer="43"/>
+<rectangle x1="-9" y1="6.75" x2="9" y2="12.75" layer="41"/>
+<wire x1="-9.75" y1="13" x2="-9.75" y2="-13" width="0.05" layer="39"/>
+<wire x1="-9.75" y1="-13" x2="9.75" y2="-13" width="0.05" layer="39"/>
+<wire x1="9.75" y1="-13" x2="9.75" y2="13" width="0.05" layer="39"/>
+<wire x1="9.75" y1="13" x2="-9.75" y2="13" width="0.05" layer="39"/>
+<wire x1="-9" y1="-12.75" x2="-9" y2="12.75" width="0.127" layer="51"/>
+<circle x="-10" y="5.25" radius="0.1" width="0.2" layer="21"/>
+<circle x="-10" y="5.25" radius="0.1" width="0.2" layer="51"/>
+<smd name="1" x="-8.75" y="5.26" dx="1.5" dy="0.9" layer="1"/>
+<smd name="2" x="-8.75" y="3.99" dx="1.5" dy="0.9" layer="1"/>
+<smd name="3" x="-8.75" y="2.72" dx="1.5" dy="0.9" layer="1"/>
+<smd name="4" x="-8.75" y="1.45" dx="1.5" dy="0.9" layer="1"/>
+<smd name="5" x="-8.75" y="0.18" dx="1.5" dy="0.9" layer="1"/>
+<smd name="6" x="-8.75" y="-1.09" dx="1.5" dy="0.9" layer="1"/>
+<smd name="7" x="-8.75" y="-2.36" dx="1.5" dy="0.9" layer="1"/>
+<smd name="8" x="-8.75" y="-3.63" dx="1.5" dy="0.9" layer="1"/>
+<smd name="9" x="-8.75" y="-4.9" dx="1.5" dy="0.9" layer="1"/>
+<smd name="10" x="-8.75" y="-6.17" dx="1.5" dy="0.9" layer="1"/>
+<smd name="11" x="-8.75" y="-7.44" dx="1.5" dy="0.9" layer="1"/>
+<smd name="12" x="-8.75" y="-8.71" dx="1.5" dy="0.9" layer="1"/>
+<smd name="13" x="-8.75" y="-9.98" dx="1.5" dy="0.9" layer="1"/>
+<smd name="14" x="-8.75" y="-11.25" dx="1.5" dy="0.9" layer="1"/>
+<smd name="15" x="8.75" y="-11.25" dx="1.5" dy="0.9" layer="1"/>
+<smd name="16" x="8.75" y="-9.98" dx="1.5" dy="0.9" layer="1"/>
+<smd name="17" x="8.75" y="-8.71" dx="1.5" dy="0.9" layer="1"/>
+<smd name="18" x="8.75" y="-7.44" dx="1.5" dy="0.9" layer="1"/>
+<smd name="19" x="8.75" y="-6.17" dx="1.5" dy="0.9" layer="1"/>
+<smd name="20" x="8.75" y="-4.9" dx="1.5" dy="0.9" layer="1"/>
+<smd name="21" x="8.75" y="-3.63" dx="1.5" dy="0.9" layer="1"/>
+<smd name="22" x="8.75" y="-2.36" dx="1.5" dy="0.9" layer="1"/>
+<smd name="23" x="8.75" y="-1.09" dx="1.5" dy="0.9" layer="1"/>
+<smd name="24" x="8.75" y="0.18" dx="1.5" dy="0.9" layer="1"/>
+<smd name="25" x="8.75" y="1.45" dx="1.5" dy="0.9" layer="1"/>
+<smd name="26" x="8.75" y="2.72" dx="1.5" dy="0.9" layer="1"/>
+<smd name="27" x="8.75" y="3.99" dx="1.5" dy="0.9" layer="1"/>
+<smd name="28" x="8.75" y="5.26" dx="1.5" dy="0.9" layer="1"/>
+<smd name="29_5" x="-1.505" y="-0.46" dx="0.8" dy="0.8" layer="1"/>
+<smd name="29_1" x="-2.755" y="0.79" dx="0.8" dy="0.8" layer="1"/>
+<smd name="29_2" x="-1.505" y="0.79" dx="0.8" dy="0.8" layer="1"/>
+<smd name="29_3" x="-0.255" y="0.79" dx="0.8" dy="0.8" layer="1"/>
+<smd name="29_4" x="-2.755" y="-0.46" dx="0.8" dy="0.8" layer="1"/>
+<smd name="29_6" x="-0.255" y="-0.46" dx="0.8" dy="0.8" layer="1"/>
+<smd name="29_7" x="-2.755" y="-1.71" dx="0.8" dy="0.8" layer="1"/>
+<smd name="29_8" x="-1.505" y="-1.71" dx="0.8" dy="0.8" layer="1"/>
+<smd name="29_9" x="-0.255" y="-1.71" dx="0.8" dy="0.8" layer="1"/>
+</package>
 </packages>
 <symbols>
 <symbol name="SAMACSYS_PARTS_USB4110-GF-A" library_version="1">
@@ -1004,6 +1063,41 @@ Switches electrical signals</description>
 <vertex x="-3.302" y="-3.302"/>
 <vertex x="-2.413" y="-2.921"/>
 </polygon>
+</symbol>
+<symbol name="ESP32-C6-WROOM-1-N8" library_version="1">
+<text x="-15.24" y="23.622" size="1.778" layer="95">&gt;NAME</text>
+<text x="-15.24" y="-25.4" size="1.778" layer="96">&gt;VALUE</text>
+<wire x1="15.24" y1="22.86" x2="-15.24" y2="22.86" width="0.254" layer="94"/>
+<wire x1="-15.24" y1="22.86" x2="-15.24" y2="-22.86" width="0.254" layer="94"/>
+<wire x1="-15.24" y1="-22.86" x2="15.24" y2="-22.86" width="0.254" layer="94"/>
+<wire x1="15.24" y1="-22.86" x2="15.24" y2="22.86" width="0.254" layer="94"/>
+<pin name="GND" x="20.32" y="-20.32" length="middle" direction="pwr" rot="R180"/>
+<pin name="3V3" x="20.32" y="20.32" length="middle" direction="pwr" rot="R180"/>
+<pin name="EN" x="-20.32" y="15.24" length="middle" direction="in"/>
+<pin name="IO4" x="-20.32" y="0" length="middle"/>
+<pin name="IO5" x="-20.32" y="-2.54" length="middle"/>
+<pin name="IO6" x="-20.32" y="-5.08" length="middle"/>
+<pin name="IO7" x="-20.32" y="-7.62" length="middle"/>
+<pin name="IO0" x="-20.32" y="10.16" length="middle"/>
+<pin name="IO1" x="-20.32" y="7.62" length="middle"/>
+<pin name="IO8" x="-20.32" y="-10.16" length="middle"/>
+<pin name="IO10" x="20.32" y="15.24" length="middle" rot="R180"/>
+<pin name="IO11" x="20.32" y="12.7" length="middle" rot="R180"/>
+<pin name="IO12" x="20.32" y="10.16" length="middle" rot="R180"/>
+<pin name="IO13" x="20.32" y="7.62" length="middle" rot="R180"/>
+<pin name="IO2" x="-20.32" y="5.08" length="middle"/>
+<pin name="IO3" x="-20.32" y="2.54" length="middle"/>
+<pin name="TXD0/GPIO16" x="20.32" y="2.54" length="middle" rot="R180"/>
+<pin name="RXD0/GPIO17" x="20.32" y="0" length="middle" rot="R180"/>
+<pin name="IO15" x="20.32" y="5.08" length="middle" rot="R180"/>
+<pin name="NC" x="-20.32" y="-17.78" length="middle" direction="nc"/>
+<pin name="IO23" x="20.32" y="-15.24" length="middle" rot="R180"/>
+<pin name="IO22" x="20.32" y="-12.7" length="middle" rot="R180"/>
+<pin name="IO21" x="20.32" y="-10.16" length="middle" rot="R180"/>
+<pin name="IO20" x="20.32" y="-7.62" length="middle" rot="R180"/>
+<pin name="IO19" x="20.32" y="-5.08" length="middle" rot="R180"/>
+<pin name="IO18" x="20.32" y="-2.54" length="middle" rot="R180"/>
+<pin name="IO9" x="-20.32" y="-12.7" length="middle"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -1540,6 +1634,57 @@ Source: http://www.osram.convergy.de/</description>
 </device>
 </devices>
 </deviceset>
+<deviceset name="ESP32-C6-WROOM-1-N8" prefix="U" library_version="1">
+<description> &lt;a href="https://pricing.snapeda.com/parts/ESP32-C6-WROOM-1-N8/Espressif%20Systems/view-part?ref=eda"&gt;Check availability&lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="ESP32-C6-WROOM-1-N8" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="XCVR_ESP32-C6-WROOM-1-N8">
+<connects>
+<connect gate="G$1" pin="3V3" pad="2"/>
+<connect gate="G$1" pin="EN" pad="3"/>
+<connect gate="G$1" pin="GND" pad="1 28 29_1 29_2 29_3 29_4 29_5 29_6 29_7 29_8 29_9"/>
+<connect gate="G$1" pin="IO0" pad="8"/>
+<connect gate="G$1" pin="IO1" pad="9"/>
+<connect gate="G$1" pin="IO10" pad="11"/>
+<connect gate="G$1" pin="IO11" pad="12"/>
+<connect gate="G$1" pin="IO12" pad="13"/>
+<connect gate="G$1" pin="IO13" pad="14"/>
+<connect gate="G$1" pin="IO15" pad="23"/>
+<connect gate="G$1" pin="IO18" pad="16"/>
+<connect gate="G$1" pin="IO19" pad="17"/>
+<connect gate="G$1" pin="IO2" pad="27"/>
+<connect gate="G$1" pin="IO20" pad="18"/>
+<connect gate="G$1" pin="IO21" pad="19"/>
+<connect gate="G$1" pin="IO22" pad="20"/>
+<connect gate="G$1" pin="IO23" pad="21"/>
+<connect gate="G$1" pin="IO3" pad="26"/>
+<connect gate="G$1" pin="IO4" pad="4"/>
+<connect gate="G$1" pin="IO5" pad="5"/>
+<connect gate="G$1" pin="IO6" pad="6"/>
+<connect gate="G$1" pin="IO7" pad="7"/>
+<connect gate="G$1" pin="IO8" pad="10"/>
+<connect gate="G$1" pin="IO9" pad="15"/>
+<connect gate="G$1" pin="NC" pad="22"/>
+<connect gate="G$1" pin="RXD0/GPIO17" pad="24"/>
+<connect gate="G$1" pin="TXD0/GPIO16" pad="25"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="AVAILABILITY" value="In Stock"/>
+<attribute name="CHECK_PRICES" value="https://www.snapeda.com/parts/ESP32-C6-WROOM-1-N8/Espressif+Systems/view-part/?ref=eda"/>
+<attribute name="DESCRIPTION" value=" Multiprotocol Modules ESP32-C6 module, Wi-Fi 6 in 2.4 GHz band, Bluetooth 5, Zigbee 3.0 and Thread. ESP34-WROOM Compatible - ENGINEERING SAMPLE "/>
+<attribute name="MF" value="Espressif Systems"/>
+<attribute name="MP" value="ESP32-C6-WROOM-1-N8"/>
+<attribute name="PACKAGE" value="None"/>
+<attribute name="PRICE" value="None"/>
+<attribute name="SNAPEDA_LINK" value="https://www.snapeda.com/parts/ESP32-C6-WROOM-1-N8/Espressif+Systems/view-part/?ref=snap"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
 </devicesets>
 </library>
 </libraries>
@@ -1609,6 +1754,11 @@ Source: http://www.osram.convergy.de/</description>
 <part name="R2_BAT" library="DeskAssistant v19 v1.flbr" library_urn="urn:adsk.wipprod:fs.file:vf.vVvdDOfaSfavM5thX5SjWw" deviceset="ESP32_WROVER_EAGLE-LTSPICE_R" device="R0402" value="2K"/>
 <part name="GND21" library="DeskAssistant v19 v1.flbr" library_urn="urn:adsk.wipprod:fs.file:vf.vVvdDOfaSfavM5thX5SjWw" deviceset="GND" device=""/>
 <part name="CHG_LED" library="DeskAssistant v19 v1.flbr" library_urn="urn:adsk.wipprod:fs.file:vf.vVvdDOfaSfavM5thX5SjWw" deviceset="ADAFRUIT_LED" device="CHIP-LED0603"/>
+<part name="U2" library="DeskAssistant v19 v1.flbr" library_urn="urn:adsk.wipprod:fs.file:vf.vVvdDOfaSfavM5thX5SjWw" deviceset="ESP32-C6-WROOM-1-N8" device=""/>
+<part name="SUPPLY3" library="DeskAssistant v19 v1.flbr" library_urn="urn:adsk.wipprod:fs.file:vf.vVvdDOfaSfavM5thX5SjWw" deviceset="3V3-CIRCLE" device="" value="3V3"/>
+<part name="GND22" library="DeskAssistant v19 v1.flbr" library_urn="urn:adsk.wipprod:fs.file:vf.vVvdDOfaSfavM5thX5SjWw" deviceset="GND" device=""/>
+<part name="R1" library="DeskAssistant v19 v1.flbr" library_urn="urn:adsk.wipprod:fs.file:vf.vVvdDOfaSfavM5thX5SjWw" deviceset="ESP32_WROVER_EAGLE-LTSPICE_R" device="R0402" value="10K"/>
+<part name="SUPPLY4" library="DeskAssistant v19 v1.flbr" library_urn="urn:adsk.wipprod:fs.file:vf.vVvdDOfaSfavM5thX5SjWw" deviceset="3V3-CIRCLE" device="" value="3V3"/>
 </parts>
 <sheets>
 <sheet>
@@ -1655,6 +1805,7 @@ ESD Protection</text>
 <text x="-86.36" y="210.82" size="1.778" layer="95" align="center">E-Paper Drive Circuit</text>
 <text x="20.32" y="208.28" size="1.778" layer="95" align="center"> Li-Po Battery Charging Controller
 </text>
+<text x="124.46" y="228.6" size="1.778" layer="95" align="center">ESP32 C6</text>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="-165.1" y="20.32" smashed="yes">
@@ -1874,6 +2025,25 @@ ESD Protection</text>
 <attribute name="NAME" x="39.116" y="175.768" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="41.275" y="175.768" size="1.778" layer="96" rot="R90"/>
 </instance>
+<instance part="U2" gate="G$1" x="167.64" y="200.66" smashed="yes">
+<attribute name="NAME" x="152.4" y="224.282" size="1.778" layer="95"/>
+<attribute name="VALUE" x="152.4" y="175.26" size="1.778" layer="96"/>
+</instance>
+<instance part="SUPPLY3" gate="G$1" x="190.5" y="226.06" smashed="yes">
+<attribute name="VALUE" x="190.373" y="229.235" size="1.778" layer="96" align="bottom-center"/>
+</instance>
+<instance part="GND22" gate="1" x="195.58" y="180.34" smashed="yes" rot="R90">
+<attribute name="VALUE" x="198.12" y="177.8" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="R1" gate="G$1" x="121.92" y="205.74" smashed="yes" rot="R90">
+<attribute name="NAME" x="120.4214" y="201.93" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="125.222" y="201.93" size="1.778" layer="96" rot="R90"/>
+<attribute name="NAME" x="120.4214" y="201.93" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="125.222" y="201.93" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="SUPPLY4" gate="G$1" x="121.92" y="215.9" smashed="yes">
+<attribute name="VALUE" x="121.793" y="219.075" size="1.778" layer="96" align="bottom-center"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -2041,6 +2211,11 @@ ESD Protection</text>
 <wire x1="78.74" y1="177.8" x2="78.74" y2="175.26" width="0.1524" layer="91"/>
 <pinref part="GND21" gate="1" pin="GND"/>
 </segment>
+<segment>
+<pinref part="U2" gate="G$1" pin="GND"/>
+<wire x1="187.96" y1="180.34" x2="193.04" y2="180.34" width="0.1524" layer="91"/>
+<pinref part="GND22" gate="1" pin="GND"/>
+</segment>
 </net>
 <net name="VUSB" class="0">
 <segment>
@@ -2175,6 +2350,11 @@ ESD Protection</text>
 <wire x1="-38.1" y1="266.7" x2="-35.56" y2="266.7" width="0.1524" layer="91"/>
 <label x="-35.56" y="266.7" size="1.778" layer="95" xref="yes"/>
 </segment>
+<segment>
+<pinref part="U2" gate="G$1" pin="IO12"/>
+<wire x1="187.96" y1="210.82" x2="190.5" y2="210.82" width="0.1524" layer="91"/>
+<label x="190.5" y="210.82" size="1.778" layer="95" xref="yes"/>
+</segment>
 </net>
 <net name="USB_D+" class="0">
 <segment>
@@ -2183,6 +2363,11 @@ ESD Protection</text>
 <wire x1="-35.56" y1="259.08" x2="-35.56" y2="256.54" width="0.1524" layer="91"/>
 <wire x1="-35.56" y1="256.54" x2="-33.02" y2="256.54" width="0.1524" layer="91"/>
 <label x="-33.02" y="256.54" size="1.778" layer="95" xref="yes"/>
+</segment>
+<segment>
+<pinref part="U2" gate="G$1" pin="IO13"/>
+<wire x1="187.96" y1="208.28" x2="190.5" y2="208.28" width="0.1524" layer="91"/>
+<label x="190.5" y="208.28" size="1.778" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="3V3" class="0">
@@ -2208,6 +2393,17 @@ ESD Protection</text>
 <wire x1="195.58" y1="264.16" x2="195.58" y2="269.24" width="0.1524" layer="91"/>
 <junction x="195.58" y="264.16"/>
 <pinref part="SUPPLY2" gate="G$1" pin="3V3"/>
+</segment>
+<segment>
+<pinref part="U2" gate="G$1" pin="3V3"/>
+<wire x1="187.96" y1="220.98" x2="190.5" y2="220.98" width="0.1524" layer="91"/>
+<wire x1="190.5" y1="220.98" x2="190.5" y2="223.52" width="0.1524" layer="91"/>
+<pinref part="SUPPLY3" gate="G$1" pin="3V3"/>
+</segment>
+<segment>
+<wire x1="121.92" y1="210.82" x2="121.92" y2="213.36" width="0.1524" layer="91"/>
+<pinref part="R1" gate="G$1" pin="2"/>
+<pinref part="SUPPLY4" gate="G$1" pin="3V3"/>
 </segment>
 </net>
 <net name="N$3" class="0">
@@ -2252,12 +2448,22 @@ ESD Protection</text>
 <wire x1="149.86" y1="248.92" x2="147.32" y2="248.92" width="0.1524" layer="91"/>
 <label x="147.32" y="248.92" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
+<segment>
+<pinref part="U2" gate="G$1" pin="IO4"/>
+<wire x1="147.32" y1="200.66" x2="144.78" y2="200.66" width="0.1524" layer="91"/>
+<label x="144.78" y="200.66" size="1.778" layer="95" rot="R180" xref="yes"/>
+</segment>
 </net>
 <net name="MOSI" class="0">
 <segment>
 <pinref part="J4" gate="G$1" pin="CMD"/>
 <wire x1="149.86" y1="246.38" x2="147.32" y2="246.38" width="0.1524" layer="91"/>
 <label x="147.32" y="246.38" size="1.778" layer="95" rot="R270" xref="yes"/>
+</segment>
+<segment>
+<pinref part="U2" gate="G$1" pin="IO7"/>
+<wire x1="147.32" y1="193.04" x2="144.78" y2="193.04" width="0.1524" layer="91"/>
+<label x="144.78" y="193.04" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="MISO" class="0">
@@ -2266,12 +2472,22 @@ ESD Protection</text>
 <wire x1="190.5" y1="254" x2="193.04" y2="254" width="0.1524" layer="91"/>
 <label x="193.04" y="254" size="1.778" layer="95" xref="yes"/>
 </segment>
+<segment>
+<pinref part="U2" gate="G$1" pin="IO2"/>
+<wire x1="147.32" y1="205.74" x2="144.78" y2="205.74" width="0.1524" layer="91"/>
+<label x="144.78" y="205.74" size="1.778" layer="95" rot="R180" xref="yes"/>
+</segment>
 </net>
 <net name="SCK" class="0">
 <segment>
 <pinref part="J4" gate="G$1" pin="CLK"/>
 <wire x1="190.5" y1="259.08" x2="193.04" y2="259.08" width="0.1524" layer="91"/>
 <label x="193.04" y="259.08" size="1.778" layer="95" xref="yes"/>
+</segment>
+<segment>
+<pinref part="U2" gate="G$1" pin="IO6"/>
+<wire x1="147.32" y1="195.58" x2="144.78" y2="195.58" width="0.1524" layer="91"/>
+<label x="144.78" y="195.58" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="RESE'" class="0">
@@ -2405,6 +2621,138 @@ ESD Protection</text>
 <wire x1="45.72" y1="172.72" x2="35.56" y2="172.72" width="0.1524" layer="91"/>
 <wire x1="35.56" y1="172.72" x2="35.56" y2="175.26" width="0.1524" layer="91"/>
 <pinref part="CHG_LED" gate="G$1" pin="C"/>
+</segment>
+</net>
+<net name="EPD_CS" class="0">
+<segment>
+<pinref part="U2" gate="G$1" pin="IO10"/>
+<wire x1="187.96" y1="215.9" x2="190.5" y2="215.9" width="0.1524" layer="91"/>
+<label x="190.5" y="215.9" size="1.778" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="FLASH_CS" class="0">
+<segment>
+<pinref part="U2" gate="G$1" pin="IO11"/>
+<label x="193.04" y="213.36" size="1.778" layer="95" xref="yes"/>
+<wire x1="187.96" y1="213.36" x2="193.04" y2="213.36" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="IO/CHANGE" class="0">
+<segment>
+<pinref part="U2" gate="G$1" pin="IO15"/>
+<wire x1="187.96" y1="205.74" x2="190.5" y2="205.74" width="0.1524" layer="91"/>
+<label x="190.5" y="205.74" size="1.778" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="TX" class="0">
+<segment>
+<pinref part="U2" gate="G$1" pin="TXD0/GPIO16"/>
+<wire x1="187.96" y1="203.2" x2="190.5" y2="203.2" width="0.1524" layer="91"/>
+<label x="190.5" y="203.2" size="1.778" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="RX" class="0">
+<segment>
+<pinref part="U2" gate="G$1" pin="RXD0/GPIO17"/>
+<wire x1="187.96" y1="200.66" x2="190.5" y2="200.66" width="0.1524" layer="91"/>
+<label x="190.5" y="200.66" size="1.778" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="RTC_RST" class="0">
+<segment>
+<pinref part="U2" gate="G$1" pin="IO18"/>
+<wire x1="187.96" y1="198.12" x2="190.5" y2="198.12" width="0.1524" layer="91"/>
+<label x="190.5" y="198.12" size="1.778" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="I2C_PW" class="0">
+<segment>
+<pinref part="U2" gate="G$1" pin="IO19"/>
+<wire x1="187.96" y1="195.58" x2="190.5" y2="195.58" width="0.1524" layer="91"/>
+<label x="190.5" y="195.58" size="1.778" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="EPD_3V3_C" class="0">
+<segment>
+<pinref part="U2" gate="G$1" pin="IO20"/>
+<wire x1="187.96" y1="193.04" x2="190.5" y2="193.04" width="0.1524" layer="91"/>
+<label x="190.5" y="193.04" size="1.778" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="SDA" class="0">
+<segment>
+<pinref part="U2" gate="G$1" pin="IO21"/>
+<wire x1="187.96" y1="190.5" x2="190.5" y2="190.5" width="0.1524" layer="91"/>
+<label x="190.5" y="190.5" size="1.778" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="SCL" class="0">
+<segment>
+<pinref part="U2" gate="G$1" pin="IO22"/>
+<wire x1="187.96" y1="187.96" x2="190.5" y2="187.96" width="0.1524" layer="91"/>
+<label x="190.5" y="187.96" size="1.778" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="EPD-RST" class="0">
+<segment>
+<pinref part="U2" gate="G$1" pin="IO23"/>
+<wire x1="187.96" y1="185.42" x2="190.5" y2="185.42" width="0.1524" layer="91"/>
+<label x="190.5" y="185.42" size="1.778" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="RESET" class="0">
+<segment>
+<pinref part="U2" gate="G$1" pin="EN"/>
+<wire x1="147.32" y1="215.9" x2="144.78" y2="215.9" width="0.1524" layer="91"/>
+<label x="144.78" y="215.9" size="1.778" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="INT_RTC" class="0">
+<segment>
+<pinref part="U2" gate="G$1" pin="IO0"/>
+<wire x1="147.32" y1="210.82" x2="144.78" y2="210.82" width="0.1524" layer="91"/>
+<label x="144.78" y="210.82" size="1.778" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="32KHZ" class="0">
+<segment>
+<pinref part="U2" gate="G$1" pin="IO1"/>
+<wire x1="147.32" y1="208.28" x2="144.78" y2="208.28" width="0.1524" layer="91"/>
+<label x="144.78" y="208.28" size="1.778" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="EPD_BUSY" class="0">
+<segment>
+<pinref part="U2" gate="G$1" pin="IO3"/>
+<wire x1="147.32" y1="203.2" x2="144.78" y2="203.2" width="0.1524" layer="91"/>
+<label x="144.78" y="203.2" size="1.778" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="EPD_DC" class="0">
+<segment>
+<pinref part="U2" gate="G$1" pin="IO5"/>
+<wire x1="147.32" y1="198.12" x2="144.78" y2="198.12" width="0.1524" layer="91"/>
+<label x="144.78" y="198.12" size="1.778" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="IO/BOOT" class="0">
+<segment>
+<pinref part="U2" gate="G$1" pin="IO9"/>
+<wire x1="147.32" y1="187.96" x2="144.78" y2="187.96" width="0.1524" layer="91"/>
+<label x="144.78" y="187.96" size="1.778" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="GPIO8" class="0">
+<segment>
+<pinref part="U2" gate="G$1" pin="IO8"/>
+<wire x1="147.32" y1="190.5" x2="127" y2="190.5" width="0.1524" layer="91"/>
+<wire x1="127" y1="190.5" x2="127" y2="187.96" width="0.1524" layer="91"/>
+<label x="127" y="187.96" size="1.778" layer="95" rot="R180" xref="yes"/>
+<wire x1="127" y1="190.5" x2="127" y2="195.58" width="0.1524" layer="91"/>
+<junction x="127" y="190.5"/>
+<wire x1="127" y1="195.58" x2="121.92" y2="195.58" width="0.1524" layer="91"/>
+<wire x1="121.92" y1="195.58" x2="121.92" y2="200.66" width="0.1524" layer="91"/>
+<pinref part="R1" gate="G$1" pin="1"/>
 </segment>
 </net>
 </nets>
