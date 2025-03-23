@@ -385,6 +385,26 @@ Source: www.farnell.com/datasheets/49238.pdf</description>
 <text x="7.095" y="3.1" size="1.27" layer="25" align="center">&gt;NAME</text>
 <text x="7.095" y="3.1" size="1.27" layer="27" align="center">&gt;VALUE</text>
 </package>
+<package name="SJ" library_version="1">
+<description>&lt;b&gt;Solder jumper&lt;/b&gt;</description>
+<wire x1="1.397" y1="-1.016" x2="-1.397" y2="-1.016" width="0.1524" layer="21"/>
+<wire x1="1.397" y1="1.016" x2="1.651" y2="0.762" width="0.1524" layer="21" curve="-90"/>
+<wire x1="-1.651" y1="0.762" x2="-1.397" y2="1.016" width="0.1524" layer="21" curve="-90"/>
+<wire x1="-1.651" y1="-0.762" x2="-1.397" y2="-1.016" width="0.1524" layer="21" curve="90"/>
+<wire x1="1.397" y1="-1.016" x2="1.651" y2="-0.762" width="0.1524" layer="21" curve="90"/>
+<wire x1="1.651" y1="-0.762" x2="1.651" y2="0.762" width="0.1524" layer="21"/>
+<wire x1="-1.651" y1="-0.762" x2="-1.651" y2="0.762" width="0.1524" layer="21"/>
+<wire x1="-1.397" y1="1.016" x2="1.397" y2="1.016" width="0.1524" layer="21"/>
+<wire x1="1.016" y1="0" x2="1.524" y2="0" width="0.1524" layer="51"/>
+<wire x1="-1.016" y1="0" x2="-1.524" y2="0" width="0.1524" layer="51"/>
+<wire x1="-0.254" y1="-0.127" x2="-0.254" y2="0.127" width="1.27" layer="51" curve="-180" cap="flat"/>
+<wire x1="0.254" y1="0.127" x2="0.254" y2="-0.127" width="1.27" layer="51" curve="-180" cap="flat"/>
+<rectangle x1="-0.0762" y1="-0.9144" x2="0.0762" y2="0.9144" layer="29"/>
+<smd name="1" x="-0.762" y="0" dx="1.1684" dy="1.6002" layer="1"/>
+<smd name="2" x="0.762" y="0" dx="1.1684" dy="1.6002" layer="1"/>
+<text x="-1.651" y="1.143" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+<text x="0.4001" y="0" size="0.02" layer="27">&gt;VALUE</text>
+</package>
 </packages>
 <symbols>
 <symbol name="SAMACSYS_PARTS_USB4110-GF-A" library_version="1">
@@ -595,6 +615,16 @@ Switches electrical signals</description>
 <pin name="VSS" x="40.64" y="-5.08" length="middle" rot="R180"/>
 <text x="36.83" y="7.62" size="1.778" layer="95" align="center-left">&gt;NAME</text>
 <text x="36.83" y="5.08" size="1.778" layer="96" align="center-left">&gt;VALUE</text>
+</symbol>
+<symbol name="SJ" library_version="1">
+<wire x1="0.381" y1="0.635" x2="0.381" y2="-0.635" width="1.27" layer="94" curve="-180" cap="flat"/>
+<wire x1="-0.381" y1="-0.635" x2="-0.381" y2="0.635" width="1.27" layer="94" curve="-180" cap="flat"/>
+<wire x1="2.54" y1="0" x2="1.651" y2="0" width="0.1524" layer="94"/>
+<wire x1="-2.54" y1="0" x2="-1.651" y2="0" width="0.1524" layer="94"/>
+<pin name="1" x="-5.08" y="0" visible="pad" length="short" direction="pas" swaplevel="1"/>
+<pin name="2" x="5.08" y="0" visible="pad" length="short" direction="pas" swaplevel="1" rot="R180"/>
+<text x="-2.54" y="2.54" size="1.778" layer="95">&gt;NAME</text>
+<text x="-2.54" y="-3.81" size="1.778" layer="96">&gt;VALUE</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -931,6 +961,25 @@ Source: &lt;a href="https://www.attend.com.tw/data/download/file/112A-TAAR-R03.p
 </device>
 </devices>
 </deviceset>
+<deviceset name="SJ" prefix="SJ" uservalue="yes" library_version="1">
+<description>SMD solder &lt;b&gt;JUMPER&lt;/b&gt;</description>
+<gates>
+<gate name="1" symbol="SJ" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SJ">
+<connects>
+<connect gate="1" pin="1" pad="1"/>
+<connect gate="1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="POPULARITY" value="3" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
 </devicesets>
 </library>
 </libraries>
@@ -974,6 +1023,10 @@ Source: &lt;a href="https://www.attend.com.tw/data/download/file/112A-TAAR-R03.p
 <part name="GND12" library="DeskAssistant v19 v1.flbr" library_urn="urn:adsk.wipprod:fs.file:vf.vVvdDOfaSfavM5thX5SjWw" deviceset="GND" device=""/>
 <part name="C9" library="DeskAssistant v19 v1.flbr" library_urn="urn:adsk.wipprod:fs.file:vf.vVvdDOfaSfavM5thX5SjWw" deviceset="EAGLE-LTSPICE_C" device="C0402" value="100nF"/>
 <part name="SUPPLY2" library="DeskAssistant v19 v1.flbr" library_urn="urn:adsk.wipprod:fs.file:vf.vVvdDOfaSfavM5thX5SjWw" deviceset="3V3-CIRCLE" device="" value="3V3"/>
+<part name="R2" library="DeskAssistant v19 v1.flbr" library_urn="urn:adsk.wipprod:fs.file:vf.vVvdDOfaSfavM5thX5SjWw" deviceset="ESP32_WROVER_EAGLE-LTSPICE_R" device="R0402" value="2.2"/>
+<part name="SJ1" library="DeskAssistant v19 v1.flbr" library_urn="urn:adsk.wipprod:fs.file:vf.vVvdDOfaSfavM5thX5SjWw" deviceset="SJ" device=""/>
+<part name="GND13" library="DeskAssistant v19 v1.flbr" library_urn="urn:adsk.wipprod:fs.file:vf.vVvdDOfaSfavM5thX5SjWw" deviceset="GND" device=""/>
+<part name="GND14" library="DeskAssistant v19 v1.flbr" library_urn="urn:adsk.wipprod:fs.file:vf.vVvdDOfaSfavM5thX5SjWw" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -1016,6 +1069,7 @@ Source: &lt;a href="https://www.attend.com.tw/data/download/file/112A-TAAR-R03.p
 ESD Protection</text>
 <text x="-2.54" y="271.78" size="1.778" layer="95" align="center">LDO Voltage Regulator</text>
 <text x="124.46" y="274.32" size="1.778" layer="95" align="center">SD Card</text>
+<text x="-147.32" y="210.82" size="1.778" layer="95" align="center">Display Type Selector</text>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="-165.1" y="20.32" smashed="yes">
@@ -1130,6 +1184,22 @@ ESD Protection</text>
 </instance>
 <instance part="SUPPLY2" gate="G$1" x="195.58" y="271.78" smashed="yes">
 <attribute name="VALUE" x="195.453" y="274.955" size="1.778" layer="96" align="bottom-center"/>
+</instance>
+<instance part="R2" gate="G$1" x="-139.7" y="180.34" smashed="yes">
+<attribute name="NAME" x="-143.51" y="181.8386" size="1.778" layer="95"/>
+<attribute name="VALUE" x="-143.51" y="177.038" size="1.778" layer="96"/>
+<attribute name="NAME" x="-143.51" y="181.8386" size="1.778" layer="95"/>
+<attribute name="VALUE" x="-143.51" y="177.038" size="1.778" layer="96"/>
+</instance>
+<instance part="SJ1" gate="1" x="-139.7" y="198.12" smashed="yes">
+<attribute name="NAME" x="-142.24" y="200.66" size="1.778" layer="95"/>
+<attribute name="VALUE" x="-142.24" y="194.31" size="1.778" layer="96"/>
+</instance>
+<instance part="GND13" gate="1" x="-149.86" y="190.5" smashed="yes">
+<attribute name="VALUE" x="-152.4" y="187.96" size="1.778" layer="96"/>
+</instance>
+<instance part="GND14" gate="1" x="-149.86" y="175.26" smashed="yes">
+<attribute name="VALUE" x="-152.4" y="172.72" size="1.778" layer="96"/>
 </instance>
 </instances>
 <busses>
@@ -1249,6 +1319,18 @@ ESD Protection</text>
 <wire x1="210.82" y1="264.16" x2="210.82" y2="256.54" width="0.1524" layer="91"/>
 <wire x1="210.82" y1="256.54" x2="205.74" y2="256.54" width="0.1524" layer="91"/>
 <junction x="205.74" y="256.54"/>
+</segment>
+<segment>
+<pinref part="SJ1" gate="1" pin="1"/>
+<wire x1="-144.78" y1="198.12" x2="-149.86" y2="198.12" width="0.1524" layer="91"/>
+<wire x1="-149.86" y1="198.12" x2="-149.86" y2="193.04" width="0.1524" layer="91"/>
+<pinref part="GND13" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="R2" gate="G$1" pin="1"/>
+<wire x1="-144.78" y1="180.34" x2="-149.86" y2="180.34" width="0.1524" layer="91"/>
+<wire x1="-149.86" y1="180.34" x2="-149.86" y2="177.8" width="0.1524" layer="91"/>
+<pinref part="GND14" gate="1" pin="GND"/>
 </segment>
 </net>
 <net name="VUSB" class="0">
@@ -1459,6 +1541,18 @@ ESD Protection</text>
 <pinref part="J4" gate="G$1" pin="CLK"/>
 <wire x1="190.5" y1="259.08" x2="193.04" y2="259.08" width="0.1524" layer="91"/>
 <label x="193.04" y="259.08" size="1.778" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="RESE'" class="0">
+<segment>
+<pinref part="SJ1" gate="1" pin="2"/>
+<wire x1="-134.62" y1="198.12" x2="-127" y2="198.12" width="0.1524" layer="91"/>
+<label x="-127" y="198.12" size="1.778" layer="95" xref="yes"/>
+</segment>
+<segment>
+<pinref part="R2" gate="G$1" pin="2"/>
+<wire x1="-134.62" y1="180.34" x2="-127" y2="180.34" width="0.1524" layer="91"/>
+<label x="-127" y="180.34" size="1.778" layer="95" xref="yes"/>
 </segment>
 </net>
 </nets>
