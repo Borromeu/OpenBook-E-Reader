@@ -800,6 +800,30 @@ Source: http://www.osram.convergy.de/ ... Lb_q993.pdf</description>
 <wire x1="5.75" y1="2.4" x2="5.75" y2="2.3" width="0.1" layer="21" curve="180"/>
 <wire x1="5.75" y1="2.3" x2="5.75" y2="2.4" width="0.1" layer="21" curve="180"/>
 </package>
+<package name="ESP32_WROVER_BME680_PSON80P300X300X100-8N" library_version="51">
+<circle x="2.045" y="1.2" radius="0.1" width="0.2" layer="21"/>
+<circle x="2.045" y="1.2" radius="0.1" width="0.2" layer="51"/>
+<wire x1="-1.53" y1="1.53" x2="-1.53" y2="-1.53" width="0.127" layer="51"/>
+<wire x1="-1.53" y1="-1.53" x2="1.53" y2="-1.53" width="0.127" layer="51"/>
+<wire x1="1.53" y1="-1.53" x2="1.53" y2="1.53" width="0.127" layer="51"/>
+<wire x1="1.53" y1="1.53" x2="-1.53" y2="1.53" width="0.127" layer="51"/>
+<wire x1="1.53" y1="1.77" x2="-1.53" y2="1.77" width="0.127" layer="21"/>
+<wire x1="-1.53" y1="-1.77" x2="1.53" y2="-1.77" width="0.127" layer="21"/>
+<wire x1="-1.78" y1="1.78" x2="1.78" y2="1.78" width="0.05" layer="39"/>
+<wire x1="1.78" y1="1.78" x2="1.78" y2="-1.78" width="0.05" layer="39"/>
+<wire x1="1.78" y1="-1.78" x2="-1.78" y2="-1.78" width="0.05" layer="39"/>
+<wire x1="-1.78" y1="-1.78" x2="-1.78" y2="1.78" width="0.05" layer="39"/>
+<smd name="1" x="1.458" y="1.2" dx="1.016" dy="0.5" layer="1" roundness="25"/>
+<smd name="2" x="1.458" y="0.4" dx="1.016" dy="0.5" layer="1" roundness="25"/>
+<smd name="3" x="1.458" y="-0.4" dx="1.016" dy="0.5" layer="1" roundness="25"/>
+<smd name="4" x="1.458" y="-1.2" dx="1.016" dy="0.5" layer="1" roundness="25"/>
+<smd name="5" x="-1.458" y="-1.22" dx="1.016" dy="0.5" layer="1" roundness="25"/>
+<smd name="6" x="-1.458" y="-0.4" dx="1.016" dy="0.5" layer="1" roundness="25"/>
+<smd name="7" x="-1.458" y="0.4" dx="1.016" dy="0.5" layer="1" roundness="25"/>
+<smd name="8" x="-1.458" y="1.2" dx="1.016" dy="0.5" layer="1" roundness="25"/>
+<text x="-1.858090625" y="1.9939" size="0.814009375" layer="25" ratio="11">&gt;NAME</text>
+<text x="-1.927440625" y="-2.760059375" size="0.81416875" layer="27" ratio="11">&gt;VALUE</text>
+</package>
 </packages>
 <symbols>
 <symbol name="SAMACSYS_PARTS_USB4110-GF-A" library_version="1">
@@ -1180,6 +1204,21 @@ Switches electrical signals</description>
 <pin name="MP1" x="0" y="-2.54" length="middle"/>
 <pin name="MP2" x="0" y="0" length="middle"/>
 </symbol>
+<symbol name="ESP32_WROVER_BME680_BME680" library_version="5">
+<wire x1="-10.16" y1="-12.7" x2="-10.16" y2="12.7" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="12.7" x2="10.16" y2="12.7" width="0.254" layer="94"/>
+<wire x1="10.16" y1="12.7" x2="10.16" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-12.7" x2="-10.16" y2="-12.7" width="0.254" layer="94"/>
+<pin name="CSB" x="-15.24" y="2.54" length="middle" direction="in"/>
+<pin name="GND" x="15.24" y="-10.16" length="middle" direction="pwr" rot="R180"/>
+<pin name="SCK" x="-15.24" y="0" length="middle" direction="in" function="clk"/>
+<pin name="SDI" x="-15.24" y="-2.54" length="middle"/>
+<pin name="SDO" x="-15.24" y="-5.08" length="middle"/>
+<pin name="VDD" x="15.24" y="7.62" length="middle" direction="pwr" rot="R180"/>
+<pin name="VDDIO" x="15.24" y="10.16" length="middle" direction="pwr" rot="R180"/>
+<text x="-10.1693" y="13.22" size="2.186390625" layer="95">&gt;NAME</text>
+<text x="-10.1798" y="-15.5193" size="2.18866875" layer="96">&gt;VALUE</text>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="SAMACSYS_PARTS_USB4110-GF-A" prefix="J" library_version="64">
@@ -1454,7 +1493,7 @@ Source: &lt;a href="https://www.torexsemi.com/file/xc6220/XC6220.pdf"&gt; Datash
 </device>
 </devices>
 </deviceset>
-<deviceset name="ESP32_WROVER_EAGLE-LTSPICE_C" prefix="C" uservalue="yes" library_version="66">
+<deviceset name="ESP32_WROVER_EAGLE-LTSPICE_C" prefix="C" uservalue="yes" library_version="1">
 <description>&lt;B&gt;CAPACITOR&lt;/B&gt;, European symbol</description>
 <gates>
 <gate name="G$1" symbol="ESP32_WROVER_EAGLE-LTSPICE_C" x="0" y="0"/>
@@ -1474,7 +1513,7 @@ Source: &lt;a href="https://www.torexsemi.com/file/xc6220/XC6220.pdf"&gt; Datash
 </device>
 </devices>
 </deviceset>
-<deviceset name="112A-TAAR-R03_ATTEND" prefix="J" library_version="2">
+<deviceset name="112A-TAAR-R03_ATTEND" prefix="J" library_version="1">
 <description>&lt;b&gt;Micro SD Card Socket, Push-Push Type, Top Mount, SMT, H=1.83mm, 10u&lt;/b&gt;&lt;p&gt;
 Source: &lt;a href="https://www.attend.com.tw/data/download/file/112A-TAAR-R03.pdf"&gt; Datasheet &lt;/a&gt;</description>
 <gates>
@@ -1817,6 +1856,35 @@ Source: &lt;a href="https://www.hirose.com/en/product/document?clcode=CL0580-125
 </device>
 </devices>
 </deviceset>
+<deviceset name="ESP32_WROVER_BME680_BME680" prefix="U" library_version="64">
+<description>Integrated Environmental Unit</description>
+<gates>
+<gate name="G$1" symbol="ESP32_WROVER_BME680_BME680" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="ESP32_WROVER_BME680_PSON80P300X300X100-8N">
+<connects>
+<connect gate="G$1" pin="CSB" pad="2"/>
+<connect gate="G$1" pin="GND" pad="1 7"/>
+<connect gate="G$1" pin="SCK" pad="4"/>
+<connect gate="G$1" pin="SDI" pad="3"/>
+<connect gate="G$1" pin="SDO" pad="5"/>
+<connect gate="G$1" pin="VDD" pad="8"/>
+<connect gate="G$1" pin="VDDIO" pad="6"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="AVAILABILITY" value="Unavailable"/>
+<attribute name="DESCRIPTION" value=" Integrated Environmental Unit "/>
+<attribute name="MF" value="Bosch Sensortec"/>
+<attribute name="MP" value="BME680"/>
+<attribute name="PACKAGE" value="LGA-8 Bosch Tools"/>
+<attribute name="PRICE" value="None"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
 </devicesets>
 </library>
 </libraries>
@@ -1910,6 +1978,14 @@ Source: &lt;a href="https://www.hirose.com/en/product/document?clcode=CL0580-125
 <part name="SUPPLY5" library="DeskAssistant v19 v1.flbr" library_urn="urn:adsk.wipprod:fs.file:vf.vVvdDOfaSfavM5thX5SjWw" deviceset="3V3-CIRCLE" device="" value="3V3"/>
 <part name="SUPPLY6" library="DeskAssistant v19 v1.flbr" library_urn="urn:adsk.wipprod:fs.file:vf.vVvdDOfaSfavM5thX5SjWw" deviceset="3V3-CIRCLE" device="" value="3V3"/>
 <part name="R_CL1" library="DeskAssistant v19 v1.flbr" library_urn="urn:adsk.wipprod:fs.file:vf.vVvdDOfaSfavM5thX5SjWw" deviceset="ESP32_WROVER_EAGLE-LTSPICE_R" device="R0402" value="10K"/>
+<part name="U3" library="DeskAssistant v19 v1.flbr" library_urn="urn:adsk.wipprod:fs.file:vf.vVvdDOfaSfavM5thX5SjWw" deviceset="ESP32_WROVER_BME680_BME680" device=""/>
+<part name="GND27" library="DeskAssistant v19 v1.flbr" library_urn="urn:adsk.wipprod:fs.file:vf.vVvdDOfaSfavM5thX5SjWw" deviceset="GND" device=""/>
+<part name="GND28" library="DeskAssistant v19 v1.flbr" library_urn="urn:adsk.wipprod:fs.file:vf.vVvdDOfaSfavM5thX5SjWw" deviceset="GND" device=""/>
+<part name="R2-PINH" library="DeskAssistant v19 v1.flbr" library_urn="urn:adsk.wipprod:fs.file:vf.vVvdDOfaSfavM5thX5SjWw" deviceset="ESP32_WROVER_EAGLE-LTSPICE_R" device="R0402" value="10K"/>
+<part name="R1-PINH" library="DeskAssistant v19 v1.flbr" library_urn="urn:adsk.wipprod:fs.file:vf.vVvdDOfaSfavM5thX5SjWw" deviceset="ESP32_WROVER_EAGLE-LTSPICE_R" device="R0402" value="10K"/>
+<part name="C2" library="DeskAssistant v19 v1.flbr" library_urn="urn:adsk.wipprod:fs.file:vf.vVvdDOfaSfavM5thX5SjWw" deviceset="ESP32_WROVER_EAGLE-LTSPICE_C" device="C0402" value="100nF"/>
+<part name="C3" library="DeskAssistant v19 v1.flbr" library_urn="urn:adsk.wipprod:fs.file:vf.vVvdDOfaSfavM5thX5SjWw" deviceset="ESP32_WROVER_EAGLE-LTSPICE_C" device="C0402" value="100nF"/>
+<part name="GND29" library="DeskAssistant v19 v1.flbr" library_urn="urn:adsk.wipprod:fs.file:vf.vVvdDOfaSfavM5thX5SjWw" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -1959,6 +2035,7 @@ ESD Protection</text>
 <text x="124.46" y="228.6" size="1.778" layer="95" align="center">ESP32 C6</text>
 <text x="-160.02" y="165.1" size="1.778" layer="95">E-Paper Display Header</text>
 <text x="-73.66" y="162.56" size="1.778" layer="95">EPD Power</text>
+<text x="-27.94" y="165.1" size="1.778" layer="95">Environmental Sensor BME688</text>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="-165.1" y="20.32" smashed="yes">
@@ -2268,6 +2345,38 @@ ESD Protection</text>
 <attribute name="NAME" x="-59.4614" y="146.05" size="1.778" layer="95" rot="R270"/>
 <attribute name="VALUE" x="-64.262" y="146.05" size="1.778" layer="96" rot="R270"/>
 </instance>
+<instance part="U3" gate="G$1" x="-5.08" y="139.7" smashed="yes">
+<attribute name="NAME" x="-15.2493" y="152.92" size="2.186390625" layer="95"/>
+</instance>
+<instance part="GND27" gate="1" x="12.7" y="124.46" smashed="yes">
+<attribute name="VALUE" x="10.16" y="121.92" size="1.778" layer="96"/>
+</instance>
+<instance part="GND28" gate="1" x="-22.86" y="129.54" smashed="yes">
+<attribute name="VALUE" x="-25.4" y="127" size="1.778" layer="96"/>
+</instance>
+<instance part="R2-PINH" gate="G$1" x="30.48" y="137.16" smashed="yes" rot="R90">
+<attribute name="NAME" x="28.9814" y="133.35" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="33.782" y="133.35" size="1.778" layer="96" rot="R90"/>
+<attribute name="NAME" x="28.9814" y="133.35" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="33.782" y="133.35" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="R1-PINH" gate="G$1" x="43.18" y="137.16" smashed="yes" rot="R90">
+<attribute name="NAME" x="41.6814" y="133.35" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="46.482" y="133.35" size="1.778" layer="96" rot="R90"/>
+<attribute name="NAME" x="41.6814" y="133.35" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="46.482" y="133.35" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="C2" gate="G$1" x="25.4" y="109.22" smashed="yes">
+<attribute name="NAME" x="26.924" y="109.601" size="1.778" layer="95"/>
+<attribute name="VALUE" x="26.924" y="104.521" size="1.778" layer="96"/>
+</instance>
+<instance part="C3" gate="G$1" x="38.1" y="109.22" smashed="yes">
+<attribute name="NAME" x="39.624" y="109.601" size="1.778" layer="95"/>
+<attribute name="VALUE" x="39.624" y="104.521" size="1.778" layer="96"/>
+</instance>
+<instance part="GND29" gate="1" x="33.02" y="93.98" smashed="yes">
+<attribute name="VALUE" x="30.48" y="91.44" size="1.778" layer="96"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -2460,6 +2569,29 @@ ESD Protection</text>
 <junction x="-147.32" y="144.78"/>
 <wire x1="-147.32" y1="144.78" x2="-149.86" y2="144.78" width="0.1524" layer="91"/>
 <pinref part="GND24" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="U3" gate="G$1" pin="GND"/>
+<wire x1="10.16" y1="129.54" x2="12.7" y2="129.54" width="0.1524" layer="91"/>
+<wire x1="12.7" y1="129.54" x2="12.7" y2="127" width="0.1524" layer="91"/>
+<pinref part="GND27" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="U3" gate="G$1" pin="SDO"/>
+<wire x1="-20.32" y1="134.62" x2="-22.86" y2="134.62" width="0.1524" layer="91"/>
+<wire x1="-22.86" y1="134.62" x2="-22.86" y2="132.08" width="0.1524" layer="91"/>
+<pinref part="GND28" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="C2" gate="G$1" pin="2"/>
+<wire x1="25.4" y1="104.14" x2="25.4" y2="101.6" width="0.1524" layer="91"/>
+<wire x1="25.4" y1="101.6" x2="33.02" y2="101.6" width="0.1524" layer="91"/>
+<wire x1="33.02" y1="101.6" x2="38.1" y2="101.6" width="0.1524" layer="91"/>
+<wire x1="38.1" y1="101.6" x2="38.1" y2="104.14" width="0.1524" layer="91"/>
+<pinref part="C3" gate="G$1" pin="2"/>
+<junction x="33.02" y="101.6"/>
+<wire x1="33.02" y1="101.6" x2="33.02" y2="96.52" width="0.1524" layer="91"/>
+<pinref part="GND29" gate="1" pin="GND"/>
 </segment>
 </net>
 <net name="VUSB" class="0">
@@ -3018,6 +3150,44 @@ ESD Protection</text>
 <wire x1="187.96" y1="195.58" x2="190.5" y2="195.58" width="0.1524" layer="91"/>
 <label x="190.5" y="195.58" size="1.778" layer="95" xref="yes"/>
 </segment>
+<segment>
+<pinref part="U3" gate="G$1" pin="VDDIO"/>
+<wire x1="10.16" y1="149.86" x2="12.7" y2="149.86" width="0.1524" layer="91"/>
+<wire x1="12.7" y1="149.86" x2="17.78" y2="149.86" width="0.1524" layer="91"/>
+<wire x1="17.78" y1="149.86" x2="17.78" y2="154.94" width="0.1524" layer="91"/>
+<pinref part="U3" gate="G$1" pin="VDD"/>
+<wire x1="10.16" y1="147.32" x2="12.7" y2="147.32" width="0.1524" layer="91"/>
+<wire x1="12.7" y1="147.32" x2="12.7" y2="149.86" width="0.1524" layer="91"/>
+<junction x="12.7" y="149.86"/>
+<wire x1="12.7" y1="149.86" x2="12.7" y2="157.48" width="0.1524" layer="91"/>
+<wire x1="12.7" y1="157.48" x2="-22.86" y2="157.48" width="0.1524" layer="91"/>
+<wire x1="-22.86" y1="157.48" x2="-22.86" y2="142.24" width="0.1524" layer="91"/>
+<wire x1="-22.86" y1="142.24" x2="-20.32" y2="142.24" width="0.1524" layer="91"/>
+<pinref part="U3" gate="G$1" pin="CSB"/>
+<label x="17.78" y="154.94" size="1.778" layer="95" rot="R90" xref="yes"/>
+</segment>
+<segment>
+<pinref part="R2-PINH" gate="G$1" pin="2"/>
+<wire x1="30.48" y1="142.24" x2="30.48" y2="149.86" width="0.1524" layer="91"/>
+<wire x1="30.48" y1="149.86" x2="38.1" y2="149.86" width="0.1524" layer="91"/>
+<wire x1="38.1" y1="149.86" x2="43.18" y2="149.86" width="0.1524" layer="91"/>
+<wire x1="43.18" y1="149.86" x2="43.18" y2="142.24" width="0.1524" layer="91"/>
+<pinref part="R1-PINH" gate="G$1" pin="2"/>
+<junction x="38.1" y="149.86"/>
+<wire x1="38.1" y1="149.86" x2="38.1" y2="154.94" width="0.1524" layer="91"/>
+<label x="38.1" y="154.94" size="1.778" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<pinref part="C2" gate="G$1" pin="1"/>
+<wire x1="25.4" y1="111.76" x2="25.4" y2="114.3" width="0.1524" layer="91"/>
+<wire x1="25.4" y1="114.3" x2="33.02" y2="114.3" width="0.1524" layer="91"/>
+<wire x1="33.02" y1="114.3" x2="38.1" y2="114.3" width="0.1524" layer="91"/>
+<wire x1="38.1" y1="114.3" x2="38.1" y2="111.76" width="0.1524" layer="91"/>
+<pinref part="C3" gate="G$1" pin="1"/>
+<junction x="33.02" y="114.3"/>
+<wire x1="33.02" y1="114.3" x2="33.02" y2="116.84" width="0.1524" layer="91"/>
+<label x="33.02" y="116.84" size="1.778" layer="95" xref="yes"/>
+</segment>
 </net>
 <net name="EPD_3V3_C" class="0">
 <segment>
@@ -3041,12 +3211,32 @@ ESD Protection</text>
 <wire x1="187.96" y1="190.5" x2="190.5" y2="190.5" width="0.1524" layer="91"/>
 <label x="190.5" y="190.5" size="1.778" layer="95" xref="yes"/>
 </segment>
+<segment>
+<pinref part="U3" gate="G$1" pin="SDI"/>
+<wire x1="-20.32" y1="137.16" x2="-22.86" y2="137.16" width="0.1524" layer="91"/>
+<label x="-22.86" y="137.16" size="1.778" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<pinref part="R1-PINH" gate="G$1" pin="1"/>
+<wire x1="43.18" y1="132.08" x2="43.18" y2="129.54" width="0.1524" layer="91"/>
+<label x="43.18" y="129.54" size="1.778" layer="95" rot="R180" xref="yes"/>
+</segment>
 </net>
 <net name="SCL" class="0">
 <segment>
 <pinref part="U2" gate="G$1" pin="IO22"/>
 <wire x1="187.96" y1="187.96" x2="190.5" y2="187.96" width="0.1524" layer="91"/>
 <label x="190.5" y="187.96" size="1.778" layer="95" xref="yes"/>
+</segment>
+<segment>
+<pinref part="U3" gate="G$1" pin="SCK"/>
+<label x="-25.4" y="139.7" size="1.778" layer="95" rot="R90" xref="yes"/>
+<wire x1="-20.32" y1="139.7" x2="-25.4" y2="139.7" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="R2-PINH" gate="G$1" pin="1"/>
+<wire x1="30.48" y1="132.08" x2="30.48" y2="129.54" width="0.1524" layer="91"/>
+<label x="30.48" y="129.54" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="EPD-RST" class="0">
