@@ -655,6 +655,45 @@ Source: www.farnell.com/datasheets/49238.pdf</description>
 <smd name="2" x="-1.05" y="-0.65" dx="1.05" dy="0.5" layer="1"/>
 <smd name="3" x="1.05" y="0" dx="1.05" dy="0.5" layer="1"/>
 </package>
+<package name="ESP32_WROVER_SPARKFUN-IC-POWER_SOT23-5" library_version="32">
+<description>&lt;b&gt;Small Outline Transistor&lt;/b&gt;</description>
+<circle x="-1.6002" y="-1.016" radius="0.127" width="0" layer="21"/>
+<wire x1="1.27" y1="0.4294" x2="1.27" y2="-0.4294" width="0.2032" layer="21"/>
+<wire x1="1.4" y1="-0.8" x2="-1.4" y2="-0.8" width="0.1524" layer="51"/>
+<wire x1="-1.27" y1="-0.4294" x2="-1.27" y2="0.4294" width="0.2032" layer="21"/>
+<wire x1="-1.4" y1="0.8" x2="1.4" y2="0.8" width="0.1524" layer="51"/>
+<wire x1="-0.2684" y1="0.7088" x2="0.2684" y2="0.7088" width="0.2032" layer="21"/>
+<wire x1="1.4" y1="0.8" x2="1.4" y2="-0.8" width="0.1524" layer="51"/>
+<wire x1="-1.4" y1="0.8" x2="-1.4" y2="-0.8" width="0.1524" layer="51"/>
+<rectangle x1="-1.2" y1="-1.5" x2="-0.7" y2="-0.85" layer="51"/>
+<rectangle x1="-0.25" y1="-1.5" x2="0.25" y2="-0.85" layer="51"/>
+<rectangle x1="0.7" y1="-1.5" x2="1.2" y2="-0.85" layer="51"/>
+<rectangle x1="0.7" y1="0.85" x2="1.2" y2="1.5" layer="51"/>
+<rectangle x1="-1.2" y1="0.85" x2="-0.7" y2="1.5" layer="51"/>
+<smd name="1" x="-0.95" y="-1.3001" dx="0.55" dy="1.2" layer="1"/>
+<smd name="2" x="0" y="-1.3001" dx="0.55" dy="1.2" layer="1"/>
+<smd name="3" x="0.95" y="-1.3001" dx="0.55" dy="1.2" layer="1"/>
+<smd name="4" x="0.95" y="1.3001" dx="0.55" dy="1.2" layer="1"/>
+<smd name="5" x="-0.95" y="1.3001" dx="0.55" dy="1.2" layer="1"/>
+<text x="-1.778" y="2.159" size="0.6096" layer="25" ratio="20">&gt;NAME</text>
+<text x="-1.778" y="-2.794" size="0.6096" layer="27" ratio="20">&gt;VALUE</text>
+</package>
+<package name="ADAFRUIT_CHIP-LED0603" library_version="30">
+<description>&lt;b&gt;Hyper CHIPLED Hyper-Bright LED&lt;/b&gt;&lt;p&gt;
+LB Q993&lt;br&gt;
+Source: http://www.osram.convergy.de/ ... Lb_q993.pdf</description>
+<wire x1="-0.4" y1="0.45" x2="-0.4" y2="-0.45" width="0.1016" layer="51"/>
+<wire x1="0.4" y1="0.45" x2="0.4" y2="-0.45" width="0.1016" layer="51"/>
+<rectangle x1="-0.45" y1="0.45" x2="0.45" y2="0.85" layer="51"/>
+<rectangle x1="-0.45" y1="-0.85" x2="0.45" y2="-0.45" layer="51"/>
+<rectangle x1="-0.45" y1="0" x2="-0.3" y2="0.3" layer="21"/>
+<rectangle x1="0.3" y1="0" x2="0.45" y2="0.3" layer="21"/>
+<rectangle x1="-0.15" y1="0" x2="0.15" y2="0.3" layer="21"/>
+<smd name="A" x="0" y="-0.75" dx="0.8" dy="0.8" layer="1"/>
+<smd name="C" x="0" y="0.75" dx="0.8" dy="0.8" layer="1"/>
+<text x="-0.635" y="-0.635" size="1.27" layer="25" rot="R90">&gt;NAME</text>
+<text x="1.905" y="-0.635" size="1.27" layer="27" rot="R90">&gt;VALUE</text>
+</package>
 </packages>
 <symbols>
 <symbol name="SAMACSYS_PARTS_USB4110-GF-A" library_version="1">
@@ -927,6 +966,44 @@ Switches electrical signals</description>
 <pin name="G" x="0" y="0" visible="pad" length="short"/>
 <pin name="D" x="7.62" y="10.16" visible="pad" length="short" rot="R270"/>
 <pin name="S" x="7.62" y="-5.08" visible="pad" length="short" rot="R90"/>
+</symbol>
+<symbol name="ESP32_WROVER_SPARKFUN-IC-POWER_MCP73831" library_version="5">
+<wire x1="-7.62" y1="5.08" x2="7.62" y2="5.08" width="0.254" layer="94"/>
+<wire x1="7.62" y1="5.08" x2="7.62" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-5.08" x2="-7.62" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="-5.08" x2="-7.62" y2="5.08" width="0.254" layer="94"/>
+<pin name="PROG" x="10.16" y="0" length="short" direction="in" rot="R180"/>
+<pin name="STAT" x="-10.16" y="-2.54" length="short" direction="out"/>
+<pin name="VBAT" x="10.16" y="2.54" length="short" direction="pwr" rot="R180"/>
+<pin name="VIN" x="-10.16" y="2.54" length="short" direction="pwr"/>
+<pin name="VSS" x="10.16" y="-2.54" length="short" direction="pwr" rot="R180"/>
+<text x="-7.62" y="5.588" size="1.778" layer="95">&gt;Name</text>
+<text x="-7.62" y="-7.62" size="1.778" layer="96">&gt;Value</text>
+</symbol>
+<symbol name="ADAFRUIT_LED" library_version="5">
+<wire x1="1.27" y1="0" x2="0" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="0" y1="-2.54" x2="-1.27" y2="0" width="0.254" layer="94"/>
+<wire x1="1.27" y1="-2.54" x2="0" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="0" y1="-2.54" x2="-1.27" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="1.27" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="-1.27" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="0" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="-2.032" y1="-0.762" x2="-3.429" y2="-2.159" width="0.1524" layer="94"/>
+<wire x1="-1.905" y1="-1.905" x2="-3.302" y2="-3.302" width="0.1524" layer="94"/>
+<pin name="A" x="0" y="2.54" visible="off" length="short" direction="pas" rot="R270"/>
+<pin name="C" x="0" y="-5.08" visible="off" length="short" direction="pas" rot="R90"/>
+<text x="3.556" y="-4.572" size="1.778" layer="95" rot="R90">&gt;NAME</text>
+<text x="5.715" y="-4.572" size="1.778" layer="96" rot="R90">&gt;VALUE</text>
+<polygon width="0.1524" layer="94" pour="solid">
+<vertex x="-3.048" y="-1.27"/>
+<vertex x="-3.429" y="-2.159"/>
+<vertex x="-2.54" y="-1.778"/>
+</polygon>
+<polygon width="0.1524" layer="94" pour="solid">
+<vertex x="-2.921" y="-2.413"/>
+<vertex x="-3.302" y="-3.302"/>
+<vertex x="-2.413" y="-2.921"/>
+</polygon>
 </symbol>
 </symbols>
 <devicesets>
@@ -1359,6 +1436,110 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/1/SI1308EDL-T1-
 </device>
 </devices>
 </deviceset>
+<deviceset name="ESP32_WROVER_SPARKFUN-IC-POWER_MCP73831" prefix="U" library_version="64">
+<description>&lt;h3&gt;MCP73831T Li-Ion, Li-Pol Controller&lt;/h3&gt;
+&lt;p&gt;Miniature single cell, fully integrated Li-Ion, Li-polymer charge management controller
+&lt;li&gt;&lt;a href=”http://ww1.microchip.com/downloads/en/DeviceDoc/20001984g.pdf”&gt;Datasheet&lt;/a&gt;&lt;/li&gt;&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;SparkFun Products:&lt;/b&gt;
+&lt;ul&gt;&lt;li&gt;&lt;a href=”https://www.sparkfun.com/products/13907”&gt;SparkFun ESP32 Thing&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=”https://www.sparkfun.com/products/14001”&gt;SparkFun 9DoF Razor IMU M0&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;</description>
+<gates>
+<gate name="G$1" symbol="ESP32_WROVER_SPARKFUN-IC-POWER_MCP73831" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="ESP32_WROVER_SPARKFUN-IC-POWER_SOT23-5">
+<connects>
+<connect gate="G$1" pin="PROG" pad="5"/>
+<connect gate="G$1" pin="STAT" pad="1"/>
+<connect gate="G$1" pin="VBAT" pad="3"/>
+<connect gate="G$1" pin="VIN" pad="4"/>
+<connect gate="G$1" pin="VSS" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="IC-09995"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="ADAFRUIT_LED" prefix="LED" uservalue="yes" library_version="64">
+<description>&lt;b&gt;LED&lt;/b&gt;&lt;p&gt;
+&lt;u&gt;OSRAM&lt;/u&gt;:&lt;br&gt;
+
+- &lt;u&gt;CHIPLED&lt;/u&gt;&lt;br&gt;
+LG R971, LG N971, LY N971, LG Q971, LY Q971, LO R971, LY R971
+LH N974, LH R974&lt;br&gt;
+LS Q976, LO Q976, LY Q976&lt;br&gt;
+LO Q996&lt;br&gt;
+
+
+- &lt;u&gt;Hyper CHIPLED&lt;/u&gt;&lt;br&gt;
+LW Q18S&lt;br&gt;
+LB Q993, LB Q99A, LB R99A&lt;br&gt;
+
+- &lt;u&gt;SideLED&lt;/u&gt;&lt;br&gt;
+LS A670, LO A670, LY A670, LG A670, LP A670&lt;br&gt;
+LB A673, LV A673, LT A673, LW A673&lt;br&gt;
+LH A674&lt;br&gt;
+LY A675&lt;br&gt;
+LS A676, LA A676, LO A676, LY A676, LW A676&lt;br&gt;
+LS A679, LY A679, LG A679&lt;br&gt;
+
+-  &lt;u&gt;Hyper Micro SIDELED®&lt;/u&gt;&lt;br&gt;
+LS Y876, LA Y876, LO Y876, LY Y876&lt;br&gt;
+LT Y87S&lt;br&gt;
+
+- &lt;u&gt;SmartLED&lt;/u&gt;&lt;br&gt;
+LW L88C, LW L88S&lt;br&gt;
+LB L89C, LB L89S, LG L890&lt;br&gt;
+LS L89K, LO L89K, LY L89K&lt;br&gt;
+LS L896, LA L896, LO L896, LY L896&lt;br&gt;
+
+- &lt;u&gt;TOPLED&lt;/u&gt;&lt;br&gt;
+LS T670, LO T670, LY T670, LG T670, LP T670&lt;br&gt;
+LSG T670, LSP T670, LSY T670, LOP T670, LYG T670&lt;br&gt;
+LG T671, LOG T671, LSG T671&lt;br&gt;
+LB T673, LV T673, LT T673, LW T673&lt;br&gt;
+LH T674&lt;br&gt;
+LS T676, LA T676, LO T676, LY T676, LB T676, LH T676, LSB T676, LW T676&lt;br&gt;
+LB T67C, LV T67C, LT T67C, LS T67K, LO T67K, LY T67K, LW E67C&lt;br&gt;
+LS E67B, LA E67B, LO E67B, LY E67B, LB E67C, LV E67C, LT E67C&lt;br&gt;
+LW T67C&lt;br&gt;
+LS T679, LY T679, LG T679&lt;br&gt;
+LS T770, LO T770, LY T770, LG T770, LP T770&lt;br&gt;
+LB T773, LV T773, LT T773, LW T773&lt;br&gt;
+LH T774&lt;br&gt;
+LS E675, LA E675, LY E675, LS T675&lt;br&gt;
+LS T776, LA T776, LO T776, LY T776, LB T776&lt;br&gt;
+LHGB T686&lt;br&gt;
+LT T68C, LB T68C&lt;br&gt;
+
+- &lt;u&gt;Hyper Mini TOPLED®&lt;/u&gt;&lt;br&gt;
+LB M676&lt;br&gt;
+
+- &lt;u&gt;Mini TOPLED Santana®&lt;/u&gt;&lt;br&gt;
+LG M470&lt;br&gt;
+LS M47K, LO M47K, LY M47K&lt;br&gt;
+
+&lt;p&gt;
+Source: http://www.osram.convergy.de/</description>
+<gates>
+<gate name="G$1" symbol="ADAFRUIT_LED" x="0" y="0"/>
+</gates>
+<devices>
+<device name="CHIP-LED0603" package="ADAFRUIT_CHIP-LED0603">
+<connects>
+<connect gate="G$1" pin="A" pad="A"/>
+<connect gate="G$1" pin="C" pad="C"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
 </devicesets>
 </library>
 </libraries>
@@ -1415,9 +1596,19 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/1/SI1308EDL-T1-
 <part name="D5" library="DeskAssistant v19 v1.flbr" library_urn="urn:adsk.wipprod:fs.file:vf.vVvdDOfaSfavM5thX5SjWw" deviceset="MBR0530" device=""/>
 <part name="GND16" library="DeskAssistant v19 v1.flbr" library_urn="urn:adsk.wipprod:fs.file:vf.vVvdDOfaSfavM5thX5SjWw" deviceset="GND" device=""/>
 <part name="Q2" library="DeskAssistant v19 v1.flbr" library_urn="urn:adsk.wipprod:fs.file:vf.vVvdDOfaSfavM5thX5SjWw" deviceset="SI1308EDL-T1-GE3" device=""/>
-<part name="R1" library="DeskAssistant v19 v1.flbr" library_urn="urn:adsk.wipprod:fs.file:vf.vVvdDOfaSfavM5thX5SjWw" deviceset="ESP32_WROVER_EAGLE-LTSPICE_R" device="R0402" value="0.47"/>
+<part name="R3" library="DeskAssistant v19 v1.flbr" library_urn="urn:adsk.wipprod:fs.file:vf.vVvdDOfaSfavM5thX5SjWw" deviceset="ESP32_WROVER_EAGLE-LTSPICE_R" device="R0402" value="0.47"/>
 <part name="R4" library="DeskAssistant v19 v1.flbr" library_urn="urn:adsk.wipprod:fs.file:vf.vVvdDOfaSfavM5thX5SjWw" deviceset="ESP32_WROVER_EAGLE-LTSPICE_R" device="R0402" value="10K"/>
 <part name="GND17" library="DeskAssistant v19 v1.flbr" library_urn="urn:adsk.wipprod:fs.file:vf.vVvdDOfaSfavM5thX5SjWw" deviceset="GND" device=""/>
+<part name="U1" library="DeskAssistant v19 v1.flbr" library_urn="urn:adsk.wipprod:fs.file:vf.vVvdDOfaSfavM5thX5SjWw" deviceset="ESP32_WROVER_SPARKFUN-IC-POWER_MCP73831" device=""/>
+<part name="C2_BAT" library="DeskAssistant v19 v1.flbr" library_urn="urn:adsk.wipprod:fs.file:vf.vVvdDOfaSfavM5thX5SjWw" deviceset="EAGLE-LTSPICE_C" device="C0402" value="4.7uF"/>
+<part name="C1_BAT" library="DeskAssistant v19 v1.flbr" library_urn="urn:adsk.wipprod:fs.file:vf.vVvdDOfaSfavM5thX5SjWw" deviceset="EAGLE-LTSPICE_C" device="C0402" value="4.7uF"/>
+<part name="GND18" library="DeskAssistant v19 v1.flbr" library_urn="urn:adsk.wipprod:fs.file:vf.vVvdDOfaSfavM5thX5SjWw" deviceset="GND" device=""/>
+<part name="GND19" library="DeskAssistant v19 v1.flbr" library_urn="urn:adsk.wipprod:fs.file:vf.vVvdDOfaSfavM5thX5SjWw" deviceset="GND" device=""/>
+<part name="GND20" library="DeskAssistant v19 v1.flbr" library_urn="urn:adsk.wipprod:fs.file:vf.vVvdDOfaSfavM5thX5SjWw" deviceset="GND" device=""/>
+<part name="R1_BAT" library="DeskAssistant v19 v1.flbr" library_urn="urn:adsk.wipprod:fs.file:vf.vVvdDOfaSfavM5thX5SjWw" deviceset="ESP32_WROVER_EAGLE-LTSPICE_R" device="R0402" value="200"/>
+<part name="R2_BAT" library="DeskAssistant v19 v1.flbr" library_urn="urn:adsk.wipprod:fs.file:vf.vVvdDOfaSfavM5thX5SjWw" deviceset="ESP32_WROVER_EAGLE-LTSPICE_R" device="R0402" value="2K"/>
+<part name="GND21" library="DeskAssistant v19 v1.flbr" library_urn="urn:adsk.wipprod:fs.file:vf.vVvdDOfaSfavM5thX5SjWw" deviceset="GND" device=""/>
+<part name="CHG_LED" library="DeskAssistant v19 v1.flbr" library_urn="urn:adsk.wipprod:fs.file:vf.vVvdDOfaSfavM5thX5SjWw" deviceset="ADAFRUIT_LED" device="CHIP-LED0603"/>
 </parts>
 <sheets>
 <sheet>
@@ -1462,6 +1653,8 @@ ESD Protection</text>
 <text x="124.46" y="274.32" size="1.778" layer="95" align="center">SD Card</text>
 <text x="-147.32" y="210.82" size="1.778" layer="95" align="center">Display Type Selector</text>
 <text x="-86.36" y="210.82" size="1.778" layer="95" align="center">E-Paper Drive Circuit</text>
+<text x="20.32" y="208.28" size="1.778" layer="95" align="center"> Li-Po Battery Charging Controller
+</text>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="-165.1" y="20.32" smashed="yes">
@@ -1627,7 +1820,7 @@ ESD Protection</text>
 <attribute name="NAME" x="-67.31" y="181.61" size="1.778" layer="95" align="center-left"/>
 <attribute name="VALUE" x="-67.31" y="179.07" size="1.778" layer="96" align="center-left"/>
 </instance>
-<instance part="R1" gate="G$1" x="-60.96" y="170.18" smashed="yes">
+<instance part="R3" gate="G$1" x="-60.96" y="170.18" smashed="yes">
 <attribute name="NAME" x="-64.77" y="171.6786" size="1.778" layer="95"/>
 <attribute name="VALUE" x="-64.77" y="166.878" size="1.778" layer="96"/>
 <attribute name="NAME" x="-64.77" y="171.6786" size="1.778" layer="95"/>
@@ -1641,6 +1834,45 @@ ESD Protection</text>
 </instance>
 <instance part="GND17" gate="1" x="-93.98" y="170.18" smashed="yes" rot="R270">
 <attribute name="VALUE" x="-96.52" y="172.72" size="1.778" layer="96" rot="R270"/>
+</instance>
+<instance part="U1" gate="G$1" x="50.8" y="200.66" smashed="yes">
+<attribute name="NAME" x="43.18" y="206.248" size="1.778" layer="95"/>
+</instance>
+<instance part="C2_BAT" gate="G$1" x="91.44" y="182.88" smashed="yes">
+<attribute name="NAME" x="92.964" y="183.261" size="1.778" layer="95"/>
+<attribute name="VALUE" x="92.964" y="178.181" size="1.778" layer="96"/>
+</instance>
+<instance part="C1_BAT" gate="G$1" x="22.86" y="182.88" smashed="yes">
+<attribute name="NAME" x="24.384" y="183.261" size="1.778" layer="95"/>
+<attribute name="VALUE" x="24.384" y="178.181" size="1.778" layer="96"/>
+</instance>
+<instance part="GND18" gate="1" x="91.44" y="172.72" smashed="yes">
+<attribute name="VALUE" x="88.9" y="170.18" size="1.778" layer="96"/>
+</instance>
+<instance part="GND19" gate="1" x="22.86" y="172.72" smashed="yes">
+<attribute name="VALUE" x="20.32" y="170.18" size="1.778" layer="96"/>
+</instance>
+<instance part="GND20" gate="1" x="63.5" y="175.26" smashed="yes">
+<attribute name="VALUE" x="60.96" y="172.72" size="1.778" layer="96"/>
+</instance>
+<instance part="R1_BAT" gate="G$1" x="45.72" y="182.88" smashed="yes" rot="R270">
+<attribute name="NAME" x="47.2186" y="186.69" size="1.778" layer="95" rot="R270"/>
+<attribute name="VALUE" x="42.418" y="186.69" size="1.778" layer="96" rot="R270"/>
+<attribute name="NAME" x="47.2186" y="186.69" size="1.778" layer="95" rot="R270"/>
+<attribute name="VALUE" x="42.418" y="186.69" size="1.778" layer="96" rot="R270"/>
+</instance>
+<instance part="R2_BAT" gate="G$1" x="78.74" y="182.88" smashed="yes" rot="R270">
+<attribute name="NAME" x="80.2386" y="186.69" size="1.778" layer="95" rot="R270"/>
+<attribute name="VALUE" x="75.438" y="186.69" size="1.778" layer="96" rot="R270"/>
+<attribute name="NAME" x="80.2386" y="186.69" size="1.778" layer="95" rot="R270"/>
+<attribute name="VALUE" x="75.438" y="186.69" size="1.778" layer="96" rot="R270"/>
+</instance>
+<instance part="GND21" gate="1" x="78.74" y="172.72" smashed="yes">
+<attribute name="VALUE" x="76.2" y="170.18" size="1.778" layer="96"/>
+</instance>
+<instance part="CHG_LED" gate="G$1" x="35.56" y="180.34" smashed="yes">
+<attribute name="NAME" x="39.116" y="175.768" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="41.275" y="175.768" size="1.778" layer="96" rot="R90"/>
 </instance>
 </instances>
 <busses>
@@ -1788,6 +2020,27 @@ ESD Protection</text>
 <wire x1="-88.9" y1="170.18" x2="-91.44" y2="170.18" width="0.1524" layer="91"/>
 <pinref part="GND17" gate="1" pin="GND"/>
 </segment>
+<segment>
+<pinref part="C2_BAT" gate="G$1" pin="2"/>
+<wire x1="91.44" y1="177.8" x2="91.44" y2="175.26" width="0.1524" layer="91"/>
+<pinref part="GND18" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="C1_BAT" gate="G$1" pin="2"/>
+<wire x1="22.86" y1="177.8" x2="22.86" y2="175.26" width="0.1524" layer="91"/>
+<pinref part="GND19" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="U1" gate="G$1" pin="VSS"/>
+<wire x1="60.96" y1="198.12" x2="63.5" y2="198.12" width="0.1524" layer="91"/>
+<wire x1="63.5" y1="198.12" x2="63.5" y2="177.8" width="0.1524" layer="91"/>
+<pinref part="GND20" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="R2_BAT" gate="G$1" pin="2"/>
+<wire x1="78.74" y1="177.8" x2="78.74" y2="175.26" width="0.1524" layer="91"/>
+<pinref part="GND21" gate="1" pin="GND"/>
+</segment>
 </net>
 <net name="VUSB" class="0">
 <segment>
@@ -1852,6 +2105,19 @@ ESD Protection</text>
 <wire x1="-12.7" y1="259.08" x2="-12.7" y2="248.92" width="0.1524" layer="91"/>
 <junction x="-12.7" y="259.08"/>
 <pinref part="R1_PWRUSB" gate="G$1" pin="2"/>
+</segment>
+<segment>
+<pinref part="C1_BAT" gate="G$1" pin="1"/>
+<wire x1="22.86" y1="185.42" x2="22.86" y2="203.2" width="0.1524" layer="91"/>
+<wire x1="22.86" y1="203.2" x2="35.56" y2="203.2" width="0.1524" layer="91"/>
+<pinref part="U1" gate="G$1" pin="VIN"/>
+<wire x1="35.56" y1="203.2" x2="40.64" y2="203.2" width="0.1524" layer="91"/>
+<wire x1="22.86" y1="203.2" x2="12.7" y2="203.2" width="0.1524" layer="91"/>
+<junction x="22.86" y="203.2"/>
+<label x="12.7" y="203.2" size="1.778" layer="95" rot="R180" xref="yes"/>
+<pinref part="CHG_LED" gate="G$1" pin="A"/>
+<wire x1="35.56" y1="182.88" x2="35.56" y2="203.2" width="0.1524" layer="91"/>
+<junction x="35.56" y="203.2"/>
 </segment>
 </net>
 <net name="N$1" class="0">
@@ -1970,6 +2236,15 @@ ESD Protection</text>
 <wire x1="20.32" y1="266.7" x2="20.32" y2="269.24" width="0.1524" layer="91"/>
 <label x="20.32" y="269.24" size="1.778" layer="95" xref="yes"/>
 </segment>
+<segment>
+<pinref part="U1" gate="G$1" pin="VBAT"/>
+<wire x1="60.96" y1="203.2" x2="91.44" y2="203.2" width="0.1524" layer="91"/>
+<label x="99.06" y="203.2" size="1.778" layer="95" xref="yes"/>
+<pinref part="C2_BAT" gate="G$1" pin="1"/>
+<wire x1="91.44" y1="203.2" x2="99.06" y2="203.2" width="0.1524" layer="91"/>
+<wire x1="91.44" y1="185.42" x2="91.44" y2="203.2" width="0.1524" layer="91"/>
+<junction x="91.44" y="203.2"/>
+</segment>
 </net>
 <net name="SS_SD" class="0">
 <segment>
@@ -2011,7 +2286,7 @@ ESD Protection</text>
 <label x="-127" y="180.34" size="1.778" layer="95" xref="yes"/>
 </segment>
 <segment>
-<pinref part="R1" gate="G$1" pin="2"/>
+<pinref part="R3" gate="G$1" pin="2"/>
 <wire x1="-55.88" y1="170.18" x2="-43.18" y2="170.18" width="0.1524" layer="91"/>
 <label x="-43.18" y="170.18" size="1.778" layer="95" rot="R90" xref="yes"/>
 </segment>
@@ -2102,7 +2377,34 @@ ESD Protection</text>
 <wire x1="-68.58" y1="172.72" x2="-68.58" y2="170.18" width="0.1524" layer="91"/>
 <junction x="-68.58" y="172.72"/>
 <wire x1="-68.58" y1="170.18" x2="-66.04" y2="170.18" width="0.1524" layer="91"/>
-<pinref part="R1" gate="G$1" pin="1"/>
+<pinref part="R3" gate="G$1" pin="1"/>
+</segment>
+</net>
+<net name="N$5" class="0">
+<segment>
+<pinref part="U1" gate="G$1" pin="PROG"/>
+<wire x1="60.96" y1="200.66" x2="78.74" y2="200.66" width="0.1524" layer="91"/>
+<wire x1="78.74" y1="200.66" x2="78.74" y2="187.96" width="0.1524" layer="91"/>
+<pinref part="R2_BAT" gate="G$1" pin="1"/>
+</segment>
+</net>
+<net name="N$7" class="0">
+<segment>
+<pinref part="U1" gate="G$1" pin="STAT"/>
+<wire x1="40.64" y1="198.12" x2="38.1" y2="198.12" width="0.1524" layer="91"/>
+<wire x1="38.1" y1="198.12" x2="38.1" y2="190.5" width="0.1524" layer="91"/>
+<wire x1="38.1" y1="190.5" x2="45.72" y2="190.5" width="0.1524" layer="91"/>
+<wire x1="45.72" y1="190.5" x2="45.72" y2="187.96" width="0.1524" layer="91"/>
+<pinref part="R1_BAT" gate="G$1" pin="1"/>
+</segment>
+</net>
+<net name="N$8" class="0">
+<segment>
+<pinref part="R1_BAT" gate="G$1" pin="2"/>
+<wire x1="45.72" y1="177.8" x2="45.72" y2="172.72" width="0.1524" layer="91"/>
+<wire x1="45.72" y1="172.72" x2="35.56" y2="172.72" width="0.1524" layer="91"/>
+<wire x1="35.56" y1="172.72" x2="35.56" y2="175.26" width="0.1524" layer="91"/>
+<pinref part="CHG_LED" gate="G$1" pin="C"/>
 </segment>
 </net>
 </nets>
