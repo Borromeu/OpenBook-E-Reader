@@ -247,6 +247,109 @@ Source: www.farnell.com/datasheets/49238.pdf</description>
 <smd name="5" x="1.25" y="0" dx="1.2" dy="0.6" layer="1"/>
 <smd name="6" x="1.25" y="0.95" dx="1.2" dy="0.6" layer="1"/>
 </package>
+<package name="SOT95P280X120-5N" library_version="46">
+<description>&lt;b&gt;SOT23-5_1&lt;/b&gt;&lt;br&gt;
+</description>
+<smd name="1" x="-1.4" y="0.95" dx="0.9" dy="0.6" layer="1"/>
+<smd name="2" x="-1.4" y="0" dx="0.9" dy="0.6" layer="1"/>
+<smd name="3" x="-1.4" y="-0.95" dx="0.9" dy="0.6" layer="1"/>
+<smd name="4" x="1.4" y="-0.95" dx="0.9" dy="0.6" layer="1"/>
+<smd name="5" x="1.4" y="0.95" dx="0.9" dy="0.6" layer="1"/>
+<text x="0" y="0" size="1.27" layer="25" align="center">&gt;NAME</text>
+<text x="0" y="0" size="1.27" layer="27" align="center">&gt;VALUE</text>
+<wire x1="-2.1" y1="1.8" x2="2.1" y2="1.8" width="0.05" layer="51"/>
+<wire x1="2.1" y1="1.8" x2="2.1" y2="-1.8" width="0.05" layer="51"/>
+<wire x1="2.1" y1="-1.8" x2="-2.1" y2="-1.8" width="0.05" layer="51"/>
+<wire x1="-2.1" y1="-1.8" x2="-2.1" y2="1.8" width="0.05" layer="51"/>
+<wire x1="-0.825" y1="1.45" x2="0.825" y2="1.45" width="0.1" layer="51"/>
+<wire x1="0.825" y1="1.45" x2="0.825" y2="-1.45" width="0.1" layer="51"/>
+<wire x1="0.825" y1="-1.45" x2="-0.825" y2="-1.45" width="0.1" layer="51"/>
+<wire x1="-0.825" y1="-1.45" x2="-0.825" y2="1.45" width="0.1" layer="51"/>
+<wire x1="-0.825" y1="0.5" x2="0.125" y2="1.45" width="0.1" layer="51"/>
+<wire x1="-0.6" y1="1.45" x2="0.6" y2="1.45" width="0.2" layer="21"/>
+<wire x1="0.6" y1="1.45" x2="0.6" y2="-1.45" width="0.2" layer="21"/>
+<wire x1="0.6" y1="-1.45" x2="-0.6" y2="-1.45" width="0.2" layer="21"/>
+<wire x1="-0.6" y1="-1.45" x2="-0.6" y2="1.45" width="0.2" layer="21"/>
+<wire x1="-1.85" y1="1.5" x2="-0.95" y2="1.5" width="0.2" layer="21"/>
+</package>
+<package name="RCL_CT3528" library_version="31">
+<description>&lt;b&gt;TANTALUM CAPACITOR&lt;/b&gt;</description>
+<wire x1="-2.973" y1="1.983" x2="2.973" y2="1.983" width="0.0508" layer="39"/>
+<wire x1="2.973" y1="-1.983" x2="-2.973" y2="-1.983" width="0.0508" layer="39"/>
+<wire x1="-2.973" y1="-1.983" x2="-2.973" y2="1.983" width="0.0508" layer="39"/>
+<wire x1="2.973" y1="1.983" x2="2.973" y2="-1.983" width="0.0508" layer="39"/>
+<wire x1="-1.637" y1="-1.383" x2="-1.637" y2="1.383" width="0.2032" layer="51"/>
+<wire x1="-1.778" y1="1.016" x2="-1.778" y2="-1.016" width="0.1524" layer="51"/>
+<wire x1="1.637" y1="1.383" x2="-1.637" y2="1.383" width="0.2032" layer="51"/>
+<wire x1="1.637" y1="-1.383" x2="-1.637" y2="-1.383" width="0.2032" layer="51"/>
+<wire x1="1.778" y1="1.016" x2="1.778" y2="-1.016" width="0.1524" layer="51"/>
+<wire x1="1.637" y1="-1.383" x2="1.637" y2="1.383" width="0.2032" layer="51"/>
+<wire x1="-0.68" y1="0" x2="-1.31" y2="0" width="0.2032" layer="51"/>
+<wire x1="-1" y1="0.3" x2="-1" y2="-0.33" width="0.2032" layer="51"/>
+<rectangle x1="-0.3" y1="-1" x2="0.3" y2="1" layer="35"/>
+<smd name="+" x="-1.5" y="0" dx="2" dy="2.2" layer="1"/>
+<smd name="-" x="1.5" y="0" dx="2" dy="2.2" layer="1"/>
+<text x="-2.54" y="1.905" size="1.27" layer="25">&gt;NAME</text>
+<text x="-2.54" y="-3.175" size="1.27" layer="27">&gt;VALUE</text>
+</package>
+<package name="ESP32_WROVER_AVX---SD0805S020S1R0_AVX_SD0805S020S1R0_0" library_version="62">
+<description>Schottky Barrier Rectifier Diode</description>
+<wire x1="-1" y1="-0.65" x2="-1" y2="0.65" width="0.15" layer="51"/>
+<wire x1="-1" y1="0.65" x2="1" y2="0.65" width="0.15" layer="51"/>
+<wire x1="1" y1="0.65" x2="1" y2="-0.65" width="0.15" layer="51"/>
+<wire x1="1" y1="-0.65" x2="-1" y2="-0.65" width="0.15" layer="51"/>
+<wire x1="-1.55" y1="-0.8" x2="-1.55" y2="0.8" width="0.1" layer="39"/>
+<wire x1="-1.55" y1="0.8" x2="1.55" y2="0.8" width="0.1" layer="39"/>
+<wire x1="1.55" y1="0.8" x2="1.55" y2="-0.8" width="0.1" layer="39"/>
+<wire x1="1.55" y1="-0.8" x2="-1.55" y2="-0.8" width="0.1" layer="39"/>
+<wire x1="-0.3" y1="0.65" x2="0.3" y2="0.65" width="0.15" layer="21"/>
+<wire x1="-0.3" y1="-0.65" x2="0.3" y2="-0.65" width="0.15" layer="21"/>
+<wire x1="-0.15" y1="-0.6" x2="-0.15" y2="0.6" width="0.25" layer="21"/>
+<smd name="1" x="-1.05" y="0" dx="0.8" dy="0.9" layer="1"/>
+<smd name="2" x="1.05" y="0" dx="0.8" dy="0.9" layer="1"/>
+<text x="1.775" y="-0.225" size="1" layer="25">&gt;NAME</text>
+</package>
+<package name="ESP32_WROVER_SPARKFUN-DISCRETESEMI_SOT23-3" library_version="28">
+<description>&lt;h3&gt;SOT23-3X&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Total Size: 3mm x 2.5mm&lt;/li&gt;
+&lt;li&gt;Landing Pad Size: .8mm x .9mm&lt;/li&gt;
+&lt;li&gt;Pitch: 2 (vertical) .95mm (horizontal)&lt;/li&gt;
+&lt;li&gt;&lt;/li&gt;
+&lt;li&gt;&lt;/li&gt;
+&lt;li&gt;&lt;/li&gt;
+&lt;/ul&gt;</description>
+<wire x1="1.4224" y1="0.6604" x2="1.4224" y2="-0.6604" width="0.1524" layer="51"/>
+<wire x1="1.4224" y1="-0.6604" x2="-1.4224" y2="-0.6604" width="0.1524" layer="51"/>
+<wire x1="-1.4224" y1="-0.6604" x2="-1.4224" y2="0.6604" width="0.1524" layer="51"/>
+<wire x1="-1.4224" y1="0.6604" x2="1.4224" y2="0.6604" width="0.1524" layer="51"/>
+<wire x1="-0.8" y1="0.7" x2="-1.4" y2="0.7" width="0.2032" layer="21"/>
+<wire x1="-1.4" y1="0.7" x2="-1.4" y2="-0.1" width="0.2032" layer="21"/>
+<wire x1="0.8" y1="0.7" x2="1.4" y2="0.7" width="0.2032" layer="21"/>
+<wire x1="1.4" y1="0.7" x2="1.4" y2="-0.1" width="0.2032" layer="21"/>
+<smd name="1" x="-0.95" y="-1" dx="0.8" dy="0.9" layer="1"/>
+<smd name="2" x="0.95" y="-1" dx="0.8" dy="0.9" layer="1"/>
+<smd name="3" x="0" y="1.1" dx="0.8" dy="0.9" layer="1"/>
+<text x="-1.651" y="0" size="0.6096" layer="25" font="vector" ratio="20" rot="R90" align="bottom-center">&gt;NAME</text>
+<text x="1.651" y="0" size="0.6096" layer="27" font="vector" ratio="20" rot="R90" align="top-center">&gt;VALUE</text>
+</package>
+<package name="ESP32_WROVER_EAGLE-LTSPICE_C0402" library_version="20">
+<description>&lt;b&gt;CAPACITOR&lt;/b&gt;</description>
+<wire x1="-0.245" y1="0.224" x2="0.245" y2="0.224" width="0.1524" layer="51"/>
+<wire x1="0.245" y1="-0.224" x2="-0.245" y2="-0.224" width="0.1524" layer="51"/>
+<wire x1="-1.473" y1="0.483" x2="1.473" y2="0.483" width="0.0508" layer="39"/>
+<wire x1="1.473" y1="0.483" x2="1.473" y2="-0.483" width="0.0508" layer="39"/>
+<wire x1="1.473" y1="-0.483" x2="-1.473" y2="-0.483" width="0.0508" layer="39"/>
+<wire x1="-1.473" y1="-0.483" x2="-1.473" y2="0.483" width="0.0508" layer="39"/>
+<rectangle x1="-0.554" y1="-0.3048" x2="-0.254" y2="0.2951" layer="51"/>
+<rectangle x1="0.2588" y1="-0.3048" x2="0.5588" y2="0.2951" layer="51"/>
+<rectangle x1="-0.1999" y1="-0.3" x2="0.1999" y2="0.3" layer="35"/>
+<smd name="1" x="-0.65" y="0" dx="0.7" dy="0.9" layer="1"/>
+<smd name="2" x="0.65" y="0" dx="0.7" dy="0.9" layer="1"/>
+<text x="-0.635" y="0.635" size="1.27" layer="25">&gt;NAME</text>
+<text x="-0.635" y="-1.905" size="1.27" layer="27">&gt;VALUE</text>
+</package>
 </packages>
 <symbols>
 <symbol name="SAMACSYS_PARTS_USB4110-GF-A" library_version="1">
@@ -336,6 +439,105 @@ Source: www.farnell.com/datasheets/49238.pdf</description>
 <pin name="I/O1_2" x="33.02" y="0" length="middle" rot="R180"/>
 <pin name="VBUS" x="33.02" y="-2.54" length="middle" rot="R180"/>
 <pin name="I/O2_2" x="33.02" y="-5.08" length="middle" rot="R180"/>
+</symbol>
+<symbol name="XC6220A331MR-G" library_version="46">
+<wire x1="5.08" y1="2.54" x2="22.86" y2="2.54" width="0.254" layer="94"/>
+<wire x1="22.86" y1="-7.62" x2="22.86" y2="2.54" width="0.254" layer="94"/>
+<wire x1="22.86" y1="-7.62" x2="5.08" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="5.08" y1="2.54" x2="5.08" y2="-7.62" width="0.254" layer="94"/>
+<text x="24.13" y="7.62" size="1.778" layer="95" align="center-left">&gt;NAME</text>
+<text x="24.13" y="5.08" size="1.778" layer="96" align="center-left">&gt;VALUE</text>
+<pin name="VIN" x="0" y="0" length="middle"/>
+<pin name="VSS" x="0" y="-2.54" length="middle"/>
+<pin name="CE" x="0" y="-5.08" length="middle"/>
+<pin name="NC" x="27.94" y="0" length="middle" direction="nc" rot="R180"/>
+<pin name="VOUT" x="27.94" y="-2.54" length="middle" rot="R180"/>
+</symbol>
+<symbol name="RCL_CPOL" library_version="1">
+<rectangle x1="-1.651" y1="-2.54" x2="1.651" y2="-1.651" layer="94"/>
+<wire x1="-1.524" y1="-0.889" x2="1.524" y2="-0.889" width="0.254" layer="94"/>
+<wire x1="1.524" y1="-0.889" x2="1.524" y2="0" width="0.254" layer="94"/>
+<wire x1="-1.524" y1="0" x2="-1.524" y2="-0.889" width="0.254" layer="94"/>
+<wire x1="-1.524" y1="0" x2="1.524" y2="0" width="0.254" layer="94"/>
+<pin name="+" x="0" y="2.54" visible="off" length="short" direction="pas" rot="R270"/>
+<pin name="-" x="0" y="-5.08" visible="off" length="short" direction="pas" rot="R90"/>
+<text x="1.143" y="0.4826" size="1.778" layer="95">&gt;NAME</text>
+<text x="-0.5842" y="0.4064" size="1.27" layer="94" rot="R90">+</text>
+<text x="1.143" y="-4.5974" size="1.778" layer="96">&gt;VALUE</text>
+</symbol>
+<symbol name="3V3-CIRCLE" urn="urn:adsk.eagle:symbol:18498229/2" library_version="1">
+<description>3.3 Volt (3V3) Circle</description>
+<circle x="0" y="1.27" radius="1.27" width="0.254" layer="94"/>
+<text x="-0.127" y="3.175" size="1.778" layer="96" align="bottom-center">&gt;VALUE</text>
+<pin name="3V3" x="0" y="-2.54" visible="off" length="short" direction="sup" rot="R90"/>
+</symbol>
+<symbol name="ESP32_WROVER_AVX---SD0805S020S1R0_AVX_SD0805S020S1R0_0_0" library_version="62">
+<description>Schottky Barrier Rectifier Diode</description>
+<wire x1="2.54" y1="-2.54" x2="2.54" y2="-7.62" width="0.508" layer="94"/>
+<wire x1="7.62" y1="-2.54" x2="7.62" y2="-5.08" width="0.508" layer="94"/>
+<wire x1="7.62" y1="-5.08" x2="7.62" y2="-7.62" width="0.508" layer="94"/>
+<wire x1="2.54" y1="-2.54" x2="7.62" y2="-5.08" width="0.508" layer="94"/>
+<wire x1="2.54" y1="-7.62" x2="7.62" y2="-5.08" width="0.508" layer="94"/>
+<wire x1="7.62" y1="-2.54" x2="6.858" y2="-2.54" width="0.508" layer="94"/>
+<wire x1="8.382" y1="-7.62" x2="8.382" y2="-6.858" width="0.508" layer="94"/>
+<wire x1="6.858" y1="-2.54" x2="6.858" y2="-3.302" width="0.508" layer="94"/>
+<wire x1="7.62" y1="-7.62" x2="8.382" y2="-7.62" width="0.508" layer="94"/>
+<pin name="ANODE" x="-2.54" y="-5.08" visible="pad" length="middle"/>
+<pin name="CATHODE" x="12.7" y="-5.08" visible="pad" length="middle" rot="R180"/>
+<text x="1.016" y="0.254" size="2.54" layer="95" align="top-left">&gt;NAME</text>
+</symbol>
+<symbol name="ESP32_WROVER_SPARKFUN-DISCRETESEMI_LABELED-PMOS" library_version="1">
+<description>&lt;h3&gt;P-channel MOSFET&lt;/h3&gt;
+Switches electrical signals</description>
+<wire x1="-2.54" y1="-2.54" x2="-2.54" y2="2.54" width="0.1524" layer="94"/>
+<wire x1="-1.9812" y1="0.6858" x2="-1.9812" y2="0" width="0.1524" layer="94"/>
+<wire x1="-1.9812" y1="0" x2="-1.9812" y2="-0.8382" width="0.1524" layer="94"/>
+<wire x1="-1.9812" y1="-1.2954" x2="-1.9812" y2="-1.905" width="0.1524" layer="94"/>
+<wire x1="-1.9812" y1="-1.905" x2="-1.9812" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="-1.9812" y1="2.54" x2="-1.9812" y2="1.8034" width="0.1524" layer="94"/>
+<wire x1="-1.9812" y1="1.8034" x2="-1.9812" y2="1.0922" width="0.1524" layer="94"/>
+<wire x1="-1.9812" y1="-1.905" x2="0" y2="-1.905" width="0.1524" layer="94"/>
+<wire x1="0" y1="-1.905" x2="0" y2="0" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="-1.905" x2="0" y2="-1.905" width="0.1524" layer="94"/>
+<wire x1="-1.9812" y1="1.8034" x2="2.54" y2="1.8034" width="0.1524" layer="94"/>
+<wire x1="1.778" y1="-0.762" x2="3.302" y2="-0.762" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="2.54" x2="2.54" y2="1.8034" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="-2.54" x2="2.54" y2="-1.905" width="0.1524" layer="94"/>
+<wire x1="1.778" y1="-0.762" x2="1.6002" y2="-0.9398" width="0.1524" layer="94"/>
+<wire x1="3.4798" y1="-0.5842" x2="3.302" y2="-0.762" width="0.1524" layer="94"/>
+<wire x1="0" y1="0" x2="-1.9812" y2="0" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="-1.905" x2="2.54" y2="-0.7874" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="1.8034" x2="2.54" y2="0.5842" width="0.1524" layer="94"/>
+<pin name="D" x="2.54" y="5.08" visible="off" length="short" rot="R270"/>
+<pin name="G" x="-5.08" y="-2.54" visible="off" length="short"/>
+<pin name="S" x="2.54" y="-5.08" visible="off" length="short" rot="R90"/>
+<text x="5.08" y="0" size="1.778" layer="95" font="vector">&gt;NAME</text>
+<text x="5.08" y="-2.54" size="1.778" layer="96" font="vector">&gt;VALUE</text>
+<text x="0.508" y="2.54" size="1.27" layer="94">D</text>
+<text x="0.508" y="-3.81" size="1.27" layer="94">S</text>
+<text x="-3.302" y="-0.508" size="1.27" layer="94" rot="R180">G</text>
+<polygon width="0.1524" layer="94" pour="solid">
+<vertex x="1.778" y="0.508"/>
+<vertex x="2.54" y="-0.762"/>
+<vertex x="3.302" y="0.508"/>
+</polygon>
+<polygon width="0.1524" layer="94" pour="solid">
+<vertex x="-0.9398" y="0.254"/>
+<vertex x="-0.9398" y="-0.254"/>
+<vertex x="-0.1778" y="0"/>
+</polygon>
+</symbol>
+<symbol name="ESP32_WROVER_EAGLE-LTSPICE_C" library_version="1">
+<rectangle x1="-2.032" y1="-2.032" x2="2.032" y2="-1.524" layer="94"/>
+<rectangle x1="-2.032" y1="-1.016" x2="2.032" y2="-0.508" layer="94"/>
+<wire x1="0" y1="0" x2="0" y2="-0.508" width="0.1524" layer="94"/>
+<wire x1="0" y1="-2.54" x2="0" y2="-2.032" width="0.1524" layer="94"/>
+<pin name="1" x="0" y="2.54" visible="off" length="short" direction="pas" swaplevel="1" rot="R270"/>
+<pin name="2" x="0" y="-5.08" visible="off" length="short" direction="pas" swaplevel="1" rot="R90"/>
+<text x="1.524" y="0.381" size="1.778" layer="95">&gt;NAME</text>
+<text x="1.524" y="-4.699" size="1.778" layer="96">&gt;VALUE</text>
+<text x="0" y="2.54" size="0.4064" layer="99" align="center">SpiceOrder 1</text>
+<text x="0" y="-5.08" size="0.4064" layer="99" align="center">SpiceOrder 2</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -487,6 +689,150 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/1/USBLC6-2SC6Y.
 </device>
 </devices>
 </deviceset>
+<deviceset name="XC6220A331MR-G" prefix="IC" library_version="64">
+<description>&lt;b&gt;LDO Voltage Regulators&lt;/b&gt;&lt;p&gt;
+Source: &lt;a href="https://www.torexsemi.com/file/xc6220/XC6220.pdf"&gt; Datasheet &lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="XC6220A331MR-G" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SOT95P280X120-5N">
+<connects>
+<connect gate="G$1" pin="CE" pad="3"/>
+<connect gate="G$1" pin="NC" pad="4"/>
+<connect gate="G$1" pin="VIN" pad="1"/>
+<connect gate="G$1" pin="VOUT" pad="5"/>
+<connect gate="G$1" pin="VSS" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="ARROW_PART_NUMBER" value="" constant="no"/>
+<attribute name="ARROW_PRICE-STOCK" value="" constant="no"/>
+<attribute name="DESCRIPTION" value="LDO Voltage Regulators" constant="no"/>
+<attribute name="HEIGHT" value="1.2mm" constant="no"/>
+<attribute name="MANUFACTURER_NAME" value="Torex" constant="no"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="XC6220A331MR-G" constant="no"/>
+<attribute name="MOUSER_PART_NUMBER" value="865-XC6220A331MR-G" constant="no"/>
+<attribute name="MOUSER_PRICE-STOCK" value="https://www.mouser.co.uk/ProductDetail/Torex-Semiconductor/XC6220A331MR-G?qs=AsjdqWjXhJ8ZSWznL1J0gg%3D%3D" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="RCL_CPOL-EU" prefix="C" uservalue="yes" library_version="64">
+<description>&lt;B&gt;POLARIZED CAPACITOR&lt;/B&gt;, European symbol</description>
+<gates>
+<gate name="G$1" symbol="RCL_CPOL" x="0" y="0"/>
+</gates>
+<devices>
+<device name="CT3528" package="RCL_CT3528">
+<connects>
+<connect gate="G$1" pin="+" pad="+"/>
+<connect gate="G$1" pin="-" pad="-"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
+<attribute name="SPICEPREFIX" value="C" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="3V3-CIRCLE" prefix="SUPPLY" uservalue="yes" library_version="1">
+<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;  3.3 Volt (3V3) Circle</description>
+<gates>
+<gate name="G$1" symbol="3V3-CIRCLE" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name="">
+<attribute name="CATEGORY" value="Supply" constant="no"/>
+<attribute name="VALUE" value="3V3" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="ESP32_WROVER_AVX---SD0805S020S1R0_AVX_SD0805S020S1R0_0_0" prefix="D" library_version="64">
+<description>Schottky Barrier Rectifier Diode</description>
+<gates>
+<gate name="G$0" symbol="ESP32_WROVER_AVX---SD0805S020S1R0_AVX_SD0805S020S1R0_0_0" x="0" y="0"/>
+</gates>
+<devices>
+<device name="AVX_SD0805S020S1R0_0_0" package="ESP32_WROVER_AVX---SD0805S020S1R0_AVX_SD0805S020S1R0_0">
+<connects>
+<connect gate="G$0" pin="ANODE" pad="2"/>
+<connect gate="G$0" pin="CATHODE" pad="1"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="CENTROID_NOT_SPECIFIED" value="No"/>
+<attribute name="DATASHEET" value="http://datasheets.avx.com/schottky.pdf"/>
+<attribute name="DIGIKEY_DESCRIPTION" value="DIODE SCHOTTKY 20V 1A 0805"/>
+<attribute name="DIGIKEY_PART_NUMBER" value="478-7800-1-ND"/>
+<attribute name="LEAD_FREE" value="yes"/>
+<attribute name="MF" value="AVX"/>
+<attribute name="MOUSER_PART_NUMBER" value="581-SD0805S020S1R0"/>
+<attribute name="MPN" value=""/>
+<attribute name="PACKAGE" value="0805 (2012 metric)"/>
+<attribute name="PREFIX" value="D"/>
+<attribute name="ROHS" value="yes"/>
+<attribute name="TEMPERATURE_RANGE_HIGH" value="+125°C"/>
+<attribute name="TEMPERATURE_RANGE_LOW" value="-55°C"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="ESP32_WROVER_SPARKFUN-DISCRETESEMI_MOSFET_PCH" prefix="Q" library_version="64">
+<description>&lt;h3&gt;P-channel MOSFETs&lt;/h3&gt;
+&lt;p&gt;Voltage controlled devices that allow control of high current outputs.&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;SparkFun Products:&lt;/b&gt;
+&lt;ul&gt;&lt;li&gt;&lt;a href=”https://www.sparkfun.com/products/13907”&gt;SparkFun ESP32 Thing&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=”https://www.sparkfun.com/products/13231”&gt;SparkFun ESP8266 Thing&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=”https://www.sparkfun.com/products/15316”&gt;SparkFun Pi Servo HAT V2&lt;/a&gt; DMG2305UX-7 (20V/4.2A/SOT23-3)&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;</description>
+<gates>
+<gate name="G$1" symbol="ESP32_WROVER_SPARKFUN-DISCRETESEMI_LABELED-PMOS" x="0" y="0"/>
+</gates>
+<devices>
+<device name="-DMG2305UX-7" package="ESP32_WROVER_SPARKFUN-DISCRETESEMI_SOT23-3">
+<connects>
+<connect gate="G$1" pin="D" pad="3"/>
+<connect gate="G$1" pin="G" pad="1"/>
+<connect gate="G$1" pin="S" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="TRAN-14388" constant="no"/>
+<attribute name="VALUE" value="20V/4.2A/52mΩ/1.4W" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="ESP32_WROVER_EAGLE-LTSPICE_C" prefix="C" uservalue="yes" library_version="66">
+<description>&lt;B&gt;CAPACITOR&lt;/B&gt;, European symbol</description>
+<gates>
+<gate name="G$1" symbol="ESP32_WROVER_EAGLE-LTSPICE_C" x="0" y="0"/>
+</gates>
+<devices>
+<device name="C0402" package="ESP32_WROVER_EAGLE-LTSPICE_C0402">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="SPICEMODEL" value="NONE"/>
+<attribute name="SPICEPREFIX" value="C" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
 </devicesets>
 </library>
 </libraries>
@@ -514,6 +860,17 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/1/USBLC6-2SC6Y.
 <part name="GND6" library="DeskAssistant v19 v1.flbr" library_urn="urn:adsk.wipprod:fs.file:vf.vVvdDOfaSfavM5thX5SjWw" deviceset="GND" device=""/>
 <part name="D1" library="DeskAssistant v19 v1.flbr" library_urn="urn:adsk.wipprod:fs.file:vf.vVvdDOfaSfavM5thX5SjWw" deviceset="USBLC6-2SC6Y" device=""/>
 <part name="GND7" library="DeskAssistant v19 v1.flbr" library_urn="urn:adsk.wipprod:fs.file:vf.vVvdDOfaSfavM5thX5SjWw" deviceset="GND" device=""/>
+<part name="IC1" library="DeskAssistant v19 v1.flbr" library_urn="urn:adsk.wipprod:fs.file:vf.vVvdDOfaSfavM5thX5SjWw" deviceset="XC6220A331MR-G" device=""/>
+<part name="TANT" library="DeskAssistant v19 v1.flbr" library_urn="urn:adsk.wipprod:fs.file:vf.vVvdDOfaSfavM5thX5SjWw" deviceset="RCL_CPOL-EU" device="CT3528" value="100uF"/>
+<part name="SUPPLY1" library="DeskAssistant v19 v1.flbr" library_urn="urn:adsk.wipprod:fs.file:vf.vVvdDOfaSfavM5thX5SjWw" deviceset="3V3-CIRCLE" device="" value="3V3"/>
+<part name="GND8" library="DeskAssistant v19 v1.flbr" library_urn="urn:adsk.wipprod:fs.file:vf.vVvdDOfaSfavM5thX5SjWw" deviceset="GND" device=""/>
+<part name="D2" library="DeskAssistant v19 v1.flbr" library_urn="urn:adsk.wipprod:fs.file:vf.vVvdDOfaSfavM5thX5SjWw" deviceset="ESP32_WROVER_AVX---SD0805S020S1R0_AVX_SD0805S020S1R0_0_0" device="AVX_SD0805S020S1R0_0_0"/>
+<part name="GND9" library="DeskAssistant v19 v1.flbr" library_urn="urn:adsk.wipprod:fs.file:vf.vVvdDOfaSfavM5thX5SjWw" deviceset="GND" device=""/>
+<part name="Q1" library="DeskAssistant v19 v1.flbr" library_urn="urn:adsk.wipprod:fs.file:vf.vVvdDOfaSfavM5thX5SjWw" deviceset="ESP32_WROVER_SPARKFUN-DISCRETESEMI_MOSFET_PCH" device="-DMG2305UX-7" value="20V/4.2A/52mΩ/1.4W"/>
+<part name="R1_PWRUSB" library="DeskAssistant v19 v1.flbr" library_urn="urn:adsk.wipprod:fs.file:vf.vVvdDOfaSfavM5thX5SjWw" deviceset="ESP32_WROVER_EAGLE-LTSPICE_R" device="R0402" value="100K"/>
+<part name="GND10" library="DeskAssistant v19 v1.flbr" library_urn="urn:adsk.wipprod:fs.file:vf.vVvdDOfaSfavM5thX5SjWw" deviceset="GND" device=""/>
+<part name="C1_BAT2" library="DeskAssistant v19 v1.flbr" library_urn="urn:adsk.wipprod:fs.file:vf.vVvdDOfaSfavM5thX5SjWw" deviceset="ESP32_WROVER_EAGLE-LTSPICE_C" device="C0402" value="4.7uF"/>
+<part name="C1_BAT1" library="DeskAssistant v19 v1.flbr" library_urn="urn:adsk.wipprod:fs.file:vf.vVvdDOfaSfavM5thX5SjWw" deviceset="ESP32_WROVER_EAGLE-LTSPICE_C" device="C0402" value="4.7uF"/>
 </parts>
 <sheets>
 <sheet>
@@ -554,6 +911,7 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/1/USBLC6-2SC6Y.
 <wire x1="132.08" y1="86.36" x2="132.08" y2="43.18" width="0.1524" layer="97"/>
 <text x="-157.48" y="269.24" size="1.778" layer="97">USB C connector &amp;
 ESD Protection</text>
+<text x="-2.54" y="271.78" size="1.778" layer="95" align="center">LDO Voltage Regulator</text>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="-165.1" y="20.32" smashed="yes">
@@ -610,6 +968,47 @@ ESD Protection</text>
 </instance>
 <instance part="GND7" gate="1" x="-33.02" y="261.62" smashed="yes" rot="R90">
 <attribute name="VALUE" x="-30.48" y="259.08" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="IC1" gate="G$1" x="43.18" y="248.92" smashed="yes">
+<attribute name="NAME" x="67.31" y="256.54" size="1.778" layer="95" align="center-left"/>
+<attribute name="VALUE" x="67.31" y="254" size="1.778" layer="96" align="center-left"/>
+</instance>
+<instance part="TANT" gate="G$1" x="83.82" y="238.76" smashed="yes">
+<attribute name="NAME" x="84.963" y="239.2426" size="1.778" layer="95"/>
+<attribute name="VALUE" x="84.963" y="234.1626" size="1.778" layer="96"/>
+</instance>
+<instance part="SUPPLY1" gate="G$1" x="91.44" y="248.92" smashed="yes">
+<attribute name="VALUE" x="91.313" y="252.095" size="1.778" layer="96" align="bottom-center"/>
+</instance>
+<instance part="GND8" gate="1" x="81.28" y="223.52" smashed="yes">
+<attribute name="VALUE" x="78.74" y="220.98" size="1.778" layer="96"/>
+</instance>
+<instance part="D2" gate="G$0" x="2.54" y="254" smashed="yes">
+<attribute name="NAME" x="3.556" y="254.254" size="2.54" layer="95" align="top-left"/>
+</instance>
+<instance part="GND9" gate="1" x="25.4" y="220.98" smashed="yes">
+<attribute name="VALUE" x="22.86" y="218.44" size="1.778" layer="96"/>
+</instance>
+<instance part="Q1" gate="G$1" x="17.78" y="261.62" smashed="yes">
+<attribute name="NAME" x="22.86" y="261.62" size="1.778" layer="95" font="vector"/>
+<attribute name="VALUE" x="22.86" y="259.08" size="1.778" layer="96" font="vector"/>
+</instance>
+<instance part="R1_PWRUSB" gate="G$1" x="-12.7" y="243.84" smashed="yes" rot="R90">
+<attribute name="NAME" x="-14.1986" y="240.03" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="-9.398" y="240.03" size="1.778" layer="96" rot="R90"/>
+<attribute name="NAME" x="-14.1986" y="240.03" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="-9.398" y="240.03" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="GND10" gate="1" x="-12.7" y="226.06" smashed="yes">
+<attribute name="VALUE" x="-15.24" y="223.52" size="1.778" layer="96"/>
+</instance>
+<instance part="C1_BAT2" gate="G$1" x="78.74" y="236.22" smashed="yes" rot="R180">
+<attribute name="NAME" x="77.216" y="235.839" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="77.216" y="240.919" size="1.778" layer="96" rot="R180"/>
+</instance>
+<instance part="C1_BAT1" gate="G$1" x="25.4" y="236.22" smashed="yes" rot="R180">
+<attribute name="NAME" x="23.876" y="235.839" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="23.876" y="240.919" size="1.778" layer="96" rot="R180"/>
 </instance>
 </instances>
 <busses>
@@ -675,6 +1074,33 @@ ESD Protection</text>
 <wire x1="-38.1" y1="261.62" x2="-35.56" y2="261.62" width="0.1524" layer="91"/>
 <pinref part="GND7" gate="1" pin="GND"/>
 </segment>
+<segment>
+<pinref part="TANT" gate="G$1" pin="-"/>
+<wire x1="83.82" y1="233.68" x2="83.82" y2="231.14" width="0.1524" layer="91"/>
+<wire x1="83.82" y1="231.14" x2="81.28" y2="231.14" width="0.1524" layer="91"/>
+<wire x1="81.28" y1="231.14" x2="81.28" y2="226.06" width="0.1524" layer="91"/>
+<pinref part="GND8" gate="1" pin="GND"/>
+<wire x1="78.74" y1="233.68" x2="78.74" y2="231.14" width="0.1524" layer="91"/>
+<wire x1="78.74" y1="231.14" x2="81.28" y2="231.14" width="0.1524" layer="91"/>
+<junction x="81.28" y="231.14"/>
+<pinref part="C1_BAT2" gate="G$1" pin="1"/>
+</segment>
+<segment>
+<wire x1="25.4" y1="223.52" x2="25.4" y2="228.6" width="0.1524" layer="91"/>
+<wire x1="25.4" y1="228.6" x2="40.64" y2="228.6" width="0.1524" layer="91"/>
+<wire x1="40.64" y1="228.6" x2="40.64" y2="246.38" width="0.1524" layer="91"/>
+<wire x1="40.64" y1="246.38" x2="43.18" y2="246.38" width="0.1524" layer="91"/>
+<pinref part="IC1" gate="G$1" pin="VSS"/>
+<pinref part="GND9" gate="1" pin="GND"/>
+<wire x1="25.4" y1="228.6" x2="25.4" y2="233.68" width="0.1524" layer="91"/>
+<junction x="25.4" y="228.6"/>
+<pinref part="C1_BAT1" gate="G$1" pin="1"/>
+</segment>
+<segment>
+<wire x1="-12.7" y1="228.6" x2="-12.7" y2="238.76" width="0.1524" layer="91"/>
+<pinref part="R1_PWRUSB" gate="G$1" pin="1"/>
+<pinref part="GND10" gate="1" pin="GND"/>
+</segment>
 </net>
 <net name="VUSB" class="0">
 <segment>
@@ -725,6 +1151,20 @@ ESD Protection</text>
 <pinref part="D1" gate="G$1" pin="VBUS"/>
 <label x="-76.2" y="261.62" size="1.778" layer="95" rot="R180" xref="yes"/>
 <wire x1="-76.2" y1="261.62" x2="-71.12" y2="261.62" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="Q1" gate="G$1" pin="G"/>
+<wire x1="12.7" y1="259.08" x2="-5.08" y2="259.08" width="0.1524" layer="91"/>
+<wire x1="-5.08" y1="259.08" x2="-5.08" y2="248.92" width="0.1524" layer="91"/>
+<wire x1="-5.08" y1="248.92" x2="0" y2="248.92" width="0.1524" layer="91"/>
+<pinref part="D2" gate="G$0" pin="ANODE"/>
+<wire x1="-5.08" y1="259.08" x2="-12.7" y2="259.08" width="0.1524" layer="91"/>
+<junction x="-5.08" y="259.08"/>
+<label x="-12.7" y="264.16" size="1.778" layer="95" xref="yes"/>
+<wire x1="-12.7" y1="264.16" x2="-12.7" y2="259.08" width="0.1524" layer="91"/>
+<wire x1="-12.7" y1="259.08" x2="-12.7" y2="248.92" width="0.1524" layer="91"/>
+<junction x="-12.7" y="259.08"/>
+<pinref part="R1_PWRUSB" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="N$1" class="0">
@@ -790,6 +1230,48 @@ ESD Protection</text>
 <wire x1="-35.56" y1="259.08" x2="-35.56" y2="256.54" width="0.1524" layer="91"/>
 <wire x1="-35.56" y1="256.54" x2="-33.02" y2="256.54" width="0.1524" layer="91"/>
 <label x="-33.02" y="256.54" size="1.778" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="3V3" class="0">
+<segment>
+<pinref part="IC1" gate="G$1" pin="VOUT"/>
+<wire x1="71.12" y1="246.38" x2="78.74" y2="246.38" width="0.1524" layer="91"/>
+<wire x1="78.74" y1="246.38" x2="83.82" y2="246.38" width="0.1524" layer="91"/>
+<wire x1="83.82" y1="246.38" x2="91.44" y2="246.38" width="0.1524" layer="91"/>
+<pinref part="SUPPLY1" gate="G$1" pin="3V3"/>
+<pinref part="TANT" gate="G$1" pin="+"/>
+<wire x1="83.82" y1="241.3" x2="83.82" y2="246.38" width="0.1524" layer="91"/>
+<junction x="83.82" y="246.38"/>
+<junction x="78.74" y="246.38"/>
+<wire x1="78.74" y1="246.38" x2="78.74" y2="241.3" width="0.1524" layer="91"/>
+<pinref part="C1_BAT2" gate="G$1" pin="2"/>
+</segment>
+</net>
+<net name="N$3" class="0">
+<segment>
+<pinref part="D2" gate="G$0" pin="CATHODE"/>
+<wire x1="15.24" y1="248.92" x2="20.32" y2="248.92" width="0.1524" layer="91"/>
+<pinref part="IC1" gate="G$1" pin="VIN"/>
+<wire x1="20.32" y1="248.92" x2="25.4" y2="248.92" width="0.1524" layer="91"/>
+<wire x1="25.4" y1="248.92" x2="38.1" y2="248.92" width="0.1524" layer="91"/>
+<wire x1="38.1" y1="248.92" x2="43.18" y2="248.92" width="0.1524" layer="91"/>
+<pinref part="IC1" gate="G$1" pin="CE"/>
+<wire x1="43.18" y1="243.84" x2="38.1" y2="243.84" width="0.1524" layer="91"/>
+<wire x1="38.1" y1="243.84" x2="38.1" y2="248.92" width="0.1524" layer="91"/>
+<junction x="38.1" y="248.92"/>
+<pinref part="Q1" gate="G$1" pin="S"/>
+<wire x1="20.32" y1="256.54" x2="20.32" y2="248.92" width="0.1524" layer="91"/>
+<junction x="20.32" y="248.92"/>
+<junction x="25.4" y="248.92"/>
+<wire x1="25.4" y1="248.92" x2="25.4" y2="241.3" width="0.1524" layer="91"/>
+<pinref part="C1_BAT1" gate="G$1" pin="2"/>
+</segment>
+</net>
+<net name="VBAT" class="0">
+<segment>
+<pinref part="Q1" gate="G$1" pin="D"/>
+<wire x1="20.32" y1="266.7" x2="20.32" y2="269.24" width="0.1524" layer="91"/>
+<label x="20.32" y="269.24" size="1.778" layer="95" xref="yes"/>
 </segment>
 </net>
 </nets>
