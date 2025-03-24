@@ -824,6 +824,49 @@ Source: http://www.osram.convergy.de/ ... Lb_q993.pdf</description>
 <text x="-1.858090625" y="1.9939" size="0.814009375" layer="25" ratio="11">&gt;NAME</text>
 <text x="-1.927440625" y="-2.760059375" size="0.81416875" layer="27" ratio="11">&gt;VALUE</text>
 </package>
+<package name="SOT95P280X125-5N" library_version="51">
+<description>&lt;b&gt;SSOP5&lt;/b&gt;&lt;br&gt;
+</description>
+<smd name="1" x="-1.4" y="0.95" dx="0.9" dy="0.6" layer="1"/>
+<smd name="2" x="-1.4" y="0" dx="0.9" dy="0.6" layer="1"/>
+<smd name="3" x="-1.4" y="-0.95" dx="0.9" dy="0.6" layer="1"/>
+<smd name="4" x="1.4" y="-0.95" dx="0.9" dy="0.6" layer="1"/>
+<smd name="5" x="1.4" y="0.95" dx="0.9" dy="0.6" layer="1"/>
+<text x="0" y="0" size="1.27" layer="25" align="center">&gt;NAME</text>
+<text x="0" y="0" size="1.27" layer="27" align="center">&gt;VALUE</text>
+<wire x1="-2.1" y1="1.8" x2="2.1" y2="1.8" width="0.05" layer="51"/>
+<wire x1="2.1" y1="1.8" x2="2.1" y2="-1.8" width="0.05" layer="51"/>
+<wire x1="2.1" y1="-1.8" x2="-2.1" y2="-1.8" width="0.05" layer="51"/>
+<wire x1="-2.1" y1="-1.8" x2="-2.1" y2="1.8" width="0.05" layer="51"/>
+<wire x1="-0.825" y1="1.45" x2="0.825" y2="1.45" width="0.1" layer="51"/>
+<wire x1="0.825" y1="1.45" x2="0.825" y2="-1.45" width="0.1" layer="51"/>
+<wire x1="0.825" y1="-1.45" x2="-0.825" y2="-1.45" width="0.1" layer="51"/>
+<wire x1="-0.825" y1="-1.45" x2="-0.825" y2="1.45" width="0.1" layer="51"/>
+<wire x1="-0.825" y1="0.5" x2="0.125" y2="1.45" width="0.1" layer="51"/>
+<wire x1="-0.6" y1="1.45" x2="0.6" y2="1.45" width="0.2" layer="21"/>
+<wire x1="0.6" y1="1.45" x2="0.6" y2="-1.45" width="0.2" layer="21"/>
+<wire x1="0.6" y1="-1.45" x2="-0.6" y2="-1.45" width="0.2" layer="21"/>
+<wire x1="-0.6" y1="-1.45" x2="-0.6" y2="1.45" width="0.2" layer="21"/>
+<wire x1="-1.85" y1="1.5" x2="-0.95" y2="1.5" width="0.2" layer="21"/>
+</package>
+<package name="MYBUTTON" library_version="46">
+<description>&lt;h3&gt;Momentary Switch (Pushbutton) - SPST - SMD, 4.6 x 2.8mm&lt;/h3&gt;
+&lt;p&gt;Normally-open (NO) SPST momentary switches (buttons, pushbuttons).&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://www.ck-components.com/media/1479/kmr2.pdf"&gt;Datasheet&lt;/a&gt;&lt;/p&gt;</description>
+<circle x="0" y="0" radius="0.805" width="0.127" layer="21"/>
+<wire x1="-1.75" y1="1.45" x2="-1.75" y2="-1.45" width="0.127" layer="51"/>
+<wire x1="1.75" y1="-1.45" x2="1.75" y2="1.45" width="0.127" layer="51"/>
+<wire x1="-1.75" y1="1.45" x2="1.75" y2="1.45" width="0.127" layer="51"/>
+<wire x1="-1.75" y1="-1.45" x2="1.75" y2="-1.45" width="0.127" layer="51"/>
+<smd name="3" x="-1.75" y="-0.75" dx="1.4" dy="1.05" layer="1"/>
+<smd name="4" x="1.75" y="-0.75" dx="1.4" dy="1.05" layer="1"/>
+<smd name="1" x="1.75" y="0.75" dx="1.4" dy="1.05" layer="1"/>
+<smd name="2" x="-1.75" y="0.75" dx="1.4" dy="1.05" layer="1"/>
+<text x="-1.27" y="2.54" size="1.27" layer="25">&gt;NAME</text>
+<wire x1="-0.9" y1="-2.1" x2="-0.9" y2="-1.45" width="0.127" layer="21"/>
+<wire x1="0.9" y1="-2.1" x2="0.9" y2="-1.45" width="0.127" layer="21"/>
+<wire x1="-0.9" y1="-2.1" x2="0.9" y2="-2.1" width="0.127" layer="21"/>
+</package>
 </packages>
 <symbols>
 <symbol name="SAMACSYS_PARTS_USB4110-GF-A" library_version="1">
@@ -1218,6 +1261,42 @@ Switches electrical signals</description>
 <pin name="VDDIO" x="15.24" y="10.16" length="middle" direction="pwr" rot="R180"/>
 <text x="-10.1693" y="13.22" size="2.186390625" layer="95">&gt;NAME</text>
 <text x="-10.1798" y="-15.5193" size="2.18866875" layer="96">&gt;VALUE</text>
+</symbol>
+<symbol name="BD5229G-TR" library_version="6">
+<wire x1="5.08" y1="2.54" x2="20.32" y2="2.54" width="0.254" layer="94"/>
+<wire x1="20.32" y1="-7.62" x2="20.32" y2="2.54" width="0.254" layer="94"/>
+<wire x1="20.32" y1="-7.62" x2="5.08" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="5.08" y1="2.54" x2="5.08" y2="-7.62" width="0.254" layer="94"/>
+<text x="21.59" y="7.62" size="1.778" layer="95" align="center-left">&gt;NAME</text>
+<text x="21.59" y="5.08" size="1.778" layer="96" align="center-left">&gt;VALUE</text>
+<pin name="VOUT" x="0" y="0" length="middle"/>
+<pin name="VDD" x="0" y="-2.54" length="middle"/>
+<pin name="GND" x="0" y="-5.08" length="middle"/>
+<pin name="NC" x="25.4" y="0" length="middle" direction="nc" rot="R180"/>
+<pin name="CT" x="25.4" y="-2.54" length="middle" rot="R180"/>
+</symbol>
+<symbol name="MYBUTTON" library_version="42">
+<description>&lt;h3&gt;Momentary Switch (Pushbutton) - SPST - Two Circuits&lt;/h3&gt;
+&lt;p&gt;Normally-open (NO) SPST momentary switches (buttons, pushbuttons). Schematic symbol includes two switch circuits.&lt;/p&gt;</description>
+<circle x="-2.54" y="0" radius="0.127" width="0.4064" layer="94"/>
+<circle x="2.54" y="0" radius="0.127" width="0.4064" layer="94"/>
+<wire x1="1.905" y1="0" x2="2.54" y2="0" width="0.254" layer="94"/>
+<wire x1="1.905" y1="4.445" x2="1.905" y2="3.175" width="0.254" layer="94"/>
+<wire x1="-1.905" y1="4.445" x2="-1.905" y2="3.175" width="0.254" layer="94"/>
+<wire x1="1.905" y1="4.445" x2="0" y2="4.445" width="0.254" layer="94"/>
+<wire x1="0" y1="4.445" x2="-1.905" y2="4.445" width="0.254" layer="94"/>
+<wire x1="0" y1="2.54" x2="0" y2="1.905" width="0.1524" layer="94"/>
+<wire x1="0" y1="1.27" x2="0" y2="0.635" width="0.1524" layer="94"/>
+<wire x1="0" y1="4.445" x2="0" y2="3.175" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="-2.54" x2="2.54" y2="0" width="0.1524" layer="94"/>
+<wire x1="-2.54" y1="-2.54" x2="-2.54" y2="0" width="0.1524" layer="94"/>
+<wire x1="-2.54" y1="0" x2="1.905" y2="1.27" width="0.254" layer="94"/>
+<pin name="1" x="-5.08" y="0" visible="pad" length="short" direction="pas" swaplevel="2"/>
+<pin name="2" x="-5.08" y="-2.54" visible="pad" length="short" direction="pas" swaplevel="2"/>
+<pin name="3" x="5.08" y="0" visible="pad" length="short" direction="pas" swaplevel="1" rot="R180"/>
+<pin name="4" x="5.08" y="-2.54" visible="pad" length="short" direction="pas" swaplevel="1" rot="R180"/>
+<text x="0" y="4.826" size="1.778" layer="95" font="vector" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-2.794" size="1.778" layer="96" font="vector" align="top-center">&gt;VALUE</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -1885,6 +1964,54 @@ Source: &lt;a href="https://www.hirose.com/en/product/document?clcode=CL0580-125
 </device>
 </devices>
 </deviceset>
+<deviceset name="BD5229G-TR" prefix="IC" library_version="64">
+<description>&lt;b&gt;Voltage Detector with Adjustable Delay Time: CMOS processes are utilized to develop high precision, low current consumption CMOS reset ICs that allow arbitrary setting of the delay time. The extensive lineup includes both Nch Open Drain and CMOS output types in a wide range of detection voltages (from 2.3V to 6.0V, in 0.1V steps), enabling selection of the ideal solution based on customer requirements. In addition, the entire series is of course both lead-free and RoHS-compliant.&lt;/b&gt;&lt;p&gt;
+Source: &lt;a href="https://datasheet.datasheetarchive.com/originals/distributors/Datasheets_SAMA/f2b9741ef86007909f138d561a359946.pdf"&gt; Datasheet &lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="BD5229G-TR" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SOT95P280X125-5N">
+<connects>
+<connect gate="G$1" pin="CT" pad="5"/>
+<connect gate="G$1" pin="GND" pad="3"/>
+<connect gate="G$1" pin="NC" pad="4"/>
+<connect gate="G$1" pin="VDD" pad="2"/>
+<connect gate="G$1" pin="VOUT" pad="1"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="ARROW_PART_NUMBER" value="" constant="no"/>
+<attribute name="ARROW_PRICE-STOCK" value="" constant="no"/>
+<attribute name="DESCRIPTION" value="Voltage Detector with Adjustable Delay Time: CMOS processes are utilized to develop high precision, low current consumption CMOS reset ICs that allow arbitrary setting of the delay time. The extensive lineup includes both Nch Open Drain and CMOS output types in a wide range of detection voltages (from 2.3V to 6.0V, in 0.1V steps), enabling selection of the ideal solution based on customer requirements. In addition, the entire series is of course both lead-free and RoHS-compliant." constant="no"/>
+<attribute name="HEIGHT" value="1.25mm" constant="no"/>
+<attribute name="MANUFACTURER_NAME" value="ROHM Semiconductor" constant="no"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="BD5229G-TR" constant="no"/>
+<attribute name="MOUSER_PART_NUMBER" value="755-BD5229G-TR" constant="no"/>
+<attribute name="MOUSER_PRICE-STOCK" value="https://www.mouser.co.uk/ProductDetail/ROHM-Semiconductor/BD5229G-TR?qs=4kLU8WoGk0vvnhrrYwdszw%3D%3D" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="BUTTON_CUSYOMV1" library_version="1">
+<gates>
+<gate name="G$1" symbol="MYBUTTON" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="MYBUTTON">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+<connect gate="G$1" pin="4" pad="4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
 </devicesets>
 </library>
 </libraries>
@@ -1986,6 +2113,26 @@ Source: &lt;a href="https://www.hirose.com/en/product/document?clcode=CL0580-125
 <part name="C2" library="DeskAssistant v19 v1.flbr" library_urn="urn:adsk.wipprod:fs.file:vf.vVvdDOfaSfavM5thX5SjWw" deviceset="ESP32_WROVER_EAGLE-LTSPICE_C" device="C0402" value="100nF"/>
 <part name="C3" library="DeskAssistant v19 v1.flbr" library_urn="urn:adsk.wipprod:fs.file:vf.vVvdDOfaSfavM5thX5SjWw" deviceset="ESP32_WROVER_EAGLE-LTSPICE_C" device="C0402" value="100nF"/>
 <part name="GND29" library="DeskAssistant v19 v1.flbr" library_urn="urn:adsk.wipprod:fs.file:vf.vVvdDOfaSfavM5thX5SjWw" deviceset="GND" device=""/>
+<part name="IC2" library="DeskAssistant v19 v1.flbr" library_urn="urn:adsk.wipprod:fs.file:vf.vVvdDOfaSfavM5thX5SjWw" deviceset="BD5229G-TR" device=""/>
+<part name="C_DELAY" library="DeskAssistant v19 v1.flbr" library_urn="urn:adsk.wipprod:fs.file:vf.vVvdDOfaSfavM5thX5SjWw" deviceset="EAGLE-LTSPICE_C" device="C0402" value="100nF"/>
+<part name="GND30" library="DeskAssistant v19 v1.flbr" library_urn="urn:adsk.wipprod:fs.file:vf.vVvdDOfaSfavM5thX5SjWw" deviceset="GND" device=""/>
+<part name="GND31" library="DeskAssistant v19 v1.flbr" library_urn="urn:adsk.wipprod:fs.file:vf.vVvdDOfaSfavM5thX5SjWw" deviceset="GND" device=""/>
+<part name="GND32" library="DeskAssistant v19 v1.flbr" library_urn="urn:adsk.wipprod:fs.file:vf.vVvdDOfaSfavM5thX5SjWw" deviceset="GND" device=""/>
+<part name="GND33" library="DeskAssistant v19 v1.flbr" library_urn="urn:adsk.wipprod:fs.file:vf.vVvdDOfaSfavM5thX5SjWw" deviceset="GND" device=""/>
+<part name="GND34" library="DeskAssistant v19 v1.flbr" library_urn="urn:adsk.wipprod:fs.file:vf.vVvdDOfaSfavM5thX5SjWw" deviceset="GND" device=""/>
+<part name="SUPPLY7" library="DeskAssistant v19 v1.flbr" library_urn="urn:adsk.wipprod:fs.file:vf.vVvdDOfaSfavM5thX5SjWw" deviceset="3V3-CIRCLE" device="" value="3V3"/>
+<part name="R_RESET" library="DeskAssistant v19 v1.flbr" library_urn="urn:adsk.wipprod:fs.file:vf.vVvdDOfaSfavM5thX5SjWw" deviceset="ESP32_WROVER_EAGLE-LTSPICE_R" device="R0402" value="10K"/>
+<part name="SUPPLY8" library="DeskAssistant v19 v1.flbr" library_urn="urn:adsk.wipprod:fs.file:vf.vVvdDOfaSfavM5thX5SjWw" deviceset="3V3-CIRCLE" device="" value="3V3"/>
+<part name="RESET_BUTTON" library="DeskAssistant v19 v1.flbr" library_urn="urn:adsk.wipprod:fs.file:vf.vVvdDOfaSfavM5thX5SjWw" deviceset="BUTTON_CUSYOMV1" device=""/>
+<part name="C5" library="DeskAssistant v19 v1.flbr" library_urn="urn:adsk.wipprod:fs.file:vf.vVvdDOfaSfavM5thX5SjWw" deviceset="ESP32_WROVER_EAGLE-LTSPICE_C" device="C0402" value="1uF"/>
+<part name="C6" library="DeskAssistant v19 v1.flbr" library_urn="urn:adsk.wipprod:fs.file:vf.vVvdDOfaSfavM5thX5SjWw" deviceset="ESP32_WROVER_EAGLE-LTSPICE_C" device="C0402" value="100nF"/>
+<part name="C10" library="DeskAssistant v19 v1.flbr" library_urn="urn:adsk.wipprod:fs.file:vf.vVvdDOfaSfavM5thX5SjWw" deviceset="ESP32_WROVER_EAGLE-LTSPICE_C" device="C0402" value="100nF"/>
+<part name="R5_BOOT" library="DeskAssistant v19 v1.flbr" library_urn="urn:adsk.wipprod:fs.file:vf.vVvdDOfaSfavM5thX5SjWw" deviceset="ESP32_WROVER_EAGLE-LTSPICE_R" device="R0402" value="10K"/>
+<part name="R_CHANGE" library="DeskAssistant v19 v1.flbr" library_urn="urn:adsk.wipprod:fs.file:vf.vVvdDOfaSfavM5thX5SjWw" deviceset="ESP32_WROVER_EAGLE-LTSPICE_R" device="R0402" value="10K"/>
+<part name="BOOT_BUTTON" library="DeskAssistant v19 v1.flbr" library_urn="urn:adsk.wipprod:fs.file:vf.vVvdDOfaSfavM5thX5SjWw" deviceset="BUTTON_CUSYOMV1" device=""/>
+<part name="CHANGE_BUTTON" library="DeskAssistant v19 v1.flbr" library_urn="urn:adsk.wipprod:fs.file:vf.vVvdDOfaSfavM5thX5SjWw" deviceset="BUTTON_CUSYOMV1" device=""/>
+<part name="SUPPLY9" library="DeskAssistant v19 v1.flbr" library_urn="urn:adsk.wipprod:fs.file:vf.vVvdDOfaSfavM5thX5SjWw" deviceset="3V3-CIRCLE" device="" value="3V3"/>
+<part name="SUPPLY10" library="DeskAssistant v19 v1.flbr" library_urn="urn:adsk.wipprod:fs.file:vf.vVvdDOfaSfavM5thX5SjWw" deviceset="3V3-CIRCLE" device="" value="3V3"/>
 </parts>
 <sheets>
 <sheet>
@@ -2003,7 +2150,8 @@ Source: &lt;a href="https://www.hirose.com/en/product/document?clcode=CL0580-125
 <wire x1="-76.2" y1="167.64" x2="-30.48" y2="167.64" width="0.1524" layer="97"/>
 <wire x1="-30.48" y1="167.64" x2="0" y2="167.64" width="0.1524" layer="97"/>
 <wire x1="63.5" y1="167.64" x2="116.84" y2="167.64" width="0.1524" layer="97"/>
-<wire x1="116.84" y1="167.64" x2="218.44" y2="167.64" width="0.1524" layer="97"/>
+<wire x1="116.84" y1="167.64" x2="154.94" y2="167.64" width="0.1524" layer="97"/>
+<wire x1="154.94" y1="167.64" x2="218.44" y2="167.64" width="0.1524" layer="97"/>
 <wire x1="218.44" y1="167.64" x2="218.44" y2="172.72" width="0.1524" layer="97"/>
 <wire x1="-99.06" y1="213.36" x2="-99.06" y2="167.64" width="0.1524" layer="97"/>
 <wire x1="-162.56" y1="86.36" x2="-76.2" y2="86.36" width="0.1524" layer="97"/>
@@ -2013,7 +2161,8 @@ Source: &lt;a href="https://www.hirose.com/en/product/document?clcode=CL0580-125
 <wire x1="27.94" y1="86.36" x2="63.5" y2="86.36" width="0.1524" layer="97"/>
 <wire x1="63.5" y1="86.36" x2="66.04" y2="86.36" width="0.1524" layer="97"/>
 <wire x1="66.04" y1="86.36" x2="132.08" y2="86.36" width="0.1524" layer="97"/>
-<wire x1="132.08" y1="86.36" x2="218.44" y2="86.36" width="0.1524" layer="97"/>
+<wire x1="132.08" y1="86.36" x2="154.94" y2="86.36" width="0.1524" layer="97"/>
+<wire x1="154.94" y1="86.36" x2="218.44" y2="86.36" width="0.1524" layer="97"/>
 <wire x1="-76.2" y1="167.64" x2="-76.2" y2="86.36" width="0.1524" layer="97"/>
 <wire x1="-30.48" y1="167.64" x2="-30.48" y2="86.36" width="0.1524" layer="97"/>
 <wire x1="63.5" y1="167.64" x2="63.5" y2="86.36" width="0.1524" layer="97"/>
@@ -2036,6 +2185,9 @@ ESD Protection</text>
 <text x="-160.02" y="165.1" size="1.778" layer="95">E-Paper Display Header</text>
 <text x="-73.66" y="162.56" size="1.778" layer="95">EPD Power</text>
 <text x="-27.94" y="165.1" size="1.778" layer="95">Environmental Sensor BME688</text>
+<wire x1="154.94" y1="167.64" x2="154.94" y2="86.36" width="0.1524" layer="97"/>
+<text x="66.04" y="160.02" size="1.778" layer="95">Voltage Supervisor + Reset &amp; 
+Boot / IO Button</text>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="-165.1" y="20.32" smashed="yes">
@@ -2377,6 +2529,79 @@ ESD Protection</text>
 <instance part="GND29" gate="1" x="33.02" y="93.98" smashed="yes">
 <attribute name="VALUE" x="30.48" y="91.44" size="1.778" layer="96"/>
 </instance>
+<instance part="IC2" gate="G$1" x="96.52" y="121.92" smashed="yes" rot="MR0">
+<attribute name="NAME" x="82.55" y="127" size="1.778" layer="95" rot="MR0" align="center-left"/>
+</instance>
+<instance part="C_DELAY" gate="G$1" x="68.58" y="106.68" smashed="yes">
+<attribute name="NAME" x="70.104" y="107.061" size="1.778" layer="95"/>
+<attribute name="VALUE" x="70.104" y="101.981" size="1.778" layer="96"/>
+</instance>
+<instance part="GND30" gate="1" x="68.58" y="93.98" smashed="yes">
+<attribute name="VALUE" x="66.04" y="91.44" size="1.778" layer="96"/>
+</instance>
+<instance part="GND31" gate="1" x="99.06" y="111.76" smashed="yes">
+<attribute name="VALUE" x="96.52" y="109.22" size="1.778" layer="96"/>
+</instance>
+<instance part="GND32" gate="1" x="106.68" y="152.4" smashed="yes" rot="R180">
+<attribute name="VALUE" x="109.22" y="154.94" size="1.778" layer="96" rot="R180"/>
+</instance>
+<instance part="GND33" gate="1" x="124.46" y="152.4" smashed="yes" rot="R180">
+<attribute name="VALUE" x="127" y="154.94" size="1.778" layer="96" rot="R180"/>
+</instance>
+<instance part="GND34" gate="1" x="142.24" y="152.4" smashed="yes" rot="R180">
+<attribute name="VALUE" x="144.78" y="154.94" size="1.778" layer="96" rot="R180"/>
+</instance>
+<instance part="SUPPLY7" gate="G$1" x="99.06" y="119.38" smashed="yes" rot="R270">
+<attribute name="VALUE" x="102.235" y="119.507" size="1.778" layer="96" rot="R270" align="bottom-center"/>
+</instance>
+<instance part="R_RESET" gate="G$1" x="111.76" y="111.76" smashed="yes" rot="R270">
+<attribute name="NAME" x="113.2586" y="115.57" size="1.778" layer="95" rot="R270"/>
+<attribute name="VALUE" x="108.458" y="115.57" size="1.778" layer="96" rot="R270"/>
+<attribute name="NAME" x="113.2586" y="115.57" size="1.778" layer="95" rot="R270"/>
+<attribute name="VALUE" x="108.458" y="115.57" size="1.778" layer="96" rot="R270"/>
+</instance>
+<instance part="SUPPLY8" gate="G$1" x="111.76" y="101.6" smashed="yes" rot="R180">
+<attribute name="VALUE" x="111.887" y="98.425" size="1.778" layer="96" rot="R180" align="bottom-center"/>
+</instance>
+<instance part="RESET_BUTTON" gate="G$1" x="104.14" y="137.16" smashed="yes" rot="R270">
+<attribute name="NAME" x="108.966" y="137.16" size="1.778" layer="95" font="vector" rot="R270" align="bottom-center"/>
+</instance>
+<instance part="C5" gate="G$1" x="91.44" y="139.7" smashed="yes">
+<attribute name="NAME" x="92.964" y="140.081" size="1.778" layer="95"/>
+<attribute name="VALUE" x="92.964" y="135.001" size="1.778" layer="96"/>
+</instance>
+<instance part="C6" gate="G$1" x="129.54" y="142.24" smashed="yes">
+<attribute name="NAME" x="131.064" y="142.621" size="1.778" layer="95"/>
+<attribute name="VALUE" x="131.064" y="137.541" size="1.778" layer="96"/>
+</instance>
+<instance part="C10" gate="G$1" x="147.32" y="132.08" smashed="yes">
+<attribute name="NAME" x="148.844" y="132.461" size="1.778" layer="95"/>
+<attribute name="VALUE" x="148.844" y="127.381" size="1.778" layer="96"/>
+</instance>
+<instance part="R5_BOOT" gate="G$1" x="124.46" y="121.92" smashed="yes" rot="R270">
+<attribute name="NAME" x="125.9586" y="125.73" size="1.778" layer="95" rot="R270"/>
+<attribute name="VALUE" x="121.158" y="125.73" size="1.778" layer="96" rot="R270"/>
+<attribute name="NAME" x="125.9586" y="125.73" size="1.778" layer="95" rot="R270"/>
+<attribute name="VALUE" x="121.158" y="125.73" size="1.778" layer="96" rot="R270"/>
+</instance>
+<instance part="R_CHANGE" gate="G$1" x="144.78" y="109.22" smashed="yes" rot="R270">
+<attribute name="NAME" x="146.2786" y="113.03" size="1.778" layer="95" rot="R270"/>
+<attribute name="VALUE" x="141.478" y="113.03" size="1.778" layer="96" rot="R270"/>
+<attribute name="NAME" x="146.2786" y="113.03" size="1.778" layer="95" rot="R270"/>
+<attribute name="VALUE" x="141.478" y="113.03" size="1.778" layer="96" rot="R270"/>
+</instance>
+<instance part="BOOT_BUTTON" gate="G$1" x="121.92" y="139.7" smashed="yes" rot="MR270">
+<attribute name="NAME" x="117.094" y="139.7" size="1.778" layer="95" font="vector" rot="MR270" align="bottom-center"/>
+</instance>
+<instance part="CHANGE_BUTTON" gate="G$1" x="139.7" y="129.54" smashed="yes" rot="MR270">
+<attribute name="NAME" x="134.874" y="129.54" size="1.778" layer="95" font="vector" rot="MR270" align="bottom-center"/>
+</instance>
+<instance part="SUPPLY9" gate="G$1" x="124.46" y="106.68" smashed="yes" rot="R180">
+<attribute name="VALUE" x="124.587" y="103.505" size="1.778" layer="96" rot="R180" align="bottom-center"/>
+</instance>
+<instance part="SUPPLY10" gate="G$1" x="144.78" y="96.52" smashed="yes" rot="R180">
+<attribute name="VALUE" x="144.907" y="93.345" size="1.778" layer="96" rot="R180" align="bottom-center"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -2593,6 +2818,54 @@ ESD Protection</text>
 <wire x1="33.02" y1="101.6" x2="33.02" y2="96.52" width="0.1524" layer="91"/>
 <pinref part="GND29" gate="1" pin="GND"/>
 </segment>
+<segment>
+<pinref part="C_DELAY" gate="G$1" pin="2"/>
+<wire x1="68.58" y1="101.6" x2="68.58" y2="96.52" width="0.1524" layer="91"/>
+<pinref part="GND30" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="IC2" gate="G$1" pin="GND"/>
+<wire x1="96.52" y1="116.84" x2="99.06" y2="116.84" width="0.1524" layer="91"/>
+<wire x1="99.06" y1="116.84" x2="99.06" y2="114.3" width="0.1524" layer="91"/>
+<pinref part="GND31" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="C5" gate="G$1" pin="1"/>
+<wire x1="91.44" y1="142.24" x2="91.44" y2="144.78" width="0.1524" layer="91"/>
+<wire x1="91.44" y1="144.78" x2="101.6" y2="144.78" width="0.1524" layer="91"/>
+<wire x1="101.6" y1="144.78" x2="101.6" y2="142.24" width="0.1524" layer="91"/>
+<pinref part="RESET_BUTTON" gate="G$1" pin="2"/>
+<wire x1="101.6" y1="142.24" x2="104.14" y2="142.24" width="0.1524" layer="91"/>
+<junction x="101.6" y="142.24"/>
+<pinref part="RESET_BUTTON" gate="G$1" pin="1"/>
+<wire x1="101.6" y1="144.78" x2="106.68" y2="144.78" width="0.1524" layer="91"/>
+<junction x="101.6" y="144.78"/>
+<wire x1="106.68" y1="144.78" x2="106.68" y2="149.86" width="0.1524" layer="91"/>
+<pinref part="GND32" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="GND33" gate="1" pin="GND"/>
+<wire x1="124.46" y1="149.86" x2="124.46" y2="144.78" width="0.1524" layer="91"/>
+<pinref part="BOOT_BUTTON" gate="G$1" pin="2"/>
+<wire x1="124.46" y1="144.78" x2="121.92" y2="144.78" width="0.1524" layer="91"/>
+<junction x="124.46" y="144.78"/>
+<pinref part="BOOT_BUTTON" gate="G$1" pin="1"/>
+<wire x1="124.46" y1="144.78" x2="129.54" y2="144.78" width="0.1524" layer="91"/>
+<pinref part="C6" gate="G$1" pin="1"/>
+</segment>
+<segment>
+<pinref part="C10" gate="G$1" pin="1"/>
+<wire x1="147.32" y1="134.62" x2="147.32" y2="137.16" width="0.1524" layer="91"/>
+<wire x1="147.32" y1="137.16" x2="142.24" y2="137.16" width="0.1524" layer="91"/>
+<wire x1="142.24" y1="137.16" x2="142.24" y2="134.62" width="0.1524" layer="91"/>
+<pinref part="CHANGE_BUTTON" gate="G$1" pin="2"/>
+<pinref part="CHANGE_BUTTON" gate="G$1" pin="1"/>
+<wire x1="139.7" y1="134.62" x2="142.24" y2="134.62" width="0.1524" layer="91"/>
+<junction x="142.24" y="134.62"/>
+<wire x1="142.24" y1="137.16" x2="142.24" y2="149.86" width="0.1524" layer="91"/>
+<junction x="142.24" y="137.16"/>
+<pinref part="GND34" gate="1" pin="GND"/>
+</segment>
 </net>
 <net name="VUSB" class="0">
 <segment>
@@ -2791,6 +3064,25 @@ ESD Protection</text>
 <pinref part="SUPPLY6" gate="G$1" pin="3V3"/>
 <pinref part="R_CL1" gate="G$1" pin="1"/>
 <wire x1="-60.96" y1="149.86" x2="-60.96" y2="147.32" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="IC2" gate="G$1" pin="VDD"/>
+<pinref part="SUPPLY7" gate="G$1" pin="3V3"/>
+</segment>
+<segment>
+<pinref part="R_RESET" gate="G$1" pin="2"/>
+<wire x1="111.76" y1="106.68" x2="111.76" y2="104.14" width="0.1524" layer="91"/>
+<pinref part="SUPPLY8" gate="G$1" pin="3V3"/>
+</segment>
+<segment>
+<pinref part="R5_BOOT" gate="G$1" pin="2"/>
+<wire x1="124.46" y1="116.84" x2="124.46" y2="109.22" width="0.1524" layer="91"/>
+<pinref part="SUPPLY9" gate="G$1" pin="3V3"/>
+</segment>
+<segment>
+<pinref part="R_CHANGE" gate="G$1" pin="2"/>
+<wire x1="144.78" y1="104.14" x2="144.78" y2="99.06" width="0.1524" layer="91"/>
+<pinref part="SUPPLY10" gate="G$1" pin="3V3"/>
 </segment>
 </net>
 <net name="N$3" class="0">
@@ -3122,6 +3414,23 @@ ESD Protection</text>
 <wire x1="187.96" y1="205.74" x2="190.5" y2="205.74" width="0.1524" layer="91"/>
 <label x="190.5" y="205.74" size="1.778" layer="95" xref="yes"/>
 </segment>
+<segment>
+<pinref part="R_CHANGE" gate="G$1" pin="1"/>
+<wire x1="144.78" y1="114.3" x2="144.78" y2="119.38" width="0.1524" layer="91"/>
+<wire x1="144.78" y1="119.38" x2="144.78" y2="121.92" width="0.1524" layer="91"/>
+<wire x1="144.78" y1="121.92" x2="142.24" y2="121.92" width="0.1524" layer="91"/>
+<wire x1="142.24" y1="121.92" x2="142.24" y2="124.46" width="0.1524" layer="91"/>
+<pinref part="CHANGE_BUTTON" gate="G$1" pin="4"/>
+<pinref part="CHANGE_BUTTON" gate="G$1" pin="3"/>
+<wire x1="139.7" y1="124.46" x2="142.24" y2="124.46" width="0.1524" layer="91"/>
+<junction x="142.24" y="124.46"/>
+<junction x="144.78" y="119.38"/>
+<wire x1="144.78" y1="119.38" x2="139.7" y2="119.38" width="0.1524" layer="91"/>
+<label x="139.7" y="119.38" size="1.778" layer="95" rot="R270" xref="yes"/>
+<wire x1="142.24" y1="124.46" x2="147.32" y2="124.46" width="0.1524" layer="91"/>
+<wire x1="147.32" y1="124.46" x2="147.32" y2="127" width="0.1524" layer="91"/>
+<pinref part="C10" gate="G$1" pin="2"/>
+</segment>
 </net>
 <net name="TX" class="0">
 <segment>
@@ -3252,6 +3561,26 @@ ESD Protection</text>
 <wire x1="147.32" y1="215.9" x2="144.78" y2="215.9" width="0.1524" layer="91"/>
 <label x="144.78" y="215.9" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
+<segment>
+<pinref part="IC2" gate="G$1" pin="VOUT"/>
+<wire x1="96.52" y1="121.92" x2="106.68" y2="121.92" width="0.1524" layer="91"/>
+<wire x1="106.68" y1="121.92" x2="106.68" y2="119.38" width="0.1524" layer="91"/>
+<label x="106.68" y="119.38" size="1.778" layer="95" rot="R270" xref="yes"/>
+<wire x1="106.68" y1="121.92" x2="111.76" y2="121.92" width="0.1524" layer="91"/>
+<junction x="106.68" y="121.92"/>
+<wire x1="111.76" y1="121.92" x2="111.76" y2="116.84" width="0.1524" layer="91"/>
+<pinref part="R_RESET" gate="G$1" pin="1"/>
+<wire x1="106.68" y1="121.92" x2="106.68" y2="129.54" width="0.1524" layer="91"/>
+<wire x1="106.68" y1="129.54" x2="101.6" y2="129.54" width="0.1524" layer="91"/>
+<wire x1="101.6" y1="129.54" x2="101.6" y2="132.08" width="0.1524" layer="91"/>
+<pinref part="RESET_BUTTON" gate="G$1" pin="4"/>
+<wire x1="101.6" y1="132.08" x2="104.14" y2="132.08" width="0.1524" layer="91"/>
+<junction x="101.6" y="132.08"/>
+<pinref part="RESET_BUTTON" gate="G$1" pin="3"/>
+<wire x1="101.6" y1="132.08" x2="91.44" y2="132.08" width="0.1524" layer="91"/>
+<wire x1="91.44" y1="132.08" x2="91.44" y2="134.62" width="0.1524" layer="91"/>
+<pinref part="C5" gate="G$1" pin="2"/>
+</segment>
 </net>
 <net name="INT_RTC" class="0">
 <segment>
@@ -3296,6 +3625,20 @@ ESD Protection</text>
 <pinref part="U2" gate="G$1" pin="IO9"/>
 <wire x1="147.32" y1="187.96" x2="144.78" y2="187.96" width="0.1524" layer="91"/>
 <label x="144.78" y="187.96" size="1.778" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<pinref part="C6" gate="G$1" pin="2"/>
+<wire x1="129.54" y1="137.16" x2="129.54" y2="132.08" width="0.1524" layer="91"/>
+<wire x1="129.54" y1="132.08" x2="124.46" y2="132.08" width="0.1524" layer="91"/>
+<wire x1="124.46" y1="132.08" x2="124.46" y2="134.62" width="0.1524" layer="91"/>
+<pinref part="BOOT_BUTTON" gate="G$1" pin="4"/>
+<wire x1="124.46" y1="134.62" x2="121.92" y2="134.62" width="0.1524" layer="91"/>
+<junction x="124.46" y="134.62"/>
+<pinref part="BOOT_BUTTON" gate="G$1" pin="3"/>
+<junction x="124.46" y="132.08"/>
+<wire x1="124.46" y1="132.08" x2="124.46" y2="127" width="0.1524" layer="91"/>
+<pinref part="R5_BOOT" gate="G$1" pin="1"/>
+<label x="124.46" y="132.08" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="GPIO8" class="0">
@@ -3379,6 +3722,24 @@ ESD Protection</text>
 <pinref part="EPD_C6" gate="G$1" pin="2"/>
 <wire x1="-139.7" y1="114.3" x2="-111.76" y2="114.3" width="0.1524" layer="91"/>
 <pinref part="J2" gate="G$1" pin="18"/>
+</segment>
+</net>
+<net name="N$15" class="0">
+<segment>
+<wire x1="152.4" y1="167.64" x2="154.94" y2="167.64" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$19" class="0">
+<segment>
+<pinref part="IC2" gate="G$1" pin="CT"/>
+<wire x1="71.12" y1="119.38" x2="68.58" y2="119.38" width="0.1524" layer="91"/>
+<wire x1="68.58" y1="119.38" x2="68.58" y2="109.22" width="0.1524" layer="91"/>
+<pinref part="C_DELAY" gate="G$1" pin="1"/>
+</segment>
+</net>
+<net name="N$20" class="0">
+<segment>
+<wire x1="119.38" y1="139.7" x2="119.38" y2="142.24" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
