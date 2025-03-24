@@ -946,6 +946,13 @@ Source: http://www.osram.convergy.de/ ... Lb_q993.pdf</description>
 <smd name="2" x="1.1" y="0" dx="1.4" dy="1.4" layer="1"/>
 <smd name="1" x="-1.1" y="0" dx="1.4" dy="1.4" layer="1"/>
 </package>
+<package name="TP20R" library_version="1">
+<description>&lt;b&gt;TEST PAD&lt;/b&gt;</description>
+<smd name="TP" x="0" y="0" dx="2" dy="2" layer="1" roundness="100" cream="no"/>
+<text x="-1" y="1.05" size="1.27" layer="25">&gt;NAME</text>
+<text x="-0.762" y="-1.016" size="0.0254" layer="27">&gt;VALUE</text>
+<text x="0" y="-2.54" size="1" layer="37">&gt;TP_SIGNAL_NAME</text>
+</package>
 </packages>
 <symbols>
 <symbol name="SAMACSYS_PARTS_USB4110-GF-A" library_version="1">
@@ -1417,6 +1424,15 @@ Switches electrical signals</description>
 <rectangle x1="1.905" y1="-1.905" x2="2.54" y2="1.905" layer="94"/>
 <pin name="1" x="5.08" y="0" visible="pad" length="short" direction="pas" rot="R180"/>
 <pin name="2" x="-2.54" y="0" visible="pad" length="short" direction="pas"/>
+</symbol>
+<symbol name="TP" library_version="1">
+<wire x1="-0.762" y1="-0.762" x2="0" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="0.762" y2="-0.762" width="0.254" layer="94"/>
+<wire x1="0.762" y1="-0.762" x2="0" y2="-1.524" width="0.254" layer="94"/>
+<wire x1="0" y1="-1.524" x2="-0.762" y2="-0.762" width="0.254" layer="94"/>
+<pin name="TP" x="0" y="-2.54" visible="off" length="short" direction="in" rot="R90"/>
+<text x="-1.27" y="1.27" size="1.778" layer="95">&gt;NAME</text>
+<text x="1.27" y="-1.27" size="1.778" layer="97">&gt;TP_SIGNAL_NAME</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -2226,6 +2242,25 @@ Source: &lt;a href="https://datasheet.datasheetarchive.com/originals/distributor
 </device>
 </devices>
 </deviceset>
+<deviceset name="TP" prefix="TP" library_version="1">
+<description>&lt;b&gt;Test pad&lt;/b&gt;</description>
+<gates>
+<gate name="G$1" symbol="TP" x="0" y="0"/>
+</gates>
+<devices>
+<device name="TP20R" package="TP20R">
+<connects>
+<connect gate="G$1" pin="TP" pad="TP"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="POPULARITY" value="2" constant="no"/>
+<attribute name="TP_SIGNAL_NAME" value="" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
 </devicesets>
 </library>
 </libraries>
@@ -2364,6 +2399,23 @@ Source: &lt;a href="https://datasheet.datasheetarchive.com/originals/distributor
 <part name="R_CAPACITOR" library="DeskAssistant v19 v1.flbr" library_urn="urn:adsk.wipprod:fs.file:vf.vVvdDOfaSfavM5thX5SjWw" deviceset="ESP32_WROVER_EAGLE-LTSPICE_R" device="R0402" value="15"/>
 <part name="C4" library="DeskAssistant v19 v1.flbr" library_urn="urn:adsk.wipprod:fs.file:vf.vVvdDOfaSfavM5thX5SjWw" deviceset="CPH3225A" device=""/>
 <part name="GND40" library="DeskAssistant v19 v1.flbr" library_urn="urn:adsk.wipprod:fs.file:vf.vVvdDOfaSfavM5thX5SjWw" deviceset="GND" device=""/>
+<part name="TP1" library="DeskAssistant v19 v1.flbr" library_urn="urn:adsk.wipprod:fs.file:vf.vVvdDOfaSfavM5thX5SjWw" deviceset="TP" device="TP20R"/>
+<part name="TP2" library="DeskAssistant v19 v1.flbr" library_urn="urn:adsk.wipprod:fs.file:vf.vVvdDOfaSfavM5thX5SjWw" deviceset="TP" device="TP20R"/>
+<part name="TP3" library="DeskAssistant v19 v1.flbr" library_urn="urn:adsk.wipprod:fs.file:vf.vVvdDOfaSfavM5thX5SjWw" deviceset="TP" device="TP20R"/>
+<part name="TP4" library="DeskAssistant v19 v1.flbr" library_urn="urn:adsk.wipprod:fs.file:vf.vVvdDOfaSfavM5thX5SjWw" deviceset="TP" device="TP20R"/>
+<part name="TP5" library="DeskAssistant v19 v1.flbr" library_urn="urn:adsk.wipprod:fs.file:vf.vVvdDOfaSfavM5thX5SjWw" deviceset="TP" device="TP20R"/>
+<part name="TP6" library="DeskAssistant v19 v1.flbr" library_urn="urn:adsk.wipprod:fs.file:vf.vVvdDOfaSfavM5thX5SjWw" deviceset="TP" device="TP20R"/>
+<part name="TP7" library="DeskAssistant v19 v1.flbr" library_urn="urn:adsk.wipprod:fs.file:vf.vVvdDOfaSfavM5thX5SjWw" deviceset="TP" device="TP20R"/>
+<part name="TP8" library="DeskAssistant v19 v1.flbr" library_urn="urn:adsk.wipprod:fs.file:vf.vVvdDOfaSfavM5thX5SjWw" deviceset="TP" device="TP20R"/>
+<part name="TP9" library="DeskAssistant v19 v1.flbr" library_urn="urn:adsk.wipprod:fs.file:vf.vVvdDOfaSfavM5thX5SjWw" deviceset="TP" device="TP20R"/>
+<part name="TP10" library="DeskAssistant v19 v1.flbr" library_urn="urn:adsk.wipprod:fs.file:vf.vVvdDOfaSfavM5thX5SjWw" deviceset="TP" device="TP20R"/>
+<part name="TP11" library="DeskAssistant v19 v1.flbr" library_urn="urn:adsk.wipprod:fs.file:vf.vVvdDOfaSfavM5thX5SjWw" deviceset="TP" device="TP20R"/>
+<part name="TP12" library="DeskAssistant v19 v1.flbr" library_urn="urn:adsk.wipprod:fs.file:vf.vVvdDOfaSfavM5thX5SjWw" deviceset="TP" device="TP20R"/>
+<part name="TP13" library="DeskAssistant v19 v1.flbr" library_urn="urn:adsk.wipprod:fs.file:vf.vVvdDOfaSfavM5thX5SjWw" deviceset="TP" device="TP20R"/>
+<part name="TP14" library="DeskAssistant v19 v1.flbr" library_urn="urn:adsk.wipprod:fs.file:vf.vVvdDOfaSfavM5thX5SjWw" deviceset="TP" device="TP20R"/>
+<part name="TP15" library="DeskAssistant v19 v1.flbr" library_urn="urn:adsk.wipprod:fs.file:vf.vVvdDOfaSfavM5thX5SjWw" deviceset="TP" device="TP20R"/>
+<part name="TP16" library="DeskAssistant v19 v1.flbr" library_urn="urn:adsk.wipprod:fs.file:vf.vVvdDOfaSfavM5thX5SjWw" deviceset="TP" device="TP20R"/>
+<part name="TP17" library="DeskAssistant v19 v1.flbr" library_urn="urn:adsk.wipprod:fs.file:vf.vVvdDOfaSfavM5thX5SjWw" deviceset="TP" device="TP20R"/>
 </parts>
 <sheets>
 <sheet>
@@ -2421,6 +2473,7 @@ ESD Protection</text>
 Boot / IO Button</text>
 <text x="157.48" y="162.56" size="1.778" layer="95">Battery Charge Level</text>
 <text x="-160.02" y="81.28" size="1.778" layer="95"> RTC Module DS3231SN</text>
+<text x="-10.16" y="81.28" size="1.778" layer="95">Test Pads</text>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="-165.1" y="20.32" smashed="yes">
@@ -2899,6 +2952,74 @@ Boot / IO Button</text>
 <instance part="GND40" gate="1" x="-58.42" y="40.64" smashed="yes">
 <attribute name="VALUE" x="-60.96" y="38.1" size="1.778" layer="96"/>
 </instance>
+<instance part="TP1" gate="G$1" x="-7.62" y="68.58" smashed="yes" rot="R180">
+<attribute name="NAME" x="-6.35" y="67.31" size="1.778" layer="95" rot="R180"/>
+<attribute name="TP_SIGNAL_NAME" x="-8.89" y="69.85" size="1.778" layer="97" rot="R180"/>
+</instance>
+<instance part="TP2" gate="G$1" x="-2.54" y="68.58" smashed="yes" rot="R180">
+<attribute name="NAME" x="-1.27" y="67.31" size="1.778" layer="95" rot="R180"/>
+<attribute name="TP_SIGNAL_NAME" x="-3.81" y="69.85" size="1.778" layer="97" rot="R180"/>
+</instance>
+<instance part="TP3" gate="G$1" x="2.54" y="68.58" smashed="yes" rot="R180">
+<attribute name="NAME" x="3.81" y="67.31" size="1.778" layer="95" rot="R180"/>
+<attribute name="TP_SIGNAL_NAME" x="1.27" y="69.85" size="1.778" layer="97" rot="R180"/>
+</instance>
+<instance part="TP4" gate="G$1" x="7.62" y="68.58" smashed="yes" rot="R180">
+<attribute name="NAME" x="8.89" y="67.31" size="1.778" layer="95" rot="R180"/>
+<attribute name="TP_SIGNAL_NAME" x="6.35" y="69.85" size="1.778" layer="97" rot="R180"/>
+</instance>
+<instance part="TP5" gate="G$1" x="12.7" y="68.58" smashed="yes" rot="R180">
+<attribute name="NAME" x="13.97" y="67.31" size="1.778" layer="95" rot="R180"/>
+<attribute name="TP_SIGNAL_NAME" x="11.43" y="69.85" size="1.778" layer="97" rot="R180"/>
+</instance>
+<instance part="TP6" gate="G$1" x="-7.62" y="50.8" smashed="yes" rot="R180">
+<attribute name="NAME" x="-6.35" y="49.53" size="1.778" layer="95" rot="R180"/>
+<attribute name="TP_SIGNAL_NAME" x="-8.89" y="52.07" size="1.778" layer="97" rot="R180"/>
+</instance>
+<instance part="TP7" gate="G$1" x="0" y="50.8" smashed="yes" rot="R180">
+<attribute name="NAME" x="1.27" y="49.53" size="1.778" layer="95" rot="R180"/>
+<attribute name="TP_SIGNAL_NAME" x="-1.27" y="52.07" size="1.778" layer="97" rot="R180"/>
+</instance>
+<instance part="TP8" gate="G$1" x="7.62" y="50.8" smashed="yes" rot="R180">
+<attribute name="NAME" x="8.89" y="49.53" size="1.778" layer="95" rot="R180"/>
+<attribute name="TP_SIGNAL_NAME" x="6.35" y="52.07" size="1.778" layer="97" rot="R180"/>
+</instance>
+<instance part="TP9" gate="G$1" x="15.24" y="50.8" smashed="yes" rot="R180">
+<attribute name="NAME" x="16.51" y="49.53" size="1.778" layer="95" rot="R180"/>
+<attribute name="TP_SIGNAL_NAME" x="13.97" y="52.07" size="1.778" layer="97" rot="R180"/>
+</instance>
+<instance part="TP10" gate="G$1" x="22.86" y="50.8" smashed="yes" rot="R180">
+<attribute name="NAME" x="24.13" y="49.53" size="1.778" layer="95" rot="R180"/>
+<attribute name="TP_SIGNAL_NAME" x="21.59" y="52.07" size="1.778" layer="97" rot="R180"/>
+</instance>
+<instance part="TP11" gate="G$1" x="-7.62" y="30.48" smashed="yes" rot="R180">
+<attribute name="NAME" x="-6.35" y="29.21" size="1.778" layer="95" rot="R180"/>
+<attribute name="TP_SIGNAL_NAME" x="-8.89" y="31.75" size="1.778" layer="97" rot="R180"/>
+</instance>
+<instance part="TP12" gate="G$1" x="0" y="30.48" smashed="yes" rot="R180">
+<attribute name="NAME" x="1.27" y="29.21" size="1.778" layer="95" rot="R180"/>
+<attribute name="TP_SIGNAL_NAME" x="-1.27" y="31.75" size="1.778" layer="97" rot="R180"/>
+</instance>
+<instance part="TP13" gate="G$1" x="7.62" y="30.48" smashed="yes" rot="R180">
+<attribute name="NAME" x="8.89" y="29.21" size="1.778" layer="95" rot="R180"/>
+<attribute name="TP_SIGNAL_NAME" x="6.35" y="31.75" size="1.778" layer="97" rot="R180"/>
+</instance>
+<instance part="TP14" gate="G$1" x="15.24" y="30.48" smashed="yes" rot="R180">
+<attribute name="NAME" x="16.51" y="29.21" size="1.778" layer="95" rot="R180"/>
+<attribute name="TP_SIGNAL_NAME" x="13.97" y="31.75" size="1.778" layer="97" rot="R180"/>
+</instance>
+<instance part="TP15" gate="G$1" x="22.86" y="30.48" smashed="yes" rot="R180">
+<attribute name="NAME" x="24.13" y="29.21" size="1.778" layer="95" rot="R180"/>
+<attribute name="TP_SIGNAL_NAME" x="21.59" y="31.75" size="1.778" layer="97" rot="R180"/>
+</instance>
+<instance part="TP16" gate="G$1" x="20.32" y="68.58" smashed="yes" rot="R180">
+<attribute name="NAME" x="21.59" y="67.31" size="1.778" layer="95" rot="R180"/>
+<attribute name="TP_SIGNAL_NAME" x="19.05" y="69.85" size="1.778" layer="97" rot="R180"/>
+</instance>
+<instance part="TP17" gate="G$1" x="25.4" y="68.58" smashed="yes" rot="R180">
+<attribute name="NAME" x="26.67" y="67.31" size="1.778" layer="95" rot="R180"/>
+<attribute name="TP_SIGNAL_NAME" x="24.13" y="69.85" size="1.778" layer="97" rot="R180"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -3204,6 +3325,16 @@ Boot / IO Button</text>
 <wire x1="-55.88" y1="48.26" x2="-58.42" y2="48.26" width="0.1524" layer="91"/>
 <junction x="-58.42" y="48.26"/>
 </segment>
+<segment>
+<pinref part="TP4" gate="G$1" pin="TP"/>
+<wire x1="7.62" y1="71.12" x2="7.62" y2="73.66" width="0.1524" layer="91"/>
+<label x="7.62" y="73.66" size="1.778" layer="95" rot="R90" xref="yes"/>
+</segment>
+<segment>
+<pinref part="TP5" gate="G$1" pin="TP"/>
+<wire x1="12.7" y1="71.12" x2="12.7" y2="73.66" width="0.1524" layer="91"/>
+<label x="12.7" y="73.66" size="1.778" layer="95" rot="R90" xref="yes"/>
+</segment>
 </net>
 <net name="VUSB" class="0">
 <segment>
@@ -3281,6 +3412,11 @@ Boot / IO Button</text>
 <pinref part="CHG_LED" gate="G$1" pin="A"/>
 <wire x1="35.56" y1="182.88" x2="35.56" y2="203.2" width="0.1524" layer="91"/>
 <junction x="35.56" y="203.2"/>
+</segment>
+<segment>
+<pinref part="TP14" gate="G$1" pin="TP"/>
+<wire x1="15.24" y1="33.02" x2="15.24" y2="35.56" width="0.1524" layer="91"/>
+<label x="15.24" y="35.56" size="1.778" layer="95" rot="R90" xref="yes"/>
 </segment>
 </net>
 <net name="N$1" class="0">
@@ -3445,6 +3581,11 @@ Boot / IO Button</text>
 <wire x1="-88.9" y1="66.04" x2="-83.82" y2="66.04" width="0.1524" layer="91"/>
 <pinref part="D6" gate="G$0" pin="ANODE"/>
 </segment>
+<segment>
+<pinref part="TP16" gate="G$1" pin="TP"/>
+<wire x1="20.32" y1="71.12" x2="20.32" y2="73.66" width="0.1524" layer="91"/>
+<label x="20.32" y="73.66" size="1.778" layer="95" rot="R90" xref="yes"/>
+</segment>
 </net>
 <net name="N$3" class="0">
 <segment>
@@ -3491,6 +3632,11 @@ Boot / IO Button</text>
 <junction x="208.28" y="139.7"/>
 <label x="210.82" y="139.7" size="1.778" layer="95" xref="yes"/>
 </segment>
+<segment>
+<pinref part="TP3" gate="G$1" pin="TP"/>
+<wire x1="2.54" y1="71.12" x2="2.54" y2="73.66" width="0.1524" layer="91"/>
+<label x="2.54" y="73.66" size="1.778" layer="95" rot="R90" xref="yes"/>
+</segment>
 </net>
 <net name="SS_SD" class="0">
 <segment>
@@ -3520,6 +3666,11 @@ Boot / IO Button</text>
 <wire x1="-111.76" y1="124.46" x2="-114.3" y2="124.46" width="0.1524" layer="91"/>
 <label x="-114.3" y="124.46" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
+<segment>
+<pinref part="TP7" gate="G$1" pin="TP"/>
+<wire x1="0" y1="53.34" x2="0" y2="55.88" width="0.1524" layer="91"/>
+<label x="0" y="55.88" size="1.778" layer="95" rot="R90" xref="yes"/>
+</segment>
 </net>
 <net name="MISO" class="0">
 <segment>
@@ -3531,6 +3682,11 @@ Boot / IO Button</text>
 <pinref part="U2" gate="G$1" pin="IO2"/>
 <wire x1="147.32" y1="205.74" x2="144.78" y2="205.74" width="0.1524" layer="91"/>
 <label x="144.78" y="205.74" size="1.778" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<pinref part="TP6" gate="G$1" pin="TP"/>
+<wire x1="-7.62" y1="53.34" x2="-7.62" y2="55.88" width="0.1524" layer="91"/>
+<label x="-7.62" y="55.88" size="1.778" layer="95" rot="R90" xref="yes"/>
 </segment>
 </net>
 <net name="SCK" class="0">
@@ -3548,6 +3704,11 @@ Boot / IO Button</text>
 <pinref part="J2" gate="G$1" pin="13"/>
 <wire x1="-111.76" y1="127" x2="-114.3" y2="127" width="0.1524" layer="91"/>
 <label x="-114.3" y="127" size="1.778" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<pinref part="TP8" gate="G$1" pin="TP"/>
+<wire x1="7.62" y1="53.34" x2="7.62" y2="55.88" width="0.1524" layer="91"/>
+<label x="7.62" y="55.88" size="1.778" layer="95" rot="R90" xref="yes"/>
 </segment>
 </net>
 <net name="RESE'" class="0">
@@ -3616,6 +3777,11 @@ Boot / IO Button</text>
 <pinref part="Q3" gate="G$1" pin="S"/>
 <wire x1="-50.8" y1="124.46" x2="-50.8" y2="121.92" width="0.1524" layer="91"/>
 <label x="-50.8" y="121.92" size="1.778" layer="95" rot="R270" xref="yes"/>
+</segment>
+<segment>
+<pinref part="TP17" gate="G$1" pin="TP"/>
+<wire x1="25.4" y1="71.12" x2="25.4" y2="73.66" width="0.1524" layer="91"/>
+<label x="25.4" y="73.66" size="1.778" layer="95" rot="R90" xref="yes"/>
 </segment>
 </net>
 <net name="N$4" class="0">
@@ -3771,6 +3937,11 @@ Boot / IO Button</text>
 <wire x1="-111.76" y1="129.54" x2="-114.3" y2="129.54" width="0.1524" layer="91"/>
 <label x="-114.3" y="129.54" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
+<segment>
+<pinref part="TP10" gate="G$1" pin="TP"/>
+<wire x1="22.86" y1="53.34" x2="22.86" y2="55.88" width="0.1524" layer="91"/>
+<label x="22.86" y="55.88" size="1.778" layer="95" rot="R90" xref="yes"/>
+</segment>
 </net>
 <net name="FLASH_CS" class="0">
 <segment>
@@ -3809,12 +3980,22 @@ Boot / IO Button</text>
 <wire x1="187.96" y1="203.2" x2="190.5" y2="203.2" width="0.1524" layer="91"/>
 <label x="190.5" y="203.2" size="1.778" layer="95" xref="yes"/>
 </segment>
+<segment>
+<pinref part="TP1" gate="G$1" pin="TP"/>
+<wire x1="-7.62" y1="71.12" x2="-7.62" y2="73.66" width="0.1524" layer="91"/>
+<label x="-7.62" y="73.66" size="1.778" layer="95" rot="R90" xref="yes"/>
+</segment>
 </net>
 <net name="RX" class="0">
 <segment>
 <pinref part="U2" gate="G$1" pin="RXD0/GPIO17"/>
 <wire x1="187.96" y1="200.66" x2="190.5" y2="200.66" width="0.1524" layer="91"/>
 <label x="190.5" y="200.66" size="1.778" layer="95" xref="yes"/>
+</segment>
+<segment>
+<pinref part="TP2" gate="G$1" pin="TP"/>
+<wire x1="-2.54" y1="71.12" x2="-2.54" y2="73.66" width="0.1524" layer="91"/>
+<label x="-2.54" y="73.66" size="1.778" layer="95" rot="R90" xref="yes"/>
 </segment>
 </net>
 <net name="RTC_RST" class="0">
@@ -3889,6 +4070,11 @@ Boot / IO Button</text>
 <wire x1="-60.96" y1="127" x2="-60.96" y2="137.16" width="0.1524" layer="91"/>
 <pinref part="R_CL1" gate="G$1" pin="2"/>
 </segment>
+<segment>
+<pinref part="TP13" gate="G$1" pin="TP"/>
+<wire x1="7.62" y1="33.02" x2="7.62" y2="35.56" width="0.1524" layer="91"/>
+<label x="7.62" y="35.56" size="1.778" layer="95" rot="R90" xref="yes"/>
+</segment>
 </net>
 <net name="SDA" class="0">
 <segment>
@@ -3950,6 +4136,11 @@ Boot / IO Button</text>
 <wire x1="187.96" y1="185.42" x2="190.5" y2="185.42" width="0.1524" layer="91"/>
 <label x="190.5" y="185.42" size="1.778" layer="95" xref="yes"/>
 </segment>
+<segment>
+<pinref part="TP12" gate="G$1" pin="TP"/>
+<wire x1="0" y1="33.02" x2="0" y2="35.56" width="0.1524" layer="91"/>
+<label x="0" y="35.56" size="1.778" layer="95" rot="R90" xref="yes"/>
+</segment>
 </net>
 <net name="RESET" class="0">
 <segment>
@@ -3996,6 +4187,11 @@ Boot / IO Button</text>
 <wire x1="-22.86" y1="58.42" x2="-22.86" y2="50.8" width="0.1524" layer="91"/>
 <label x="-22.86" y="50.8" size="1.778" layer="95" rot="R270" xref="yes"/>
 </segment>
+<segment>
+<pinref part="TP15" gate="G$1" pin="TP"/>
+<wire x1="22.86" y1="33.02" x2="22.86" y2="35.56" width="0.1524" layer="91"/>
+<label x="22.86" y="35.56" size="1.778" layer="95" rot="R90" xref="yes"/>
+</segment>
 </net>
 <net name="32KHZ" class="0">
 <segment>
@@ -4025,6 +4221,11 @@ Boot / IO Button</text>
 <wire x1="-111.76" y1="137.16" x2="-114.3" y2="137.16" width="0.1524" layer="91"/>
 <label x="-114.3" y="137.16" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
+<segment>
+<pinref part="TP9" gate="G$1" pin="TP"/>
+<wire x1="15.24" y1="53.34" x2="15.24" y2="55.88" width="0.1524" layer="91"/>
+<label x="15.24" y="55.88" size="1.778" layer="95" rot="R90" xref="yes"/>
+</segment>
 </net>
 <net name="EPD_DC" class="0">
 <segment>
@@ -4036,6 +4237,11 @@ Boot / IO Button</text>
 <pinref part="J2" gate="G$1" pin="11"/>
 <wire x1="-111.76" y1="132.08" x2="-114.3" y2="132.08" width="0.1524" layer="91"/>
 <label x="-114.3" y="132.08" size="1.778" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<pinref part="TP11" gate="G$1" pin="TP"/>
+<wire x1="-7.62" y1="33.02" x2="-7.62" y2="35.56" width="0.1524" layer="91"/>
+<label x="-7.62" y="35.56" size="1.778" layer="95" rot="R90" xref="yes"/>
 </segment>
 </net>
 <net name="IO/BOOT" class="0">
