@@ -991,6 +991,39 @@ Source: http://www.osram.convergy.de/ ... Lb_q993.pdf</description>
 <smd name="1" x="-0.75" y="0" dx="0.97" dy="0.94" layer="1"/>
 <smd name="2" x="0.75" y="0" dx="0.97" dy="0.94" layer="1"/>
 </package>
+<package name="SON127P600X800X80-9N" library_version="42">
+<wire x1="-4" y1="3" x2="4" y2="3" width="0.127" layer="51"/>
+<wire x1="-4" y1="-3" x2="4" y2="-3" width="0.127" layer="51"/>
+<wire x1="-4" y1="3" x2="-4" y2="-3" width="0.127" layer="51"/>
+<wire x1="4" y1="3" x2="4" y2="-3" width="0.127" layer="51"/>
+<wire x1="-4" y1="3" x2="-4" y2="2.445" width="0.127" layer="21"/>
+<wire x1="-4" y1="-3" x2="-4" y2="-2.445" width="0.127" layer="21"/>
+<wire x1="4" y1="3" x2="4" y2="2.445" width="0.127" layer="21"/>
+<wire x1="4" y1="-3" x2="4" y2="-2.445" width="0.127" layer="21"/>
+<wire x1="-4" y1="3" x2="4" y2="3" width="0.127" layer="21"/>
+<wire x1="-4" y1="-3" x2="4" y2="-3" width="0.127" layer="21"/>
+<wire x1="-4.615" y1="3.25" x2="-4.615" y2="-3.25" width="0.05" layer="39"/>
+<wire x1="-4.615" y1="-3.25" x2="4.615" y2="-3.25" width="0.05" layer="39"/>
+<wire x1="4.615" y1="-3.25" x2="4.615" y2="3.25" width="0.05" layer="39"/>
+<wire x1="4.615" y1="3.25" x2="-4.615" y2="3.25" width="0.05" layer="39"/>
+<circle x="-5" y="1.905" radius="0.1" width="0.2" layer="21"/>
+<circle x="-5" y="1.905" radius="0.1" width="0.2" layer="51"/>
+<text x="-4.615" y="3.41" size="1.27" layer="25">&gt;NAME</text>
+<text x="-4.615" y="-3.48" size="1.27" layer="27" align="top-left">&gt;VALUE</text>
+<rectangle x1="-1.24" y1="0.23" x2="-0.23" y2="1.69" layer="31"/>
+<rectangle x1="0.23" y1="0.23" x2="1.24" y2="1.69" layer="31"/>
+<rectangle x1="-1.24" y1="-1.69" x2="-0.23" y2="-0.23" layer="31"/>
+<rectangle x1="0.23" y1="-1.69" x2="1.24" y2="-0.23" layer="31"/>
+<smd name="1" x="-3.895" y="1.905" dx="0.94" dy="0.44" layer="1" roundness="25"/>
+<smd name="2" x="-3.895" y="0.635" dx="0.94" dy="0.44" layer="1" roundness="25"/>
+<smd name="3" x="-3.895" y="-0.635" dx="0.94" dy="0.44" layer="1" roundness="25"/>
+<smd name="4" x="-3.895" y="-1.905" dx="0.94" dy="0.44" layer="1" roundness="25"/>
+<smd name="5" x="3.895" y="-1.905" dx="0.94" dy="0.44" layer="1" roundness="25"/>
+<smd name="6" x="3.895" y="-0.635" dx="0.94" dy="0.44" layer="1" roundness="25"/>
+<smd name="7" x="3.895" y="0.635" dx="0.94" dy="0.44" layer="1" roundness="25"/>
+<smd name="8" x="3.895" y="1.905" dx="0.94" dy="0.44" layer="1" roundness="25"/>
+<smd name="9" x="0" y="0" dx="3.4" dy="4.3" layer="1" cream="no"/>
+</package>
 </packages>
 <packages3d>
 <package3d name="JST04_1MM_RA" urn="urn:adsk.eagle:package:41390393/1" type="box">
@@ -1529,6 +1562,23 @@ Switches electrical signals</description>
 <text x="-5.08" y="-5.08" size="1.778" layer="96">&gt;VALUE</text>
 <pin name="1" x="-5.08" y="0" visible="off" length="short" direction="pas"/>
 <pin name="2" x="5.08" y="0" visible="off" length="short" direction="pas" rot="R180"/>
+</symbol>
+<symbol name="W25Q512JVEIQ" library_version="42">
+<wire x1="-17.78" y1="12.7" x2="17.78" y2="12.7" width="0.254" layer="94"/>
+<wire x1="17.78" y1="12.7" x2="17.78" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="17.78" y1="-10.16" x2="-17.78" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="-17.78" y1="-10.16" x2="-17.78" y2="12.7" width="0.254" layer="94"/>
+<text x="-17.78" y="15.24" size="2.54" layer="95">&gt;NAME</text>
+<text x="-17.78" y="-15.24" size="2.54" layer="96">&gt;VALUE</text>
+<pin name="!CS" x="-22.86" y="5.08" length="middle" direction="in"/>
+<pin name="DO(IO1)" x="22.86" y="5.08" length="middle" rot="R180"/>
+<pin name="!WP!(IO2)" x="22.86" y="0" length="middle" rot="R180"/>
+<pin name="GND" x="22.86" y="-7.62" length="middle" direction="pwr" rot="R180"/>
+<pin name="VCC" x="22.86" y="10.16" length="middle" direction="pwr" rot="R180"/>
+<pin name="!HOLD!/!RESET!(IO3)" x="-22.86" y="-2.54" length="middle"/>
+<pin name="CLK" x="-22.86" y="2.54" length="middle" direction="in" function="clk"/>
+<pin name="DI(IO0)" x="22.86" y="2.54" length="middle" rot="R180"/>
+<pin name="EXP" x="22.86" y="-5.08" length="middle" direction="pas" rot="R180"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -2414,6 +2464,39 @@ We carry &lt;a href=”https://www.sparkfun.com/products/14204”&gt;200mm&lt;/a
 </device>
 </devices>
 </deviceset>
+<deviceset name="W25Q512JVEIQ" prefix="U" library_version="64">
+<description> &lt;a href="https://pricing.snapeda.com/parts/W25Q512JVEIQ/Winbond%20Electronics/view-part?ref=eda"&gt;Check availability&lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="W25Q512JVEIQ" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SON127P600X800X80-9N">
+<connects>
+<connect gate="G$1" pin="!CS" pad="1"/>
+<connect gate="G$1" pin="!HOLD!/!RESET!(IO3)" pad="7"/>
+<connect gate="G$1" pin="!WP!(IO2)" pad="3"/>
+<connect gate="G$1" pin="CLK" pad="6"/>
+<connect gate="G$1" pin="DI(IO0)" pad="5"/>
+<connect gate="G$1" pin="DO(IO1)" pad="2"/>
+<connect gate="G$1" pin="EXP" pad="9"/>
+<connect gate="G$1" pin="GND" pad="4"/>
+<connect gate="G$1" pin="VCC" pad="8"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="AVAILABILITY" value="In Stock"/>
+<attribute name="CHECK_PRICES" value="https://www.snapeda.com/parts/W25Q512JVEIQ/Winbond+Electronics/view-part/?ref=eda"/>
+<attribute name="DESCRIPTION" value=" FLASH - NOR Memory IC 512Mb (64M x 8) SPI - Quad I/O 133 MHz 8-WSON (8x6) "/>
+<attribute name="MF" value="Winbond Electronics"/>
+<attribute name="MP" value="W25Q512JVEIQ"/>
+<attribute name="PACKAGE" value="Package "/>
+<attribute name="PRICE" value="None"/>
+<attribute name="SNAPEDA_LINK" value="https://www.snapeda.com/parts/W25Q512JVEIQ/Winbond+Electronics/view-part/?ref=snap"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
 </devicesets>
 </library>
 </libraries>
@@ -2586,6 +2669,10 @@ We carry &lt;a href=”https://www.sparkfun.com/products/14204”&gt;200mm&lt;/a
 <part name="D10" library="DeskAssistant v19 v1.flbr" library_urn="urn:adsk.wipprod:fs.file:vf.vVvdDOfaSfavM5thX5SjWw" deviceset="PGB1010603MR" device=""/>
 <part name="D11" library="DeskAssistant v19 v1.flbr" library_urn="urn:adsk.wipprod:fs.file:vf.vVvdDOfaSfavM5thX5SjWw" deviceset="PGB1010603MR" device=""/>
 <part name="D12" library="DeskAssistant v19 v1.flbr" library_urn="urn:adsk.wipprod:fs.file:vf.vVvdDOfaSfavM5thX5SjWw" deviceset="PGB1010603MR" device=""/>
+<part name="U6" library="DeskAssistant v19 v1.flbr" library_urn="urn:adsk.wipprod:fs.file:vf.vVvdDOfaSfavM5thX5SjWw" deviceset="W25Q512JVEIQ" device=""/>
+<part name="SUPPLY16" library="DeskAssistant v19 v1.flbr" library_urn="urn:adsk.wipprod:fs.file:vf.vVvdDOfaSfavM5thX5SjWw" deviceset="3V3-CIRCLE" device="" value="3V3"/>
+<part name="GND43" library="DeskAssistant v19 v1.flbr" library_urn="urn:adsk.wipprod:fs.file:vf.vVvdDOfaSfavM5thX5SjWw" deviceset="GND" device=""/>
+<part name="SUPPLY17" library="DeskAssistant v19 v1.flbr" library_urn="urn:adsk.wipprod:fs.file:vf.vVvdDOfaSfavM5thX5SjWw" deviceset="3V3-CIRCLE" device="" value="3V3"/>
 </parts>
 <sheets>
 <sheet>
@@ -2647,11 +2734,14 @@ Boot / IO Button</text>
 <text x="30.48" y="83.82" size="1.778" layer="95">Qwiic / Stemma QT</text>
 <text x="68.58" y="81.28" size="1.778" layer="95">SPI ESD Protection
 Lines</text>
+<text x="134.62" y="83.82" size="1.778" layer="95">External NOR Flash 64MB</text>
+<text x="129.54" y="35.56" size="1.778" layer="95">OpenBook Schematic</text>
+<text x="180.34" y="40.64" size="1.778" layer="95">drawn by Fulop Adelin-Andrei</text>
+<text x="180.34" y="30.48" size="1.778" layer="95">9:41 AM 24/03/2024</text>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="-165.1" y="20.32" smashed="yes">
 <attribute name="DRAWING_NAME" x="179.07" y="35.56" size="2.54" layer="94"/>
-<attribute name="LAST_DATE_TIME" x="179.07" y="30.48" size="2.286" layer="94"/>
 <attribute name="SHEET" x="192.405" y="25.4" size="2.54" layer="94"/>
 </instance>
 <instance part="J1" gate="G$1" x="-129.54" y="248.92" smashed="yes">
@@ -3262,6 +3352,19 @@ Lines</text>
 <instance part="D12" gate="G$1" x="111.76" y="48.26" smashed="yes" rot="R90">
 <attribute name="NAME" x="109.22" y="43.18" size="1.778" layer="95" rot="R90"/>
 </instance>
+<instance part="U6" gate="G$1" x="175.26" y="63.5" smashed="yes">
+<attribute name="NAME" x="157.48" y="78.74" size="2.54" layer="95"/>
+<attribute name="VALUE" x="157.48" y="48.26" size="2.54" layer="96"/>
+</instance>
+<instance part="SUPPLY16" gate="G$1" x="147.32" y="60.96" smashed="yes" rot="R90">
+<attribute name="VALUE" x="144.145" y="60.833" size="1.778" layer="96" rot="R90" align="bottom-center"/>
+</instance>
+<instance part="GND43" gate="1" x="200.66" y="50.8" smashed="yes">
+<attribute name="VALUE" x="198.12" y="48.26" size="1.778" layer="96"/>
+</instance>
+<instance part="SUPPLY17" gate="G$1" x="208.28" y="78.74" smashed="yes">
+<attribute name="VALUE" x="208.153" y="81.915" size="1.778" layer="96" align="bottom-center"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -3610,6 +3713,16 @@ Lines</text>
 <wire x1="81.28" y1="43.18" x2="81.28" y2="35.56" width="0.1524" layer="91"/>
 <junction x="81.28" y="35.56"/>
 </segment>
+<segment>
+<pinref part="U6" gate="G$1" pin="EXP"/>
+<wire x1="198.12" y1="58.42" x2="200.66" y2="58.42" width="0.1524" layer="91"/>
+<wire x1="200.66" y1="58.42" x2="200.66" y2="55.88" width="0.1524" layer="91"/>
+<wire x1="200.66" y1="55.88" x2="198.12" y2="55.88" width="0.1524" layer="91"/>
+<pinref part="U6" gate="G$1" pin="GND"/>
+<wire x1="200.66" y1="55.88" x2="200.66" y2="53.34" width="0.1524" layer="91"/>
+<junction x="200.66" y="55.88"/>
+<pinref part="GND43" gate="1" pin="GND"/>
+</segment>
 </net>
 <net name="VUSB" class="0">
 <segment>
@@ -3893,6 +4006,21 @@ Lines</text>
 <wire x1="111.76" y1="71.12" x2="111.76" y2="78.74" width="0.1524" layer="91"/>
 <junction x="111.76" y="78.74"/>
 </segment>
+<segment>
+<pinref part="U6" gate="G$1" pin="!HOLD!/!RESET!(IO3)"/>
+<wire x1="152.4" y1="60.96" x2="149.86" y2="60.96" width="0.1524" layer="91"/>
+<pinref part="SUPPLY16" gate="G$1" pin="3V3"/>
+</segment>
+<segment>
+<pinref part="U6" gate="G$1" pin="!WP!(IO2)"/>
+<wire x1="198.12" y1="63.5" x2="208.28" y2="63.5" width="0.1524" layer="91"/>
+<wire x1="208.28" y1="63.5" x2="208.28" y2="73.66" width="0.1524" layer="91"/>
+<wire x1="208.28" y1="73.66" x2="198.12" y2="73.66" width="0.1524" layer="91"/>
+<pinref part="U6" gate="G$1" pin="VCC"/>
+<wire x1="208.28" y1="73.66" x2="208.28" y2="76.2" width="0.1524" layer="91"/>
+<junction x="208.28" y="73.66"/>
+<pinref part="SUPPLY17" gate="G$1" pin="3V3"/>
+</segment>
 </net>
 <net name="N$3" class="0">
 <segment>
@@ -3996,6 +4124,12 @@ Lines</text>
 <wire x1="81.28" y1="55.88" x2="83.82" y2="55.88" width="0.1524" layer="91"/>
 <label x="83.82" y="55.88" size="1.778" layer="95" rot="R270" xref="yes"/>
 </segment>
+<segment>
+<pinref part="U6" gate="G$1" pin="DI(IO0)"/>
+<wire x1="198.12" y1="66.04" x2="213.36" y2="66.04" width="0.1524" layer="91"/>
+<wire x1="213.36" y1="66.04" x2="213.36" y2="63.5" width="0.1524" layer="91"/>
+<label x="213.36" y="63.5" size="1.778" layer="95" rot="R270" xref="yes"/>
+</segment>
 </net>
 <net name="MISO" class="0">
 <segment>
@@ -4021,6 +4155,12 @@ Lines</text>
 <junction x="73.66" y="55.88"/>
 <wire x1="73.66" y1="55.88" x2="76.2" y2="55.88" width="0.1524" layer="91"/>
 <label x="76.2" y="55.88" size="1.778" layer="95" rot="R270" xref="yes"/>
+</segment>
+<segment>
+<pinref part="U6" gate="G$1" pin="DO(IO1)"/>
+<wire x1="198.12" y1="68.58" x2="213.36" y2="68.58" width="0.1524" layer="91"/>
+<wire x1="213.36" y1="68.58" x2="213.36" y2="73.66" width="0.1524" layer="91"/>
+<label x="213.36" y="73.66" size="1.778" layer="95" rot="R90" xref="yes"/>
 </segment>
 </net>
 <net name="SCK" class="0">
@@ -4052,6 +4192,11 @@ Lines</text>
 <junction x="88.9" y="55.88"/>
 <wire x1="88.9" y1="55.88" x2="91.44" y2="55.88" width="0.1524" layer="91"/>
 <label x="91.44" y="55.88" size="1.778" layer="95" rot="R270" xref="yes"/>
+</segment>
+<segment>
+<pinref part="U6" gate="G$1" pin="CLK"/>
+<wire x1="152.4" y1="66.04" x2="149.86" y2="66.04" width="0.1524" layer="91"/>
+<label x="149.86" y="66.04" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="RESE'" class="0">
@@ -4309,6 +4454,12 @@ Lines</text>
 <junction x="96.52" y="58.42"/>
 <wire x1="96.52" y1="58.42" x2="99.06" y2="58.42" width="0.1524" layer="91"/>
 <label x="99.06" y="58.42" size="1.778" layer="95" rot="R270" xref="yes"/>
+</segment>
+<segment>
+<pinref part="U6" gate="G$1" pin="!CS"/>
+<wire x1="152.4" y1="68.58" x2="149.86" y2="68.58" width="0.1524" layer="91"/>
+<wire x1="149.86" y1="68.58" x2="149.86" y2="71.12" width="0.1524" layer="91"/>
+<label x="149.86" y="71.12" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="IO/CHANGE" class="0">
