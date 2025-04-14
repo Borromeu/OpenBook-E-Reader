@@ -2584,8 +2584,6 @@ We carry &lt;a href=”https://www.sparkfun.com/products/14204”&gt;200mm&lt;/a
 <part name="EPD_C10" library="DeskAssistant v19 v1.flbr" library_urn="urn:adsk.wipprod:fs.file:vf.vVvdDOfaSfavM5thX5SjWw" deviceset="EAGLE-LTSPICE_C" device="C0402" value="1uF/50V"/>
 <part name="EPD_C11" library="DeskAssistant v19 v1.flbr" library_urn="urn:adsk.wipprod:fs.file:vf.vVvdDOfaSfavM5thX5SjWw" deviceset="EAGLE-LTSPICE_C" device="C0402" value="1uF/50V"/>
 <part name="EPD_C12" library="DeskAssistant v19 v1.flbr" library_urn="urn:adsk.wipprod:fs.file:vf.vVvdDOfaSfavM5thX5SjWw" deviceset="EAGLE-LTSPICE_C" device="C0402" value="1uF/50V"/>
-<part name="GND25" library="DeskAssistant v19 v1.flbr" library_urn="urn:adsk.wipprod:fs.file:vf.vVvdDOfaSfavM5thX5SjWw" deviceset="GND" device=""/>
-<part name="GND26" library="DeskAssistant v19 v1.flbr" library_urn="urn:adsk.wipprod:fs.file:vf.vVvdDOfaSfavM5thX5SjWw" deviceset="GND" device=""/>
 <part name="Q2" library="DeskAssistant v19 v1.flbr" library_urn="urn:adsk.wipprod:fs.file:vf.vVvdDOfaSfavM5thX5SjWw" deviceset="ESP32_WROVER_SPARKFUN-DISCRETESEMI_MOSFET_PCH" device="-DMG2305UX-7" value="20V/4.2A/52mΩ/1.4W"/>
 <part name="SUPPLY5" library="DeskAssistant v19 v1.flbr" library_urn="urn:adsk.wipprod:fs.file:vf.vVvdDOfaSfavM5thX5SjWw" deviceset="3V3-CIRCLE" device="" value="3V3"/>
 <part name="SUPPLY6" library="DeskAssistant v19 v1.flbr" library_urn="urn:adsk.wipprod:fs.file:vf.vVvdDOfaSfavM5thX5SjWw" deviceset="3V3-CIRCLE" device="" value="3V3"/>
@@ -3021,12 +3019,6 @@ Lines</text>
 <instance part="EPD_C12" gate="G$1" x="-129.54" y="99.06" smashed="yes" rot="R90">
 <attribute name="NAME" x="-129.921" y="100.584" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="-124.841" y="100.584" size="1.778" layer="96" rot="R90"/>
-</instance>
-<instance part="GND25" gate="1" x="-152.4" y="93.98" smashed="yes">
-<attribute name="VALUE" x="-154.94" y="91.44" size="1.778" layer="96"/>
-</instance>
-<instance part="GND26" gate="1" x="-157.48" y="129.54" smashed="yes" rot="R180">
-<attribute name="VALUE" x="-154.94" y="132.08" size="1.778" layer="96" rot="R180"/>
 </instance>
 <instance part="Q2" gate="G$1" x="-53.34" y="129.54" smashed="yes">
 <attribute name="NAME" x="-48.26" y="129.54" size="1.778" layer="95" font="vector"/>
@@ -3558,6 +3550,44 @@ Lines</text>
 <wire x1="-132.08" y1="147.32" x2="-144.78" y2="147.32" width="0.1524" layer="91"/>
 <wire x1="-144.78" y1="147.32" x2="-144.78" y2="149.86" width="0.1524" layer="91"/>
 <junction x="-144.78" y="149.86"/>
+<pinref part="EPD_C12" gate="G$1" pin="1"/>
+<wire x1="-132.08" y1="99.06" x2="-152.4" y2="99.06" width="0.1524" layer="91"/>
+<wire x1="-152.4" y1="99.06" x2="-152.4" y2="101.6" width="0.1524" layer="91"/>
+<wire x1="-152.4" y1="101.6" x2="-152.4" y2="104.14" width="0.1524" layer="91"/>
+<wire x1="-152.4" y1="104.14" x2="-152.4" y2="106.68" width="0.1524" layer="91"/>
+<wire x1="-152.4" y1="106.68" x2="-152.4" y2="109.22" width="0.1524" layer="91"/>
+<wire x1="-152.4" y1="109.22" x2="-152.4" y2="111.76" width="0.1524" layer="91"/>
+<wire x1="-152.4" y1="111.76" x2="-152.4" y2="114.3" width="0.1524" layer="91"/>
+<wire x1="-152.4" y1="114.3" x2="-152.4" y2="121.92" width="0.1524" layer="91"/>
+<wire x1="-152.4" y1="121.92" x2="-149.86" y2="121.92" width="0.1524" layer="91"/>
+<pinref part="EPD_C5" gate="G$1" pin="1"/>
+<pinref part="EPD_C6" gate="G$1" pin="1"/>
+<wire x1="-147.32" y1="114.3" x2="-152.4" y2="114.3" width="0.1524" layer="91"/>
+<junction x="-152.4" y="114.3"/>
+<pinref part="EPD_C7" gate="G$1" pin="1"/>
+<wire x1="-142.24" y1="111.76" x2="-152.4" y2="111.76" width="0.1524" layer="91"/>
+<junction x="-152.4" y="111.76"/>
+<pinref part="EPD_C8" gate="G$1" pin="1"/>
+<wire x1="-137.16" y1="109.22" x2="-152.4" y2="109.22" width="0.1524" layer="91"/>
+<junction x="-152.4" y="109.22"/>
+<pinref part="EPD_C9" gate="G$1" pin="1"/>
+<wire x1="-144.78" y1="106.68" x2="-152.4" y2="106.68" width="0.1524" layer="91"/>
+<junction x="-152.4" y="106.68"/>
+<pinref part="EPD_C10" gate="G$1" pin="1"/>
+<wire x1="-147.32" y1="104.14" x2="-152.4" y2="104.14" width="0.1524" layer="91"/>
+<junction x="-152.4" y="104.14"/>
+<pinref part="EPD_C11" gate="G$1" pin="1"/>
+<wire x1="-139.7" y1="101.6" x2="-142.24" y2="101.6" width="0.1524" layer="91"/>
+<junction x="-152.4" y="101.6"/>
+<wire x1="-142.24" y1="101.6" x2="-152.4" y2="101.6" width="0.1524" layer="91"/>
+<junction x="-142.24" y="101.6"/>
+<wire x1="-142.24" y1="101.6" x2="-142.24" y2="88.9" width="0.1524" layer="91"/>
+<label x="-137.16" y="88.9" size="1.778" layer="95" rot="R90" xref="yes"/>
+<wire x1="-142.24" y1="88.9" x2="-137.16" y2="88.9" width="0.1524" layer="91"/>
+<wire x1="-152.4" y1="121.92" x2="-152.4" y2="139.7" width="0.1524" layer="91"/>
+<wire x1="-152.4" y1="139.7" x2="-147.32" y2="139.7" width="0.1524" layer="91"/>
+<junction x="-152.4" y="121.92"/>
+<junction x="-147.32" y="139.7"/>
 </segment>
 <segment>
 <pinref part="U10" gate="G$1" pin="GND"/>
@@ -4251,16 +4281,18 @@ Lines</text>
 <segment>
 <pinref part="J2" gate="G$1" pin="17"/>
 <wire x1="-111.76" y1="116.84" x2="-114.3" y2="116.84" width="0.1524" layer="91"/>
-<wire x1="-114.3" y1="116.84" x2="-157.48" y2="116.84" width="0.1524" layer="91"/>
-<wire x1="-157.48" y1="116.84" x2="-157.48" y2="127" width="0.1524" layer="91"/>
-<pinref part="GND26" gate="1" pin="GND"/>
+<wire x1="-114.3" y1="116.84" x2="-114.3" y2="119.38" width="0.1524" layer="91"/>
 <pinref part="J2" gate="G$1" pin="16"/>
 <wire x1="-111.76" y1="119.38" x2="-114.3" y2="119.38" width="0.1524" layer="91"/>
-<wire x1="-114.3" y1="119.38" x2="-114.3" y2="116.84" width="0.1524" layer="91"/>
-<junction x="-114.3" y="116.84"/>
+<label x="-116.84" y="119.38" size="1.778" layer="95" rot="R180" xref="yes"/>
 <wire x1="-114.3" y1="119.38" x2="-116.84" y2="119.38" width="0.1524" layer="91"/>
 <junction x="-114.3" y="119.38"/>
-<label x="-116.84" y="119.38" size="1.778" layer="95" rot="R180" xref="yes"/>
+<wire x1="-114.3" y1="119.38" x2="-114.3" y2="121.92" width="0.1524" layer="91"/>
+<pinref part="EPD_C5" gate="G$1" pin="2"/>
+<wire x1="-142.24" y1="121.92" x2="-114.3" y2="121.92" width="0.1524" layer="91"/>
+<pinref part="J2" gate="G$1" pin="15"/>
+<wire x1="-114.3" y1="121.92" x2="-111.76" y2="121.92" width="0.1524" layer="91"/>
+<junction x="-114.3" y="121.92"/>
 </segment>
 <segment>
 <pinref part="Q2" gate="G$1" pin="S"/>
@@ -4290,45 +4322,6 @@ Lines</text>
 <pinref part="D4" gate="G$1" pin="A"/>
 <wire x1="-35.56" y1="195.58" x2="-33.02" y2="195.58" width="0.1524" layer="91"/>
 <label x="-33.02" y="195.58" size="1.778" layer="95" xref="yes"/>
-</segment>
-<segment>
-<pinref part="EPD_C12" gate="G$1" pin="1"/>
-<wire x1="-132.08" y1="99.06" x2="-152.4" y2="99.06" width="0.1524" layer="91"/>
-<wire x1="-152.4" y1="99.06" x2="-152.4" y2="96.52" width="0.1524" layer="91"/>
-<wire x1="-152.4" y1="99.06" x2="-152.4" y2="101.6" width="0.1524" layer="91"/>
-<junction x="-152.4" y="99.06"/>
-<wire x1="-152.4" y1="101.6" x2="-152.4" y2="104.14" width="0.1524" layer="91"/>
-<wire x1="-152.4" y1="104.14" x2="-152.4" y2="106.68" width="0.1524" layer="91"/>
-<wire x1="-152.4" y1="106.68" x2="-152.4" y2="109.22" width="0.1524" layer="91"/>
-<wire x1="-152.4" y1="109.22" x2="-152.4" y2="111.76" width="0.1524" layer="91"/>
-<wire x1="-152.4" y1="111.76" x2="-152.4" y2="114.3" width="0.1524" layer="91"/>
-<wire x1="-152.4" y1="114.3" x2="-152.4" y2="121.92" width="0.1524" layer="91"/>
-<wire x1="-152.4" y1="121.92" x2="-149.86" y2="121.92" width="0.1524" layer="91"/>
-<pinref part="EPD_C5" gate="G$1" pin="1"/>
-<pinref part="EPD_C6" gate="G$1" pin="1"/>
-<wire x1="-147.32" y1="114.3" x2="-152.4" y2="114.3" width="0.1524" layer="91"/>
-<junction x="-152.4" y="114.3"/>
-<pinref part="EPD_C7" gate="G$1" pin="1"/>
-<wire x1="-142.24" y1="111.76" x2="-152.4" y2="111.76" width="0.1524" layer="91"/>
-<junction x="-152.4" y="111.76"/>
-<pinref part="EPD_C8" gate="G$1" pin="1"/>
-<wire x1="-137.16" y1="109.22" x2="-152.4" y2="109.22" width="0.1524" layer="91"/>
-<junction x="-152.4" y="109.22"/>
-<pinref part="EPD_C9" gate="G$1" pin="1"/>
-<wire x1="-144.78" y1="106.68" x2="-152.4" y2="106.68" width="0.1524" layer="91"/>
-<junction x="-152.4" y="106.68"/>
-<pinref part="EPD_C10" gate="G$1" pin="1"/>
-<wire x1="-147.32" y1="104.14" x2="-152.4" y2="104.14" width="0.1524" layer="91"/>
-<junction x="-152.4" y="104.14"/>
-<pinref part="EPD_C11" gate="G$1" pin="1"/>
-<wire x1="-139.7" y1="101.6" x2="-142.24" y2="101.6" width="0.1524" layer="91"/>
-<junction x="-152.4" y="101.6"/>
-<pinref part="GND25" gate="1" pin="GND"/>
-<wire x1="-142.24" y1="101.6" x2="-152.4" y2="101.6" width="0.1524" layer="91"/>
-<junction x="-142.24" y="101.6"/>
-<wire x1="-142.24" y1="101.6" x2="-142.24" y2="88.9" width="0.1524" layer="91"/>
-<label x="-137.16" y="88.9" size="1.778" layer="95" rot="R90" xref="yes"/>
-<wire x1="-142.24" y1="88.9" x2="-137.16" y2="88.9" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="PREVGH" class="0">
@@ -4821,13 +4814,6 @@ Lines</text>
 <pinref part="J2" gate="G$1" pin="10"/>
 <wire x1="-111.76" y1="134.62" x2="-114.3" y2="134.62" width="0.1524" layer="91"/>
 <label x="-114.3" y="134.62" size="1.778" layer="95" rot="R180" xref="yes"/>
-</segment>
-</net>
-<net name="N$11" class="0">
-<segment>
-<pinref part="EPD_C5" gate="G$1" pin="2"/>
-<wire x1="-142.24" y1="121.92" x2="-111.76" y2="121.92" width="0.1524" layer="91"/>
-<pinref part="J2" gate="G$1" pin="15"/>
 </segment>
 </net>
 <net name="N$12" class="0">
